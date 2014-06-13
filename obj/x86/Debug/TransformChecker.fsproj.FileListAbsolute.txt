@@ -1,0 +1,1 @@
+C:\x_FSharpStuff\FSharp Test Projects\TransformChecker\obj\x86\Debug\TransformChecker.fsprojResolveAssemblyReference.cache
