@@ -101,7 +101,7 @@ let cleanUp() =
     cleanMeLoop 59
 
 let deleteExt(extension : string) =
-    for file in System.IO.Directory.EnumerateFiles("C:\Users\mhudson\Downloads\\", "*." + extension) do
-        let tempPath = System.IO.Path.Combine("C:\Users\mhudson\Downloads\\", file)
+    for file in System.IO.Directory.EnumerateFiles(dloadFolder + "/", "*." + extension) do
+        let tempPath = System.IO.Path.Combine(dloadFolder, file)
         //printf "%s" tempPath
         System.IO.File.Delete(tempPath)

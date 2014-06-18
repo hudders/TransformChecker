@@ -299,7 +299,7 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                         else
                             xVal.[n]
                     xmlLoader.checkXml (xValue, xLoc.[n], xmlFile, dataSrc, xlRow)
-                    printfn "%i === %i  === %s" xLoc.Length n xVal.[n]
+                    //printfn "%i === %i  === %s" xLoc.Length n xVal.[n]
                     if xLoc.Length <> n + 1 then
                         loop (n + 1)
                 loop 0
@@ -320,13 +320,13 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                         if xlsLoader.cellValue(xlsLoader.dataExt, "K", n).ToString() <> "Pass" then
                             ResultLoop (n + 1)
                 ResultLoop 59
-//                let resultThing =
-//                    if xlsLoader.cellValue(dataSrc, "J", xlRow) <> null then
-//                        if xlsLoader.cellValue(dataSrc, "G", xlRow) <> null then
-//                            "."
-//                        else
-//                            "F"
-//                    else
-//                        "S"
-//                printf "%s" resultThing
+                let resultThing =
+                    if xlsLoader.cellValue(dataSrc, "J", xlRow) <> null then
+                        if xlsLoader.cellValue(dataSrc, "G", xlRow) <> null then
+                            "."
+                        else
+                            "F"
+                    else
+                        "S"
+                printf "%s" resultThing
                 cleanUp()

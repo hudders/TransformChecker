@@ -42,27 +42,35 @@ let getXML(environment, brand, lastName, email, vehicleId) =
 
     let elementPath = "#DataListFiles tbody tr td a:link"
 
-    let listOfXmlFileLinks = 
-        seq { for x in elements elementPath -> System.DateTime.Parse(x.GetAttribute("text").[..18]) }
-        |> List.ofSeq
-        |> List.sortBy(fun x -> x)
-        |> List.rev
-    
-    let xmlLink =
-        let result = ref None in
-        seq { for x in elements elementPath -> x.GetAttribute("text") }
-        |> Seq.iter (fun x -> if x.StartsWith(listOfXmlFileLinks.[0].ToString()) then result := Some x)
-        !result
+    let linkID =
+        if (elements elementPath).Length > 0 then
 
-    click xmlLink.Value
+            let listOfXmlFileLinks = 
+                seq { for x in elements elementPath -> System.DateTime.Parse(x.GetAttribute("text").[..18]) }
+                |> List.ofSeq
+                |> List.sortBy(fun x -> x)
+                |> List.rev
 
-    let linkID = ((element "#GridView1 tbody tr td a:link").GetAttribute("href")).Split('_')
+            let xmlLink =
+                let result = ref None in
+                seq { for x in elements elementPath -> x.GetAttribute("text") }
+                |> Seq.iter (fun x -> if x.StartsWith(listOfXmlFileLinks.[0].ToString()) then result := Some x)
+                !result
 
-    let clickAll selector =
-        elements selector
-        |> List.iter (fun element -> click element)
+            click xmlLink.Value
 
-    clickAll "#GridView1 input"
+            let linkID = ((element "#GridView1 tbody tr td a:link").GetAttribute("href")).Split('_')
+
+            let clickAll selector =
+                elements selector
+                |> List.iter (fun element -> click element)
+
+            clickAll "#GridView1 input"
+            printfn "Successfully downloaded XML"
+            linkID
+        else
+            printfn "No XML found in QuoteFinder. Skipping tests."
+            null
 
     quit()
     linkID
@@ -74,7 +82,5 @@ let checkXml(expectedVal : string, expectedLoc : string, xmlFile : string, xlsFi
         doc.SelectNodes expectedLoc
             |> Seq.cast<XmlNode>
             |> Seq.iter (fun node -> matchToExpected(xlsFile, node.InnerXml, expectedVal, expectedLoc, xlsNode))
-        
-
     else
         printfn "Skipped test because xml file doesn't exist - check your filters!"

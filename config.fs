@@ -2,6 +2,9 @@
 
 let nodeList = [3..200]
 
+let dloadFolder = @"C:\Users\mhudson\Downloads"
+let crrntFolder = @"C:\x_FSharpStuff\FSharp Test Projects\TransformChecker"
+
 let risk_csv = @"..\..\..\..\x_ GIT repos\motor_data_driven\motor.canopy.data_driven\risks.csv"
 let additional_drivers_csv = @"..\..\..\..\x_ GIT repos\motor_data_driven\motor.canopy.data_driven\additional_drivers.csv"
 let claims_csv = @"..\..\..\..\x_ GIT repos\motor_data_driven\motor.canopy.data_driven\claims.csv"
