@@ -89,70 +89,71 @@ let loadProposer (xmlFile : string, propId : string) =
                 loop (id + 1)
     loop 0
 
-let loadTests (testType : string) =
+let loadTests (testType : string, journeyNumber : int) =
     //System.Console.Clear()
     for proposer in personCollection do
         if proposer.Execution = "Yes" then
             let pid = personCollection.IndexOf(proposer)
-            printfn ""
-            printfn "---------------------------------------------------------"
-            printfn "            %s TESTS FOR JOURNEY %s" testType proposer.TestId
-            printfn "---------------------------------------------------------"
-            let linkID = getXML(proposer.Environment, brand, proposer.LastName, proposer.Email, proposer.VehicleId)
-            if linkID <> null then
-                let xmlFile = (dloadFolder + "/Request_" + brandGroup(brand) + "_After_" + linkID.[3] + "_2.xml").ToString()
-                if testType = "PROPOSER" || testType = "ALL" then
-                    loadProposer(xmlFile, proposer.TestId)
-                if testType = "ADDITIONAL" || testType = "ALL" then
-                    if proposer.AdditionalDriverIds.Trim().Length > 0 then
-                        let list = proposer.AdditionalDriverIds.Split(',')
-                        for id in list do
-                            loadAdditional(xmlFile, id, pid)
-                if testType = "CLAIMS" || testType = "PROPOSER" || testType = "ADDITIONAL" || testType = "ALL" then
-                    if testType <> "ADDITIONAL" then
-                        if proposer.ClaimIds.Trim().Length > 0 then
-                            let list = proposer.ClaimIds.Split(',')
-                            for id in list do
-                                loadClaim(xmlFile, id, pid)
-                    if testType <> "PROPOSER" then
+            if journeyNumber - 1 = pid || journeyNumber = 0 then
+                printfn ""
+                printfn "---------------------------------------------------------"
+                printfn "            %s TESTS FOR JOURNEY %s" testType proposer.TestId
+                printfn "---------------------------------------------------------"
+                let linkID = getXML(proposer.Environment, brand, proposer.LastName, proposer.Email, proposer.VehicleId)
+                if linkID <> null then
+                    let xmlFile = (dloadFolder + "/Request_" + brandGroup(brand) + "_After_" + linkID.[3] + "_2.xml").ToString()
+                    if testType = "PROPOSER" || testType = "ALL" then
+                        loadProposer(xmlFile, proposer.TestId)
+                    if testType = "ADDITIONAL" || testType = "ALL" then
                         if proposer.AdditionalDriverIds.Trim().Length > 0 then
-                            let driverList = proposer.AdditionalDriverIds.Split(',')
-                            for driverId in driverList do
-                                let rec loop id =
-                                    if additionalCollection.[id].AdditionalDriverId = (stripChars driverId " ") then
-                                        if additionalCollection.[id].ClaimIds.Trim().Length > 0 then
-                                            let list = additionalCollection.[id].ClaimIds.Split(',')
-                                            for claimId in list do
-                                                loadClaim(xmlFile, claimId, pid)
-                                    else
-                                        if additionalCollection.[id + 1].AdditionalDriverId.Length > 0 then
-                                            loop (id + 1)
-                                loop 0
-                if testType = "CONVICTIONS" || testType = "PROPOSER" || testType = "ADDITIONAL" || testType = "ALL" then
-                    if testType <> "ADDITIONAL" then
-                        if proposer.ConvictionIds.Trim().Length > 0 then
-                            let list = proposer.ConvictionIds.Split(',')
+                            let list = proposer.AdditionalDriverIds.Split(',')
                             for id in list do
-                                loadConviction(xmlFile, id, pid)
-                    if testType <> "PROPOSER" then
-                        if proposer.AdditionalDriverIds.Trim().Length > 0 then
-                            let driverList = proposer.AdditionalDriverIds.Split(',')
-                            for driverId in driverList do
-                                let rec loop id =
-                                    if additionalCollection.[id].AdditionalDriverId = (stripChars driverId " ") then
-                                        if additionalCollection.[id].ConvictionIds.Trim().Length > 0 then
-                                            let list = additionalCollection.[id].ConvictionIds.Split(',')
-                                            for convictionId in list do
-                                                loadConviction(xmlFile, convictionId, pid)
-                                    else
-                                        if additionalCollection.[id + 1].AdditionalDriverId.Length > 0 then
-                                            loop (id + 1)
-                                loop 0
-                if testType = "VEHICLE" || testType = "ALL" then
-                    loadVehicle(xmlFile, proposer.VehicleId, proposer.VehicleUsage, pid)
-                if testType = "POLICY" || testType = "ALL" then
-                    loadData("Policy", xmlFile, pid, pid, pid)
-                deleteExt("xml")
-                deleteExt("tmp")
+                                loadAdditional(xmlFile, id, pid)
+                    if testType = "CLAIMS" || testType = "PROPOSER" || testType = "ADDITIONAL" || testType = "ALL" then
+                        if testType <> "ADDITIONAL" then
+                            if proposer.ClaimIds.Trim().Length > 0 then
+                                let list = proposer.ClaimIds.Split(',')
+                                for id in list do
+                                    loadClaim(xmlFile, id, pid)
+                        if testType <> "PROPOSER" then
+                            if proposer.AdditionalDriverIds.Trim().Length > 0 then
+                                let driverList = proposer.AdditionalDriverIds.Split(',')
+                                for driverId in driverList do
+                                    let rec loop id =
+                                        if additionalCollection.[id].AdditionalDriverId = (stripChars driverId " ") then
+                                            if additionalCollection.[id].ClaimIds.Trim().Length > 0 then
+                                                let list = additionalCollection.[id].ClaimIds.Split(',')
+                                                for claimId in list do
+                                                    loadClaim(xmlFile, claimId, pid)
+                                        else
+                                            if additionalCollection.[id + 1].AdditionalDriverId.Length > 0 then
+                                                loop (id + 1)
+                                    loop 0
+                    if testType = "CONVICTIONS" || testType = "PROPOSER" || testType = "ADDITIONAL" || testType = "ALL" then
+                        if testType <> "ADDITIONAL" then
+                            if proposer.ConvictionIds.Trim().Length > 0 then
+                                let list = proposer.ConvictionIds.Split(',')
+                                for id in list do
+                                    loadConviction(xmlFile, id, pid)
+                        if testType <> "PROPOSER" then
+                            if proposer.AdditionalDriverIds.Trim().Length > 0 then
+                                let driverList = proposer.AdditionalDriverIds.Split(',')
+                                for driverId in driverList do
+                                    let rec loop id =
+                                        if additionalCollection.[id].AdditionalDriverId = (stripChars driverId " ") then
+                                            if additionalCollection.[id].ConvictionIds.Trim().Length > 0 then
+                                                let list = additionalCollection.[id].ConvictionIds.Split(',')
+                                                for convictionId in list do
+                                                    loadConviction(xmlFile, convictionId, pid)
+                                        else
+                                            if additionalCollection.[id + 1].AdditionalDriverId.Length > 0 then
+                                                loop (id + 1)
+                                    loop 0
+                    if testType = "VEHICLE" || testType = "ALL" then
+                        loadVehicle(xmlFile, proposer.VehicleId, proposer.VehicleUsage, pid)
+                    if testType = "POLICY" || testType = "ALL" then
+                        loadData("Policy", xmlFile, pid, pid, pid)
+                    deleteExt("xml")
+                    deleteExt("tmp")
 
-loadTests ("ALL")
+loadTests ("ALL", 0) //-- Debugging control. Set first param to which tab to check, second to which journey.

@@ -264,10 +264,12 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                                     else
                                         (todaysYearInt - dateOfBirthYearInt).ToString()
                                 elif dateOffset = "or since MM/YYYY" then
-                                    if todaysMonthInt <= System.Convert.ToInt32(personCollection.[a].IsLivingInUkSinceMonthCode) then
-                                        (System.Convert.ToInt32(todaysYear) - (System.Convert.ToInt32(personCollection.[a].IsLivingInUkSinceYear) + 1)).ToString()
+                                    let todaysYear = System.Convert.ToInt32(todaysYear)
+                                    let sinceYear = System.Convert.ToInt32(personCollection.[a].IsLivingInUkSinceYear)
+                                    if todaysMonthInt < System.Convert.ToInt32(personCollection.[a].IsLivingInUkSinceMonthCode) then
+                                        ((todaysYear - (sinceYear + 1)).ToString())
                                     else
-                                        (System.Convert.ToInt32(todaysYear) - System.Convert.ToInt32(personCollection.[a].IsLivingInUkSinceYear)).ToString()
+                                        ((todaysYear - sinceYear).ToString())
                                 else
                                     ""
                             elif dataType = "Additional" then
@@ -276,14 +278,16 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                                     let dateOfBirthMonthInt = System.Convert.ToInt32(additionalCollection.[a].DateOfBirthMonth)
                                     let dateOfBirthDayInt = System.Convert.ToInt32(additionalCollection.[a].DateOfBirthDay)
                                     if todaysMonthInt < dateOfBirthMonthInt || ((todaysMonthInt = dateOfBirthMonthInt) && (todaysDayInt < dateOfBirthDayInt)) then
-                                        (todaysYearInt - (dateOfBirthYearInt - 1)).ToString()
+                                        (todaysYearInt - (dateOfBirthYearInt + 1)).ToString()
                                     else
                                         (todaysYearInt - dateOfBirthYearInt).ToString()
                                 elif dateOffset = "or since MM/YYYY" then
-                                    if todaysMonthInt <= System.Convert.ToInt32(additionalCollection.[a].IsLivingInUkSinceMonthCode) then
-                                        (System.Convert.ToInt32(todaysYear) - System.Convert.ToInt32(additionalCollection.[a].IsLivingInUkSinceYear) - 1).ToString()
+                                    let todaysYear = System.Convert.ToInt32(todaysYear)
+                                    let sinceYear = System.Convert.ToInt32(additionalCollection.[a].IsLivingInUkSinceYear)
+                                    if todaysMonthInt < System.Convert.ToInt32(additionalCollection.[a].IsLivingInUkSinceMonthCode) then
+                                        ((todaysYear - (sinceYear + 1)).ToString())
                                     else
-                                        (System.Convert.ToInt32(todaysYear) - System.Convert.ToInt32(additionalCollection.[a].IsLivingInUkSinceYear)).ToString()
+                                        ((todaysYear - sinceYear).ToString())
                                 else
                                     ""
                             else
