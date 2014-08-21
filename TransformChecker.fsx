@@ -89,22 +89,28 @@ let loadProposer (xmlFile : string, propId : string) =
                 loop (id + 1)
     loop 0
 
-let loadTests (testType : string, journeyNumber : int) =
+let loadTests (testType : string, environment : string, journeyNumber : int) =
     //System.Console.Clear()
-    for proposer in personCollection do
+    //for proposer in personCollection do
+    let rec loop n =
+        let proposer = personCollection.[n]
+        let pid = n
         if proposer.Execution = "Yes" then
-            let pid = personCollection.IndexOf(proposer)
+            //let pid = personCollection.IndexOf(proposer)
             if journeyNumber - 1 = pid || journeyNumber = 0 then
                 printfn ""
                 printfn "---------------------------------------------------------"
                 printfn "            %s TESTS FOR JOURNEY %s" testType proposer.TestId
                 printfn "---------------------------------------------------------"
-                let linkID = getXML(proposer.Environment, brand, proposer.LastName, proposer.Email, proposer.VehicleId)
-                if linkID <> null then
-                    let xmlFile = (dloadFolder + "/Request_" + brandGroup(brand) + "_After_" + linkID.[3] + "_2.xml").ToString()
-                    if testType = "PROPOSER" || testType = "ALL" then
+                let xmlFile = (savedFolder + brand + "\xml\\" + brandCode + "_" + System.DateTime.Now.ToString("ddMMyyyy") + "_" + ((pid + 1).ToString()) + ".xml").ToString()
+                printfn "%s" xmlFile
+                if not(File.Exists(xmlFile)) then
+                    printfn "Timestamp: %s" (System.DateTime.Now.ToString("hh:mm:ss"))
+                    getXML(environment, productX, brand, proposer.LastName, proposer.Email, xmlFile)
+                if File.Exists(xmlFile) then
+                    if testType = "PROPOSER" || testType = "ALL" || testType = "JUSTPROPOSER" then
                         loadProposer(xmlFile, proposer.TestId)
-                    if testType = "ADDITIONAL" || testType = "ALL" then
+                    if testType = "ADDITIONAL" || testType = "ALL" || testType = "JUSTADDITIONAL" then
                         if proposer.AdditionalDriverIds.Trim().Length > 0 then
                             let list = proposer.AdditionalDriverIds.Split(',')
                             for id in list do
@@ -153,7 +159,10 @@ let loadTests (testType : string, journeyNumber : int) =
                         loadVehicle(xmlFile, proposer.VehicleId, proposer.VehicleUsage, pid)
                     if testType = "POLICY" || testType = "ALL" then
                         loadData("Policy", xmlFile, pid, pid, pid)
-                    deleteExt("xml")
-                    deleteExt("tmp")
+                    deleteExt(dloadFolder, "xml")
+                    deleteExt(dloadFolder, "tmp")
+        if personCollection.Count > (n + 1) then
+            loop (n + 1)
+    loop 0
 
-loadTests ("ALL", 0) //-- Debugging control. Set first param to which tab to check, second to which journey.
+loadTests ("ALL", "UAT", 2) //-- Debugging control. Set first param to which tab to check, second to which journey.

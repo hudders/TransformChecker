@@ -5,7 +5,13 @@ open Microsoft.Office.Interop
 
 open config
 
-let xlsPath = @"C:\x_FSharpStuff\_dat\Panel Test PC Document V5.xlsx"
+printf "Enter name of brand: "
+let brandX = System.Console.ReadLine()
+let productX = "PC"
+//let brandX = "Drivology"
+
+let xlsPath = xlsRtFolder + "\Car\\" + brandX + "\PC Test Plan - " + brandX + ".xlsx"
+let savPath = xlsRtFolder + "\Car\\" + brandX + "\PC Test Plan - " + brandX + (System.DateTime.Today).ToString() + ".xlsx"
 
 let xlApp = new Excel.ApplicationClass()
 let xlWorkBookInput = xlApp.Workbooks.Open(xlsPath)
@@ -19,9 +25,9 @@ let dataExt = getXLS("Test Summary")
 let cellValue (xlsFile : Excel.Worksheet, column : string, row : int) =
     xlsFile.Range(column + row.ToString()).Value2
 
-let brand =
+let brand, brandCode =
   let brandFile = getXLS("Test Summary")
-  cellValue(brandFile, "C", 2).ToString()
+  cellValue(brandFile, "C", 2).ToString(), cellValue(brandFile, "I", 2).ToString()
 
 // Brand group sequences
 // ---------------------
@@ -43,7 +49,8 @@ let brandGroup(brand : string) =
              "Hastings Direct SmartMiles";
              "Castle Cover";
              "Sure Thing!";
-             "John Lewis Insurance"]
+             "John Lewis Insurance";
+             "Insure Wiser"]
 
     let cdlBrandFilteredSeq =
         seq ["AutoNet";

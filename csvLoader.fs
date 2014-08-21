@@ -39,7 +39,7 @@ type Person() =
 let mutable personCollection = new List<Person>()
 
 let personLoad (csv_filename : string) = 
-    let csv_file = CsvFile.Load(Environment.CurrentDirectory + csv_filename).Cache()
+    let csv_file = CsvFile.Load(csv_filename).Cache()
     for row in csv_file.Data do
         let obj = new Person()
         obj.TestId <- row.GetColumn("TestId")
@@ -96,7 +96,7 @@ type Additional() =
 let mutable additionalCollection = new List<Additional>()
 
 let additionalLoad (csv_filename : string) = 
-    let csv_file = CsvFile.Load(Environment.CurrentDirectory + csv_filename).Cache()
+    let csv_file = CsvFile.Load(csv_filename).Cache()
     for row in csv_file.Data do
         let obj = new Additional()
         obj.AdditionalDriverId <- row.GetColumn("AdditionalDriverId")
@@ -130,7 +130,7 @@ type Claim() =
 let mutable claimCollection = new List<Claim>()
 
 let claimLoad (csv_filename : string) = 
-    let csv_file = CsvFile.Load(Environment.CurrentDirectory + csv_filename).Cache()
+    let csv_file = CsvFile.Load(csv_filename).Cache()
     for row in csv_file.Data do
         let obj = new Claim()
         obj.ClaimsId <- row.GetColumn("ClaimsId")
@@ -155,7 +155,7 @@ type Conviction() =
 let mutable convictionCollection = new List<Conviction>()
 
 let convictionLoad (csv_filename : string) = 
-    let csv_file = CsvFile.Load(Environment.CurrentDirectory + csv_filename).Cache()
+    let csv_file = CsvFile.Load(csv_filename).Cache()
     for row in csv_file.Data do
         let obj = new Conviction()
         obj.ConvictionId <- row.GetColumn("ConvictionId")
@@ -180,7 +180,7 @@ type Vehicle() =
 let mutable vehicleCollection = new List<Vehicle>()
 
 let vehicleLoad (csv_filename : string) = 
-    let csv_file = CsvFile.Load(Environment.CurrentDirectory + csv_filename).Cache()
+    let csv_file = CsvFile.Load(csv_filename).Cache()
     for row in csv_file.Data do
         let obj = new Vehicle()
         obj.VehicleId <- row.GetColumn("VehicleId")
@@ -203,7 +203,7 @@ type CarUsage() =
 let mutable carUsageCollection = new List<CarUsage>()
 
 let carUsageLoad (csv_filename : string) = 
-    let csv_file = CsvFile.Load(Environment.CurrentDirectory + csv_filename).Cache()
+    let csv_file = CsvFile.Load(csv_filename).Cache()
     for row in csv_file.Data do
         let obj = new CarUsage()
         obj.CarUsageId <- row.GetColumn("CarUsageId")

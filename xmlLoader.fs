@@ -23,19 +23,22 @@ let processXml (xmlString : string) =
 // getXML
 // Downloads the appropriate XML files and returns a linkID
 // so we can find the files later.
-let getXML(environment, brand, lastName, email, vehicleId) =
+let getXML(environment, product, brand : string, lastName, email, xmlFile) =
+    let xmlFolder = xlsRtFolder + "\Car\\" + brandX + "\xml"
     start chrome
+    let browser1 = browser
     let environmentURL = match environment with
                             | "UAT" -> "http://peg-ctmcoruqt01.comparethemarket.local:65000#"
                             | "REG" -> "http://peg-ctmcorrqt01.comparethemarket.local:65000#"
                             | _ -> "http://peg-ctmcorqqt01.comparethemarket.local:65000#"
-    let productClass = match vehicleId with
+    let productClass = match product with
                             | Prefix "PC" rest -> "PrivateCar"
                             | Prefix "LC" rest -> "LightCommercial"
                             | _ -> "Household"
     url environmentURL
     "#DropDownListProducts" << productClass
-    "#DropDownListBrands" << brand
+    //"#DropDownListBrands" << brand
+    click brandCode
     "#TextBoxSurname" << lastName
     "#TextBoxEmailAdr" << email
     click "Search"
@@ -71,9 +74,10 @@ let getXML(environment, brand, lastName, email, vehicleId) =
         else
             printfn "No XML found in QuoteFinder. Skipping tests."
             null
-
-    quit()
-    linkID
+    if linkID <> null then
+        File.Copy((dloadFolder + "Request_" + brandGroup(brand) + "_After_" + linkID.[3] + "_2.xml").ToString(), xmlFile)
+    quit browser1
+    printfn "Timestamp: %s" (System.DateTime.Now.ToString("hh:mm:ss"))
 
 let checkXml(expectedVal : string, expectedLoc : string, xmlFile : string, xlsFile : Excel.Worksheet, xlsNode : int) =
     if File.Exists(xmlFile) then

@@ -68,6 +68,8 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                             elif dataType = "Vehicle" then
                                 if fName = "Registration Year and Letter" then
                                     stripChars vehicleCollection.[a].RegistrationNumber " "
+                                elif fName = "ABI Code" then
+                                    xlsLoader.carDetailLookup((stripChars vehicleCollection.[a].RegistrationNumber " ")).[0]
                                 elif fName = "Manufacturer" then
                                     xlsLoader.carDetailLookup((stripChars vehicleCollection.[a].RegistrationNumber " ")).[1]
                                 elif fName = "Model" then
@@ -190,64 +192,71 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                                     ""
                             else
                                 ""
-                        elif contains xVal.[n] ["YYYY-MM-DD"; "YYYY-MM-01"; "DD-MM-YYYY"] then
-                            let dateOffset = xlsLoader.cellValue(dataSrc, "C", xlRow).ToString()
-                            if dataType = "Claim" then
-                                if fName = "Date" then
-                                    dateTester (xVal.[n], "", claimCollection.[a].ClaimDateMonthCode, claimCollection.[a].ClaimDateYear)
+                        elif contains xVal.[n] ["YYYY-MM-DD"; "YYYY-MM-01"; "DD-MM-YYYY"; "YYYY-MM-DDT00:00:00"] then
+                            let datePart, timePart =
+                                if xVal.[n] = "YYYY-MM-DDT00:00:00" then
+                                    "YYYY-MM-DD", "T00:00:00"
                                 else
-                                    ""
-                            elif dataType = "Conviction" then
-                                if fName = "Date" then
-                                    dateTester (xVal.[n], "", convictionCollection.[a].ConvictionDateMonthCode, convictionCollection.[a].ConvictionDateYear)
-                                else
-                                    ""
-                            elif dataType = "Vehicle" then
-                                if fName = "Date of Purchase" then
-                                    dateTester (xVal.[n], todaysDay, carUsageCollection.[b].DateOfPurchaseMonthCode, carUsageCollection.[b].DateOfPurchaseYear)
-                                elif fName = "Not purchased yet" then
-                                    if contains (xlsLoader.brandGroup(xlsLoader.brand)) ["CDL-FilterFree"] then
-                                        dateTester (xVal.[n], todaysDay, todaysMonth, todaysYear)
+                                    xVal.[n], ""
+                            let dateTime =
+                                let dateOffset = xlsLoader.cellValue(dataSrc, "C", xlRow).ToString()
+                                if dataType = "Claim" then
+                                    if fName = "Date" then
+                                        dateTester (datePart, "", claimCollection.[a].ClaimDateMonthCode, claimCollection.[a].ClaimDateYear)
                                     else
-                                        let dateFormat = Regex.Replace(xVal.[n].ToLower(),"mm","MM")
+                                        ""
+                                elif dataType = "Conviction" then
+                                    if fName = "Date" then
+                                        dateTester (datePart, "", convictionCollection.[a].ConvictionDateMonthCode, convictionCollection.[a].ConvictionDateYear)
+                                    else
+                                        ""
+                                elif dataType = "Vehicle" then
+                                    if fName = "Date of Purchase" then
+                                        dateTester (datePart, todaysDay, carUsageCollection.[b].DateOfPurchaseMonthCode, carUsageCollection.[b].DateOfPurchaseYear)
+                                    elif fName = "Not purchased yet" then
+                                        if contains (xlsLoader.brandGroup(xlsLoader.brand)) ["CDL-FilterFree"] then
+                                            dateTester (datePart, todaysDay, todaysMonth, todaysYear)
+                                        else
+                                            let dateFormat = Regex.Replace(datePart.ToLower(),"mm","MM")
+                                            ((DateTime.Parse(todaysDay + "/" + todaysMonth + "/" + todaysYear)).AddDays ((float personCollection.[b].PolicyStartDateOffset) - float 1)).ToString(dateFormat)
+                                    else
+                                        ""
+                                elif dataType = "Policy" then
+                                    if fName = "Cover Start Date" then
+                                        let dateFormat = Regex.Replace(datePart.ToLower(),"mm","MM")
                                         ((DateTime.Parse(todaysDay + "/" + todaysMonth + "/" + todaysYear)).AddDays ((float personCollection.[b].PolicyStartDateOffset) - float 1)).ToString(dateFormat)
-                                else
-                                    ""
-                            elif dataType = "Policy" then
-                                if fName = "Cover Start Date" then
-                                    let dateFormat = Regex.Replace(xVal.[n].ToLower(),"mm","MM")
-                                    ((DateTime.Parse(todaysDay + "/" + todaysMonth + "/" + todaysYear)).AddDays ((float personCollection.[b].PolicyStartDateOffset) - float 1)).ToString(dateFormat)
-                                else
-                                    ""
-                            elif dataType = "Proposer" then
-                                if fName = "DOB" || fName = "Date of Birth" || dateOffset = "since birth" then
-                                    dateTester (xVal.[n], personCollection.[a].DateOfBirthDay, personCollection.[a].DateOfBirthMonth, personCollection.[a].DateOfBirthYear)
-                                elif dateOffset = "or since MM/YYYY" then
-                                    dateTester (xVal.[n], "01", personCollection.[a].IsLivingInUkSinceMonthCode, personCollection.[a].IsLivingInUkSinceYear)
-                                elif fName = "Period licence held for?" || fName = "Licence Date Obtained" then
-                                    let licenceYear =
-                                        if personCollection.[a].LicenceDateYear.Length > 0 then
-                                            personCollection.[a].LicenceDateYear
-                                        else
-                                            (System.Convert.ToInt32(todaysYear) - System.Convert.ToInt32(personCollection.[a].LicenceHeldCode) + 1).ToString()
-                                    dateTester (xVal.[n], personCollection.[a].LicenceDateDay, personCollection.[a].LicenceDateMonth, licenceYear)
-                                else
-                                    ""
-                            elif dataType = "Additional" then
-                                if fName = "DOB" || fName = "Date of Birth" || dateOffset = "since birth" then
-                                    dateTester (xVal.[n], additionalCollection.[a].DateOfBirthDay, additionalCollection.[a].DateOfBirthMonth, additionalCollection.[a].DateOfBirthYear)
-                                elif dateOffset = "or since MM/YYYY" then
-                                    dateTester (xVal.[n], "01", additionalCollection.[a].IsLivingInUkSinceMonthCode, additionalCollection.[a].IsLivingInUkSinceYear)
-                                elif fName = "Period licence held for?" || fName = "Licence Date Obtained" then
-                                    let licenceYear =
-                                        if additionalCollection.[a].LicenceDateYear.Length > 0 then
-                                            additionalCollection.[a].LicenceDateYear
-                                        else
-                                            (System.Convert.ToInt32(todaysYear) - System.Convert.ToInt32(additionalCollection.[a].LicenceHeldCode) + 1).ToString()
-                                    dateTester (xVal.[n], additionalCollection.[a].LicenceDateDay, additionalCollection.[a].LicenceDateMonth, licenceYear)
-                                else
-                                    ""
-                            else ""
+                                    else
+                                        ""
+                                elif dataType = "Proposer" then
+                                    if fName = "DOB" || fName = "Date of Birth" || dateOffset = "since birth" then
+                                        dateTester (datePart, personCollection.[a].DateOfBirthDay, personCollection.[a].DateOfBirthMonth, personCollection.[a].DateOfBirthYear)
+                                    elif dateOffset = "or since MM/YYYY" then
+                                        dateTester (datePart, "01", personCollection.[a].IsLivingInUkSinceMonthCode, personCollection.[a].IsLivingInUkSinceYear)
+                                    elif fName = "Period licence held for?" || fName = "Licence Date Obtained" then
+                                        let licenceYear =
+                                            if personCollection.[a].LicenceDateYear.Length > 0 then
+                                                personCollection.[a].LicenceDateYear
+                                            else
+                                                (System.Convert.ToInt32(todaysYear) - System.Convert.ToInt32(personCollection.[a].LicenceHeldCode) + 1).ToString()
+                                        dateTester (datePart, personCollection.[a].LicenceDateDay, personCollection.[a].LicenceDateMonth, licenceYear)
+                                    else
+                                        ""
+                                elif dataType = "Additional" then
+                                    if fName = "DOB" || fName = "Date of Birth" || dateOffset = "since birth" then
+                                        dateTester (datePart, additionalCollection.[a].DateOfBirthDay, additionalCollection.[a].DateOfBirthMonth, additionalCollection.[a].DateOfBirthYear)
+                                    elif dateOffset = "or since MM/YYYY" then
+                                        dateTester (datePart, "01", additionalCollection.[a].IsLivingInUkSinceMonthCode, additionalCollection.[a].IsLivingInUkSinceYear)
+                                    elif fName = "Period licence held for?" || fName = "Licence Date Obtained" then
+                                        let licenceYear =
+                                            if additionalCollection.[a].LicenceDateYear.Length > 0 then
+                                                additionalCollection.[a].LicenceDateYear
+                                            else
+                                                (System.Convert.ToInt32(todaysYear) - System.Convert.ToInt32(additionalCollection.[a].LicenceHeldCode) + 1).ToString()
+                                        dateTester (datePart, additionalCollection.[a].LicenceDateDay, additionalCollection.[a].LicenceDateMonth, licenceYear)
+                                    else
+                                        ""
+                                else ""
+                            dateTime + timePart
                         elif xVal.[n] = "<age>" then
                             let dateOffset = xlsLoader.cellValue(dataSrc, "C", xlRow).ToString()
                             let coverStart = (((DateTime.Parse(todaysDay + "/" + todaysMonth + "/" + todaysYear)).AddDays ((float personCollection.[a].PolicyStartDateOffset) - float 1)).ToString("dd/MM/yyyy")).Split('/')
@@ -303,7 +312,6 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                         else
                             xVal.[n]
                     xmlLoader.checkXml (xValue, xLoc.[n], xmlFile, dataSrc, xlRow)
-                    //printfn "%i === %i  === %s" xLoc.Length n xVal.[n]
                     if xLoc.Length <> n + 1 then
                         loop (n + 1)
                 loop 0
