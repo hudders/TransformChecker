@@ -2,9 +2,9 @@
 
 let nodeList = [3..200]
 
-let dloadFolder = @"C:\Users\mhudson\Downloads\"
+let dloadFolder = @"C:\Users\ggwynn\Downloads\"
 let savedFolder = @"C:\Dev\panel.testplans\Car\"
-let crrntFolder = @"C:\x_FSharpStuff\FSharp Test Projects\TransformChecker\"
+let crrntFolder = @"C:\Dev\TransformChecker\" #@"C:\x_FSharpStuff\FSharp Test Projects\TransformChecker\"
 let xlsRtFolder = @"C:\Dev\panel.testplans\"
 let csvRtFolder = @"C:\Dev\motor_data_driven\motor.canopy.data_driven\"
 
