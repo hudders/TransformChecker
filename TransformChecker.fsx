@@ -165,4 +165,4 @@ let loadTests (testType : string, environment : string, journeyNumber : int) =
             loop (n + 1)
     loop 0
 
-loadTests ("ALL", "UAT", 2) //-- Debugging control. Set first param to which tab to check, second to which journey.
+loadTests ("ALL", "UAT", 0) //-- Debugging control. Set first param to which tab to check, second to which journey.
