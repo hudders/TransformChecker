@@ -39,6 +39,7 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                 let xLoc = xLoc.ToString()
                 let xLoc, xVal = xLoc.Split('\n'), xVal.Split('\n')
                 let rec loop n =
+                    printfn "%s" xLoc.[n]
                     let xValue =
                         if xVal.[n] = "as input" then
                             if dataType = "Claim" then
@@ -76,7 +77,7 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                                     xlsLoader.carDetailLookup((stripChars vehicleCollection.[a].RegistrationNumber " ")).[2]
                                 elif fName = "Style" then
                                     xlsLoader.carDetailLookup((stripChars vehicleCollection.[a].RegistrationNumber " ")).[3]
-                                elif fName = "Engine" then
+                                elif fName = "Engine Capacity" then
                                     xlsLoader.carDetailLookup((stripChars vehicleCollection.[a].RegistrationNumber " ")).[5]
                                 elif fName = "Trim" then
                                     xlsLoader.carDetailLookup((stripChars vehicleCollection.[a].RegistrationNumber " ")).[6]
@@ -310,7 +311,7 @@ let loadData (dataType : string, xmlFile : string, a : int, b : int, c : int) =
                             else
                                 ""
                         else
-                            xVal.[n]
+                            (xVal.[n]).Trim()
                     xmlLoader.checkXml (xValue, xLoc.[n], xmlFile, dataSrc, xlRow)
                     if xLoc.Length <> n + 1 then
                         loop (n + 1)

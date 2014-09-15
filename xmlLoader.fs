@@ -14,9 +14,11 @@ open xlsLoader
 // processXml
 // Sorts out any problems with the xml on a brand basis
 let processXml (xmlString : string) =
-    let xmlString = xmlString.Replace("xmlns=","x=")
-    if brand = "Drivology" then
+    let xmlString = xmlString.Replace("xmlns=","x=").Replace("tem:","").Replace("web:","").Replace("&lt;","<").Replace("&gt;",">")
+    if brandGroup(brand) = "SSP Multi Quote" then
         xmlString.Replace("pmq:","")
+    elif brandGroup(brand) = "QuoteExchange" then
+        xmlString.Replace("a:","")
     else
         xmlString
 
