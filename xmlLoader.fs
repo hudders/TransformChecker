@@ -85,8 +85,13 @@ let checkXml(expectedVal : string, expectedLoc : string, xmlFile : string, xlsFi
     if File.Exists(xmlFile) then
         let xml = XDocument.Load(xmlFile).ToString()
         let doc = new XmlDocument() in doc.LoadXml (processXml(xml))
-        doc.SelectNodes expectedLoc
-            |> Seq.cast<XmlNode>
-            |> Seq.iter (fun node -> matchToExpected(xlsFile, node.InnerXml, expectedVal, expectedLoc, xlsNode))
+        
+        let xSeq = doc.SelectNodes expectedLoc
+                    |> Seq.cast<XmlNode>
+        if Seq.isEmpty xSeq then
+            matchToExpected(xlsFile, "[MISSING]", expectedVal, expectedLoc, xlsNode)
+        else
+            xSeq
+                |> Seq.iter (fun node -> matchToExpected(xlsFile, (if node.InnerXml = "" then "[EMPTY]" else node.InnerXml), expectedVal, expectedLoc, xlsNode))
     else
         printfn "Skipped test because xml file doesn't exist - check your filters!"
