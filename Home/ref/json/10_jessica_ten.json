@@ -1,0 +1,173 @@
+{
+   "documentVersion":1,
+   "riskId":"517709e2-1e85-4512-838d-2409ebc1a4fe",
+   "riskVersion":"24",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"true",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"11",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Cumbria Walk",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Mickleover",
+         "town":"Derby",
+         "traditionalCounty":"Derbyshire",
+         "administrativeCounty":"Derby",
+         "optionalCounty":"Derbyshire",
+         "postalCounty":"",
+         "postcode":"DE3 0TL"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"450"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"tv/video/hifi/radios",
+               "value":"2400",
+               "description":"Portable Blueray Player"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"450"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"11",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Cumbria Walk",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Mickleover",
+         "town":"Derby",
+         "traditionalCounty":"Derbyshire",
+         "administrativeCounty":"Derby",
+         "optionalCounty":"Derbyshire",
+         "postalCounty":"",
+         "postcode":"DE3 0TL"
+      },
+      "construction":{
+         "externalWallType":"glass",
+         "roofType":"timber",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"grade 2 listed building"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"multi-point-locking-system",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"multi-point-locking-system",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"family members and foster children",
+         "numberOfNonFamilyMembers":"10",
+         "numberOfFosterChildren":"10",
+         "durationOfFosterChildrenInCare":"3 months to 1 year",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"b52a246d-be11-4d6a-9598-b087a951697e",
+               "incidentCause":"lightning",
+               "claimType":"both contents and buildings items",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Bungalow",
+      "propertySubType":"terraced",
+      "yearBuilt":"1989",
+      "bedrooms":"9",
+      "receptionRooms":"9",
+      "bathrooms":"9",
+      "otherRooms":"9",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"ms",
+      "firstName":"Jessica",
+      "surname":"Ten",
+      "dateOfBirth":"1969-04-17 00:00:00Z",
+      "maritalStatus":"civil partnered",
+      "employmentStatus":"employed",
+      "selfEmployed":false,
+      "occupationCode":"503",
+      "occupationType":"Ground Worker",
+      "businessCode":"681",
+      "businessType":"Sports Ground",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"ms",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"civil partnered",
+      "employmentStatus":"employed",
+      "selfEmployed":true,
+      "occupationCode":"487",
+      "occupationType":"Research Scientist",
+      "businessCode":"803",
+      "businessType":"Medical research",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"business-partner"
+   }
+}

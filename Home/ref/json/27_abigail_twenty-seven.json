@@ -1,0 +1,132 @@
+{
+   "documentVersion":1,
+   "riskId":"09f3a39b-18cc-4d4e-875f-239f001509ff",
+   "riskVersion":"20",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Temple Place",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Huntingdon",
+         "traditionalCounty":"",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE29 3RT"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"300"
+      },
+      "contentsCover":{
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"300"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Temple Place",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Huntingdon",
+         "traditionalCounty":"",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE29 3RT"
+      },
+      "construction":{
+         "externalWallType":"brick",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"permanent main residence",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":""
+      },
+      "ownershipStatus":"rented",
+      "tenantType":"council-furnished",
+      "propertyType":"Bungalow",
+      "propertySubType":"detached",
+      "yearBuilt":"2002",
+      "bedrooms":"4",
+      "receptionRooms":"5",
+      "bathrooms":"6",
+      "otherRooms":"5",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mrs",
+      "firstName":"Abigail",
+      "surname":"Twenty-Seven",
+      "dateOfBirth":"1986-04-17 00:00:00Z",
+      "maritalStatus":"married",
+      "employmentStatus":"houseperson",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

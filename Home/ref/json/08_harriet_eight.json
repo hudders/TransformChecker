@@ -1,0 +1,168 @@
+{
+   "documentVersion":1,
+   "riskId":"79692447-310d-401c-980e-efdbd239809e",
+   "riskVersion":"24",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"first time buyer - renter",
+      "yearsContentsInsuranceHeld":"first time buyer - renter",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"20",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Fossway",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"York",
+         "traditionalCounty":"Yorkshire",
+         "administrativeCounty":"York",
+         "optionalCounty":"North Yorkshire",
+         "postalCounty":"",
+         "postcode":"YO31 8SG"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"350"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"photographic equipment",
+               "value":"2200",
+               "description":"12MP camera"
+            },
+            {
+               "type":"photographic equipment",
+               "value":"2300",
+               "description":"Expensive optical zoom camera"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"350"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"20",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Fossway",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"York",
+         "traditionalCounty":"Yorkshire",
+         "administrativeCounty":"York",
+         "optionalCounty":"North Yorkshire",
+         "postalCounty":"",
+         "postcode":"YO31 8SG"
+      },
+      "construction":{
+         "externalWallType":"prefabricated - combustible",
+         "roofType":"corrugated iron",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"False",
+         "locksOnExternalSlidingDoors":"",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"multi-point-locking-system",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"family members and foster children",
+         "numberOfNonFamilyMembers":"1",
+         "numberOfFosterChildren":"1",
+         "durationOfFosterChildrenInCare":"less than 3 months",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"334d9b34-66f9-4339-b6ca-8c0b15403156",
+               "incidentCause":"fire",
+               "claimType":"contents in transit",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Bungalow",
+      "propertySubType":"detached",
+      "yearBuilt":"1987",
+      "bedrooms":"7",
+      "receptionRooms":"7",
+      "bathrooms":"7",
+      "otherRooms":"7",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"miss",
+      "firstName":"Harriet",
+      "surname":"Eight",
+      "dateOfBirth":"1967-04-17 00:00:00Z",
+      "maritalStatus":"widowed-surviving civil partner",
+      "employmentStatus":"unemployed",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"miss",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"married",
+      "employmentStatus":"unemployed",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"employee"
+   }
+}

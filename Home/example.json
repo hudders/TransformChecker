@@ -1,0 +1,175 @@
+{
+   "documentVersion":1,
+   "riskId":"b7372331-61e4-4772-9702-7953b908e4ea",
+   "riskVersion":"27",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"less than 1 year",
+      "yearsContentsInsuranceHeld":"less than 1 year",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"Have not yet moved in",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"Byways",
+         "number":"Byways",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Rippons Drove",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Northborough",
+         "town":"Peterborough",
+         "traditionalCounty":"Northamptonshire",
+         "administrativeCounty":"Peterborough",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 9AG"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"0"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"jewellery/watches",
+               "value":"1500",
+               "description":"Titanium Watch"
+            }
+         ],
+         "bicycles":[
+            {
+               "type":"3",
+               "value":"350",
+               "description":"Big Bike"
+            }
+         ],
+         "highRiskAmount":"1500",
+         "mostExpensiveHighRiskItemAmount":"1500",
+         "personalPossessionsCoverAmount":"2000",
+         "coverAmount":"15000",
+         "excess":"0"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"27a",
+         "number":"",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Langley Lane",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Shipley",
+         "traditionalCounty":"Yorkshire",
+         "administrativeCounty":"Bradford",
+         "optionalCounty":"West Yorkshire",
+         "postalCounty":"West Yorkshire",
+         "postcode":"BD17 7LH"
+      },
+      "construction":{
+         "externalWallType":"stone",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"False",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"unlock-pull-down-lever",
+         "hasExternalSlidingDoors":"False",
+         "locksOnExternalSlidingDoors":"",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"True",
+         "alarmMaintenanceStatus":"yes by professional"
+      },
+      "residents":{
+         "occupancyStatus":"permanent main residence",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "childMinding":{
+            "childMindingRegistration":"True",
+            "childMindingProperty":"True",
+            "childMindingNumberOfChildren":"1"
+         }
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"terraced",
+      "yearBuilt":"1980",
+      "bedrooms":"1",
+      "receptionRooms":"0",
+      "bathrooms":"0",
+      "otherRooms":"0",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mr",
+      "firstName":"Aaron",
+      "surname":"One",
+      "dateOfBirth":"1960-04-17 00:00:00Z",
+      "maritalStatus":"married",
+      "employmentStatus":"employed",
+      "selfEmployed":false,
+      "occupationCode":"C14",
+      "occupationType":"Child Minder",
+      "businessCode":"854",
+      "businessType":"Child Minding",
+      "secondaryOccupationCode":"593",
+      "secondaryOccupationType":"Assistant Teacher",
+      "secondaryBusinessCode":"632",
+      "secondaryBusinessType":"School"
+   },
+   "jointPolicyHolder":{
+      "title":"mrs",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"married",
+      "employmentStatus":"employed",
+      "selfEmployed":false,
+      "occupationCode":"222",
+      "occupationType":"Nuclear Scientist",
+      "businessCode":"141",
+      "businessType":"Nuclear Energy",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"spouse"
+   }
+}

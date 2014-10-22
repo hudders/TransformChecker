@@ -1,0 +1,173 @@
+{
+   "documentVersion":1,
+   "riskId":"0ff846e1-fdcf-4a4b-a9cd-a36974209c13",
+   "riskVersion":"23",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"3 years",
+      "yearsContentsInsuranceHeld":"3 years",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"True",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"Corresponding with a family member",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"Byways",
+         "number":"",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Rippons Drove",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Northborough",
+         "town":"Peterborough",
+         "traditionalCounty":"Northamptonshire",
+         "administrativeCounty":"Peterborough",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 9AG"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"150"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"mobile phones",
+               "value":"1800",
+               "description":"HTC Diamond Encrusted"
+            }
+         ],
+         "highRiskAmount":"49500",
+         "mostExpensiveHighRiskItemAmount":"10000",
+         "coverAmount":"99000",
+         "excess":"150"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"1 Tower Hill Villa",
+         "number":"",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Goose Green",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Gomshall",
+         "town":"Guildford",
+         "traditionalCounty":"Surrey",
+         "administrativeCounty":"Surrey",
+         "optionalCounty":"Surrey",
+         "postalCounty":"Surrey",
+         "postcode":"GU5 9LL"
+      },
+      "construction":{
+         "externalWallType":"timber frame with brick walls",
+         "roofType":"felt on timber",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"other business use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"yale",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"multi-point-locking-system",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"2-key",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"shared by working people",
+         "numberOfNonFamilyMembers":"20",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"f4bce8a2-d74a-469f-a2ec-13b5a87de3cd",
+               "incidentCause":"escape of water",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2011-09-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"9999999",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"detached",
+      "yearBuilt":"1983",
+      "bedrooms":"3",
+      "receptionRooms":"3",
+      "bathrooms":"3",
+      "otherRooms":"3",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"True",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":"False"
+   },
+   "policyHolder":{
+      "title":"ms",
+      "firstName":"Deborah",
+      "surname":"Four",
+      "dateOfBirth":"1963-04-17 00:00:00Z",
+      "maritalStatus":"divorced-dissolved",
+      "employmentStatus":"employed",
+      "selfEmployed":false,
+      "occupationCode":"E11",
+      "occupationType":"Broadcasting Engineer",
+      "businessCode":"166",
+      "businessType":"Television",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"ms",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"divorced-dissolved",
+      "employmentStatus":"employed",
+      "selfEmployed":true,
+      "occupationCode":"C55",
+      "occupationType":"Computer Consultant",
+      "businessCode":"818",
+      "businessType":"Computer Aided Design",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"employer"
+   }
+}

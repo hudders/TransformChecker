@@ -1,0 +1,16 @@
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\HomeTransformChecker.exe.config
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\HomeTransformChecker.XML
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\HomeTransformChecker.exe
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\HomeTransformChecker.pdb
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\canopy.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\FSharp.Core.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\FSharp.Data.DesignTime.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\FSharp.Data.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\Newtonsoft.Json.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\SizSelCsZzz.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\WebDriver.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\WebDriver.Support.dll
+C:\Dev\HomeTransformChecker\HomeTransformChecker\bin\Debug\FSharp.Core.xml
+C:\Dev\HomeTransformChecker\HomeTransformChecker\obj\Debug\HomeTransformChecker.fsprojResolveAssemblyReference.cache
+C:\Dev\HomeTransformChecker\HomeTransformChecker\obj\Debug\HomeTransformChecker.exe
+C:\Dev\HomeTransformChecker\HomeTransformChecker\obj\Debug\HomeTransformChecker.pdb

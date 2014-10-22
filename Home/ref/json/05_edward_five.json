@@ -1,0 +1,168 @@
+{
+   "documentVersion":1,
+   "riskId":"4fc81b52-fa47-4c3b-bc62-2934ffe779ff",
+   "riskVersion":"23",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"4 years",
+      "yearsContentsInsuranceHeld":"4 years",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"True",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"Other",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"Byways",
+         "number":"",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Rippons Drove",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Northborough",
+         "town":"Peterborough",
+         "traditionalCounty":"Northamptonshire",
+         "administrativeCounty":"Peterborough",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 9AG"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"200"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"camcorders",
+               "value":"1900",
+               "description":"JVC HDD Camcorder"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"200"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Cotswold Close",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Slough",
+         "traditionalCounty":"Buckinghamshire",
+         "administrativeCounty":"Slough",
+         "optionalCounty":"Berkshire",
+         "postalCounty":"",
+         "postcode":"SL1 2TG"
+      },
+      "construction":{
+         "externalWallType":"timber frame with plaster panels",
+         "roofType":"",
+         "moreThanHalfRoofIsFlat":"",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"other-lock",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"2-key",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"yale",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasSeparateLockableEntrance":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"unoccupied",
+         "residentsType":"",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"until-sold",
+         "selectedUnoccupiedReason":"pending-sale",
+         "previousClaims":[
+            {
+               "claimId":"48a31148-53c1-4307-962b-eca12b196506",
+               "incidentCause":"storm damage",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2011-10-01 00:00:00Z",
+               "anyDamage":"False",
+               "damageAmount":"0",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Flat",
+      "propertySubType":"ground floor",
+      "yearBuilt":"1984",
+      "bedrooms":"4",
+      "receptionRooms":"4",
+      "bathrooms":"4",
+      "otherRooms":"4",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"True",
+      "continuesToSufferDamage":"False"
+   },
+   "policyHolder":{
+      "title":"dr-male",
+      "firstName":"Edward",
+      "surname":"Five",
+      "dateOfBirth":"1964-04-17 00:00:00Z",
+      "maritalStatus":"civil partnered",
+      "employmentStatus":"student",
+      "occupationCode":"S50",
+      "occupationType":"Mature Student - Living At Home",
+      "businessCode":"186",
+      "businessType":"Not In Employment",
+      "secondaryOccupationCode":"E11",
+      "secondaryOccupationType":"Broadcasting Engineer",
+      "secondaryBusinessCode":"166",
+      "secondaryBusinessType":"Television"
+   },
+   "jointPolicyHolder":{
+      "title":"dr-male",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"civil partnered",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"civil-partner"
+   }
+}

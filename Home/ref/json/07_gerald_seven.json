@@ -1,0 +1,164 @@
+{
+   "documentVersion":1,
+   "riskId":"03cbde55-db96-4693-8df6-50b4f5b117c0",
+   "riskVersion":"23",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"no previous insurance",
+      "yearsContentsInsuranceHeld":"no previous insurance",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"10",
+         "dependentThoroughfare":"",
+         "thoroughfare":"",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Brambridge",
+         "town":"Eastleigh",
+         "traditionalCounty":"Hampshire",
+         "administrativeCounty":"Hampshire",
+         "optionalCounty":"Hampshire",
+         "postalCounty":"Hampshire",
+         "postcode":"SO50 6HZ"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"300"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"musical instruments",
+               "value":"2100",
+               "description":"Trumpet"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"300"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"10",
+         "dependentThoroughfare":"",
+         "thoroughfare":"",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Brambridge",
+         "town":"Eastleigh",
+         "traditionalCounty":"Hampshire",
+         "administrativeCounty":"Hampshire",
+         "optionalCounty":"Hampshire",
+         "postalCounty":"Hampshire",
+         "postcode":"SO50 6HZ"
+      },
+      "construction":{
+         "externalWallType":"prefabricated - non-combustible",
+         "roofType":"",
+         "moreThanHalfRoofIsFlat":"",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"False",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"other-lock",
+         "hasOtherExternalDoors":"False",
+         "locksOnOtherExternalDoors":"",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasSeparateLockableEntrance":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"students",
+         "numberOfNonFamilyMembers":"3",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"031caa56-f671-4b10-8295-43bcfb226ba8",
+               "incidentCause":"malicious damage/vandalism",
+               "claimType":"contents in transit",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"other",
+      "tenantType":"employer-furnished",
+      "propertyType":"Flat",
+      "propertySubType":"other floor",
+      "yearBuilt":"1986",
+      "bedrooms":"6",
+      "receptionRooms":"6",
+      "bathrooms":"6",
+      "otherRooms":"6",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mr",
+      "firstName":"Gerald",
+      "surname":"Seven",
+      "dateOfBirth":"1966-04-17 00:00:00Z",
+      "maritalStatus":"separated",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"mr",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"widowed-surviving civil partner",
+      "employmentStatus":"unableToWork",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"other-family"
+   }
+}

@@ -1,0 +1,154 @@
+{
+   "documentVersion":1,
+   "riskId":"584e4d5a-c5f6-42f5-896d-736d15620361",
+   "riskVersion":"22",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Nevile Drive",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Kinoulton",
+         "town":"Nottingham",
+         "traditionalCounty":"Nottinghamshire",
+         "administrativeCounty":"Nottinghamshire",
+         "optionalCounty":"Nottinghamshire",
+         "postalCounty":"",
+         "postcode":"NG12 3EE"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"0"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"clothing",
+               "value":"3300",
+               "description":"John Lennon Suit"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"0"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Nevile Drive",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Kinoulton",
+         "town":"Nottingham",
+         "traditionalCounty":"Nottinghamshire",
+         "administrativeCounty":"Nottinghamshire",
+         "optionalCounty":"Nottinghamshire",
+         "postalCounty":"",
+         "postcode":"NG12 3EE"
+      },
+      "construction":{
+         "externalWallType":"brick",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"5deaa60e-7852-43b1-ab1d-33d6a8776ef8",
+               "incidentCause":"falling aerials, satellite receivers, masts",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2011-06-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"end terraced",
+      "yearBuilt":"1998",
+      "bedrooms":"2",
+      "receptionRooms":"2",
+      "bathrooms":"2",
+      "otherRooms":"2",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mr",
+      "firstName":"Ulric",
+      "surname":"Twenty-One",
+      "dateOfBirth":"1980-04-17 00:00:00Z",
+      "maritalStatus":"single",
+      "employmentStatus":"student",
+      "occupationCode":"S34",
+      "occupationType":"Student",
+      "businessCode":"186",
+      "businessType":"Not In Employment",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

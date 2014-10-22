@@ -1,0 +1,164 @@
+{
+   "documentVersion":1,
+   "riskId":"6eddbcfe-534f-413b-9f86-e2c43b70b844",
+   "riskVersion":"25",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"true"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"7",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Westbury Avenue",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Wembley",
+         "traditionalCounty":"Middlesex",
+         "administrativeCounty":"Brent",
+         "optionalCounty":"Middlesex",
+         "postalCounty":"Middlesex",
+         "postcode":"HA0 4JX"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"50000",
+         "excess":"350"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"angling equipment",
+               "value":"2600",
+               "description":"16 metre Maver Pole"
+            },
+            {
+               "type":"pearls",
+               "value":"2700",
+               "description":"Pearly pearls"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"350"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"7",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Westbury Avenue",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Wembley",
+         "traditionalCounty":"Middlesex",
+         "administrativeCounty":"Brent",
+         "optionalCounty":"Middlesex",
+         "postalCounty":"Middlesex",
+         "postcode":"HA0 4JX"
+      },
+      "construction":{
+         "externalWallType":"stone",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"True",
+         "flatRoofLastResurfacedYear":"more than 10 years ago",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"False",
+         "locksOnExternalSlidingDoors":"",
+         "hasOtherExternalDoors":"False",
+         "locksOnOtherExternalDoors":"",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"2fd4d0ef-d42e-437d-8df5-5614a64943c7",
+               "incidentCause":"ground heave (upward movement)",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            },
+            {
+               "claimId":"c34153ba-fb34-47cb-9080-553897e69584",
+               "incidentCause":"liability issues",
+               "claimType":"domestic employers liability - contents",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"terraced",
+      "yearBuilt":"1999",
+      "bedrooms":"3",
+      "receptionRooms":"3",
+      "bathrooms":"3",
+      "otherRooms":"3",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"miss",
+      "firstName":"Nicola",
+      "surname":"Forteen",
+      "dateOfBirth":"1973-04-17 00:00:00Z",
+      "maritalStatus":"widowed-surviving civil partner",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

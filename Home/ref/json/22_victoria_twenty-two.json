@@ -1,0 +1,155 @@
+{
+   "documentVersion":1,
+   "riskId":"dff15b71-3510-4212-bc98-c5cfcbd670cd",
+   "riskVersion":"22",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"1",
+         "dependentThoroughfare":"",
+         "thoroughfare":"St. Davids Way",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Sawtry",
+         "town":"Huntingdon",
+         "traditionalCounty":"Huntingdonshire",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE28 5NZ"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"50"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"works of art",
+               "value":"3400",
+               "description":"Picasso copy"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"50"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"1",
+         "dependentThoroughfare":"",
+         "thoroughfare":"St. Davids Way",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Sawtry",
+         "town":"Huntingdon",
+         "traditionalCounty":"Huntingdonshire",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE28 5NZ"
+      },
+      "construction":{
+         "externalWallType":"concrete",
+         "roofType":"timber",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"unoccupied",
+         "residentsType":"",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"45-to-90-days",
+         "selectedUnoccupiedReason":"repossessed-by-bank",
+         "previousClaims":[
+            {
+               "claimId":"65e7cbc0-fab3-403b-bda0-4e28bdb5b7d7",
+               "incidentCause":"earthquake",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2011-07-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"semi-detached",
+      "yearBuilt":"1999",
+      "bedrooms":"3",
+      "receptionRooms":"3",
+      "bathrooms":"3",
+      "otherRooms":"3",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"ms",
+      "firstName":"Victoria",
+      "surname":"Twenty-Two",
+      "dateOfBirth":"1981-04-17 00:00:00Z",
+      "maritalStatus":"civil partnered",
+      "employmentStatus":"employed",
+      "selfEmployed":true,
+      "occupationCode":"C99",
+      "occupationType":"Liaison Officer",
+      "businessCode":"564",
+      "businessType":"Private School",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

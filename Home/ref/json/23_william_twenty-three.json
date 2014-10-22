@@ -1,0 +1,150 @@
+{
+   "documentVersion":1,
+   "riskId":"1619c7e5-0097-4dc5-8d14-ab787a61d96f",
+   "riskVersion":"23",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Cotswold Close",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Slough",
+         "traditionalCounty":"Buckinghamshire",
+         "administrativeCounty":"Slough",
+         "optionalCounty":"Berkshire",
+         "postalCounty":"",
+         "postcode":"SL1 2TG"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"100"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"curios",
+               "value":"3500",
+               "description":"First monopoly board"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"100"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Cotswold Close",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Slough",
+         "traditionalCounty":"Buckinghamshire",
+         "administrativeCounty":"Slough",
+         "optionalCounty":"Berkshire",
+         "postalCounty":"",
+         "postcode":"SL1 2TG"
+      },
+      "construction":{
+         "externalWallType":"timber frame with brick walls",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"unoccupied",
+         "residentsType":"",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"3-to-6-months",
+         "selectedUnoccupiedReason":"awaiting-tennants",
+         "previousClaims":[
+            {
+               "claimId":"597357a3-f34d-4632-8b96-8a34639f53b8",
+               "incidentCause":"riot/civil commotion",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2011-08-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"detached",
+      "yearBuilt":"2000",
+      "bedrooms":"4",
+      "receptionRooms":"4",
+      "bathrooms":"4",
+      "otherRooms":"4",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"dr-male",
+      "firstName":"William",
+      "surname":"Twenty-Three",
+      "dateOfBirth":"1982-04-17 00:00:00Z",
+      "maritalStatus":"common law partnered-co-habiting",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

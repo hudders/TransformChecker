@@ -1,0 +1,140 @@
+{
+   "documentVersion":1,
+   "riskId":"1f4e74be-76e1-47b8-a09c-220882701177",
+   "riskVersion":"21",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"27a",
+         "number":"",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Langley Lane",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Shipley",
+         "traditionalCounty":"Yorkshire",
+         "administrativeCounty":"Bradford",
+         "optionalCounty":"West Yorkshire",
+         "postalCounty":"West Yorkshire",
+         "postcode":"BD17 7LH"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"200"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"precious metals",
+               "value":"4300",
+               "description":"Bronze donkey"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"200"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"27a",
+         "number":"",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Langley Lane",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Shipley",
+         "traditionalCounty":"Yorkshire",
+         "administrativeCounty":"Bradford",
+         "optionalCounty":"West Yorkshire",
+         "postalCounty":"West Yorkshire",
+         "postcode":"BD17 7LH"
+      },
+      "construction":{
+         "externalWallType":"timber",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasSeparateLockableEntrance":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"unoccupied",
+         "residentsType":"",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"less-than-45-days",
+         "selectedUnoccupiedReason":"awaiting-tennants"
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Flat",
+      "propertySubType":"top floor",
+      "yearBuilt":"2002",
+      "bedrooms":"2",
+      "receptionRooms":"1",
+      "bathrooms":"2",
+      "otherRooms":"3",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mr",
+      "firstName":"Yancey",
+      "surname":"Twenty-Five",
+      "dateOfBirth":"1984-04-17 00:00:00Z",
+      "maritalStatus":"separated",
+      "employmentStatus":"unableToWork",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

@@ -1,0 +1,160 @@
+{
+   "documentVersion":1,
+   "riskId":"e900e704-5cc9-43cd-a8da-a95647f7ee85",
+   "riskVersion":"20",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"Fly in the Loaf",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"13",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Hardman Street",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Liverpool",
+         "traditionalCounty":"Lancashire",
+         "administrativeCounty":"Liverpool",
+         "optionalCounty":"",
+         "postalCounty":"",
+         "postcode":"L1 9AS"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"100"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"guns",
+               "value":"3100",
+               "description":"Shooter"
+            },
+            {
+               "type":"coin collection",
+               "value":"2500",
+               "description":"Old coins"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"100"
+      },
+      "insuredAddress":{
+         "organisationName":"Fly in the Loaf",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"13",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Hardman Street",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Liverpool",
+         "traditionalCounty":"Lancashire",
+         "administrativeCounty":"Liverpool",
+         "optionalCounty":"",
+         "postalCounty":"",
+         "postcode":"L1 9AS"
+      },
+      "construction":{
+         "externalWallType":"timber",
+         "roofType":"thatch",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"False",
+         "locksOnExternalSlidingDoors":"",
+         "hasOtherExternalDoors":"False",
+         "locksOnOtherExternalDoors":"",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"ee49ef8b-ea51-4ccc-b899-87a814858f02",
+               "incidentCause":"escape of Oil",
+               "claimType":"both contents and buildings items",
+               "claimDate":"2012-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"terraced",
+      "yearBuilt":"1996",
+      "bedrooms":"4",
+      "receptionRooms":"4",
+      "bathrooms":"4",
+      "otherRooms":"4",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mrs",
+      "firstName":"Sarah",
+      "surname":"Niteen",
+      "dateOfBirth":"1978-04-17 00:00:00Z",
+      "maritalStatus":"common law partnered-co-habiting",
+      "employmentStatus":"employed",
+      "selfEmployed":false,
+      "occupationCode":"374",
+      "occupationType":"Zoologist",
+      "businessCode":"797",
+      "businessType":"Zoo Operator",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

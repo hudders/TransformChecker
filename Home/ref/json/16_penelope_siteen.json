@@ -1,0 +1,155 @@
+{
+   "documentVersion":1,
+   "riskId":"ebf7835a-836b-4e07-8684-afe86fccffc2",
+   "riskVersion":"41",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"D C Ten Hairdressing",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"15",
+         "dependentThoroughfare":"",
+         "thoroughfare":"High Street",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Market Deeping",
+         "town":"Peterborough",
+         "traditionalCounty":"Lincolnshire",
+         "administrativeCounty":"Lincolnshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 8ED"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"250"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"archery equipment",
+               "value":"2800",
+               "description":"Robin Hood bow"
+            },
+            {
+               "type":"trophies & masonic regalia",
+               "value":"4500",
+               "description":"World Cup"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"250"
+      },
+      "insuredAddress":{
+         "organisationName":"D C Ten Hairdressing",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"15",
+         "dependentThoroughfare":"",
+         "thoroughfare":"High Street",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Market Deeping",
+         "town":"Peterborough",
+         "traditionalCounty":"Lincolnshire",
+         "administrativeCounty":"Lincolnshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 8ED"
+      },
+      "construction":{
+         "externalWallType":"timber frame with plaster panels",
+         "roofType":"timber",
+         "moreThanHalfRoofIsFlat":"True",
+         "flatRoofLastResurfacedYear":"2011",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"False",
+         "locksOnExternalSlidingDoors":"",
+         "hasOtherExternalDoors":"False",
+         "locksOnOtherExternalDoors":"",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"bf755312-1db3-4843-98bb-17efece353e7",
+               "incidentCause":"liability issues",
+               "claimType":"public liability - contents",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"terraced",
+      "yearBuilt":"1993",
+      "bedrooms":"5",
+      "receptionRooms":"5",
+      "bathrooms":"5",
+      "otherRooms":"5",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"ms",
+      "firstName":"Penelope",
+      "surname":"Siteen",
+      "dateOfBirth":"1975-04-17 00:00:00Z",
+      "maritalStatus":"single",
+      "employmentStatus":"unableToWork",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

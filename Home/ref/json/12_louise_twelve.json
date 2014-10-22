@@ -1,0 +1,156 @@
+{
+   "documentVersion":1,
+   "riskId":"aaab8ac4-3ceb-4b85-81af-daa21b4e93a2",
+   "riskVersion":"24",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"75",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Gavin Way",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Highwoods",
+         "town":"Colchester",
+         "traditionalCounty":"Essex",
+         "administrativeCounty":"Essex",
+         "optionalCounty":"Essex",
+         "postalCounty":"",
+         "postcode":"CO4 9FF"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"30000",
+         "excess":"450"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"sailboards",
+               "value":"9999",
+               "description":"The best sailboard"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"450"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"75",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Gavin Way",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Highwoods",
+         "town":"Colchester",
+         "traditionalCounty":"Essex",
+         "administrativeCounty":"Essex",
+         "optionalCounty":"Essex",
+         "postalCounty":"",
+         "postcode":"CO4 9FF"
+      },
+      "construction":{
+         "externalWallType":"asbestos",
+         "roofType":"glass",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"preservation order"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"multi-point-locking-system",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"multi-point-locking-system",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasSeparateLockableEntrance":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"4a398e5a-8799-4ffe-9655-0c10cec5e4af",
+               "incidentCause":"underground pipes(gas/water/electric)",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Other",
+      "propertySubType":"maisonette",
+      "yearBuilt":"1991",
+      "bedrooms":"1",
+      "receptionRooms":"1",
+      "bathrooms":"1",
+      "otherRooms":"1",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"dr-female",
+      "firstName":"Louise",
+      "surname":"Twelve",
+      "dateOfBirth":"1971-04-17 00:00:00Z",
+      "maritalStatus":"divorced-dissolved",
+      "employmentStatus":"employed",
+      "selfEmployed":false,
+      "occupationCode":"C99",
+      "occupationType":"Liaison Officer",
+      "businessCode":"564",
+      "businessType":"Private School",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

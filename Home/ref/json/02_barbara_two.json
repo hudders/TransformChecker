@@ -1,0 +1,176 @@
+{
+   "documentVersion":1,
+   "riskId":"74243ce4-4246-40ff-84fe-7b1b884b767b",
+   "riskVersion":"22",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"1 year",
+      "yearsContentsInsuranceHeld":"1 year",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"True",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"Home is currently uninhabitable",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"Byways",
+         "number":"",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Rippons Drove",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Northborough",
+         "town":"Peterborough",
+         "traditionalCounty":"Northamptonshire",
+         "administrativeCounty":"Peterborough",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 9AG"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"50"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"gold items",
+               "value":"1600",
+               "description":"Gold Watch"
+            }
+         ],
+         "bicycles":[
+            {
+               "type":"3",
+               "value":"350",
+               "description":"Really Big Bike"
+            }
+         ],
+         "highRiskAmount":"7500",
+         "mostExpensiveHighRiskItemAmount":"7500",
+         "personalPossessionsCoverAmount":"10000",
+         "coverAmount":"15000",
+         "excess":"50"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Duke of Edinburgh Way",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Malvern",
+         "traditionalCounty":"Worcestershire",
+         "administrativeCounty":"Worcestershire",
+         "optionalCounty":"Worcestershire",
+         "postalCounty":"Worcestershire",
+         "postcode":"WR14 1AZ"
+      },
+      "construction":{
+         "externalWallType":"brick",
+         "roofType":"concrete",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"True",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"regular business visitors to property",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multiple-keys",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"unlock-pull-down-lever",
+         "hasKeyOperatedLocksOnWindows":"False",
+         "hasNeighbourhoodWatch":"False",
+         "hasLockableSafeFitted":"False",
+         "isOccupiedBetween9And5":"False",
+         "hasBurglarAlarmFitted":"True",
+         "alarmMaintenanceStatus":"no"
+      },
+      "residents":{
+         "occupancyStatus":"weekend only",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"True",
+         "haveBeenBankrupt":"True",
+         "haveBeenRefusedInsurance":"True",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "childMinding":{
+            "childMindingRegistration":"",
+            "childMindingProperty":"False",
+            "childMindingNumberOfChildren":""
+         },
+         "previousClaims":[
+            {
+               "claimId":"2a1e6072-4d49-4ec8-8e83-e85f19286b85",
+               "incidentCause":"accident",
+               "claimType":"contents in the home (loss/damage)",
+               "claimDate":"2010-09-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"rented",
+      "tenantType":"private-unfurnished",
+      "propertyType":"House",
+      "propertySubType":"end terraced",
+      "yearBuilt":"1981",
+      "bedrooms":"1",
+      "receptionRooms":"0",
+      "bathrooms":"0",
+      "otherRooms":"1",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"miss",
+      "firstName":"Barbara",
+      "surname":"Two",
+      "dateOfBirth":"1961-04-17 00:00:00Z",
+      "maritalStatus":"common law partnered-co-habiting",
+      "employmentStatus":"houseperson",
+      "secondaryOccupationCode":"C14",
+      "secondaryOccupationType":"Child Minder",
+      "secondaryBusinessCode":"854",
+      "secondaryBusinessType":"Child Minding"
+   },
+   "jointPolicyHolder":{
+      "title":"mr",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"common law partnered-co-habiting",
+      "employmentStatus":"houseperson",
+      "secondaryOccupationCode":"593",
+      "secondaryOccupationType":"Assistant Teacher",
+      "secondaryBusinessCode":"632",
+      "secondaryBusinessType":"School",
+      "relationshipStatus":"common-law-partner-cohabitee"
+   }
+}

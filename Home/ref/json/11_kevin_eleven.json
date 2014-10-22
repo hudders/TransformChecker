@@ -1,0 +1,167 @@
+{
+   "documentVersion":1,
+   "riskId":"736a1b54-0c6f-43ed-af41-2fa966e445c0",
+   "riskVersion":"28",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"true",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"12",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Temple Place",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Huntingdon",
+         "traditionalCounty":"",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE29 3RT"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"500"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"sporting equipment",
+               "value":"9999",
+               "description":"The most expensive snooker cue"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"500"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"12",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Temple Place",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Huntingdon",
+         "traditionalCounty":"",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE29 3RT"
+      },
+      "construction":{
+         "externalWallType":"corrugated iron",
+         "roofType":"shingle",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"grade 1 listed building"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"multi-point-locking-system",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"multi-point-locking-system",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"family members and foster children",
+         "numberOfNonFamilyMembers":"5",
+         "numberOfFosterChildren":"5",
+         "durationOfFosterChildrenInCare":"more than a year",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"03a9140f-70f3-462f-b749-c6f6bda852c5",
+               "incidentCause":"drains and underground tanks",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Bungalow",
+      "propertySubType":"end terraced",
+      "yearBuilt":"1990",
+      "bedrooms":"10",
+      "receptionRooms":"10",
+      "bathrooms":"10",
+      "otherRooms":"10",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"dr-male",
+      "firstName":"Kevin",
+      "surname":"Eleven",
+      "dateOfBirth":"1970-04-17 00:00:00Z",
+      "maritalStatus":"common law partnered-co-habiting",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"dr-male",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"common law partnered-co-habiting",
+      "employmentStatus":"student",
+      "occupationCode":"S52",
+      "occupationType":"Student Nurse - Living At Home",
+      "businessCode":"186",
+      "businessType":"Not In Employment",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"common-law-partner-cohabitee"
+   }
+}

@@ -1,0 +1,160 @@
+{
+   "documentVersion":1,
+   "riskId":"83cd9eef-3354-4726-8c24-5363643b7a30",
+   "riskVersion":"22",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"False",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"11",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Cumbria Walk",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Mickleover",
+         "town":"Derby",
+         "traditionalCounty":"Derbyshire",
+         "administrativeCounty":"Derby",
+         "optionalCounty":"Derbyshire",
+         "postalCounty":"",
+         "postcode":"DE3 0TL"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"350"
+      },
+      "contentsCover":{
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"350"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"11",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Cumbria Walk",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Mickleover",
+         "town":"Derby",
+         "traditionalCounty":"Derbyshire",
+         "administrativeCounty":"Derby",
+         "optionalCounty":"Derbyshire",
+         "postalCounty":"",
+         "postcode":"DE3 0TL"
+      },
+      "construction":{
+         "externalWallType":"brick",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"True",
+         "alarmMaintenanceStatus":"yes"
+      },
+      "residents":{
+         "occupancyStatus":"permanent main residence",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"f8b55e20-a0df-42d7-a20d-42732cb478db",
+               "incidentCause":"liability issues",
+               "claimType":"public liability - buildings",
+               "claimDate":"2011-09-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"House",
+      "propertySubType":"terraced",
+      "yearBuilt":"2008",
+      "bedrooms":"5",
+      "receptionRooms":"2",
+      "bathrooms":"3",
+      "otherRooms":"6",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"ms",
+      "firstName":"Brenda",
+      "surname":"Twenty-Eight",
+      "dateOfBirth":"1987-04-17 00:00:00Z",
+      "maritalStatus":"single",
+      "employmentStatus":"student",
+      "occupationCode":"S46",
+      "occupationType":"Student Teacher - Living At Home",
+      "businessCode":"186",
+      "businessType":"Not In Employment",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"mr",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"married",
+      "employmentStatus":"unableToWork",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"other-family"
+   }
+}

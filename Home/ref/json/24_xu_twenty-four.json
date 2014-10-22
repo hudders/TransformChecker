@@ -1,0 +1,151 @@
+{
+   "documentVersion":1,
+   "riskId":"f8e86a16-677d-4184-a5c3-57ea55f0ecc0",
+   "riskVersion":"22",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"Flat 1",
+         "building":"",
+         "number":"212",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Urban Road",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Doncaster",
+         "traditionalCounty":"Yorkshire",
+         "administrativeCounty":"Doncaster",
+         "optionalCounty":"South Yorkshire",
+         "postalCounty":"South Yorkshire",
+         "postcode":"DN4 0HJ"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"150"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"gemstones",
+               "value":"3600",
+               "description":"100 carat diamond"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"150"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"Flat 1",
+         "building":"",
+         "number":"212",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Urban Road",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Doncaster",
+         "traditionalCounty":"Yorkshire",
+         "administrativeCounty":"Doncaster",
+         "optionalCounty":"South Yorkshire",
+         "postalCounty":"South Yorkshire",
+         "postcode":"DN4 0HJ"
+      },
+      "construction":{
+         "externalWallType":"timber frame with plaster panels",
+         "roofType":"",
+         "moreThanHalfRoofIsFlat":"",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasSeparateLockableEntrance":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"unoccupied",
+         "residentsType":"",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"indefinitely",
+         "selectedUnoccupiedReason":"awaiting-tennants",
+         "previousClaims":[
+            {
+               "claimId":"a22b5a6f-db8f-46d0-a06b-851f55509db5",
+               "incidentCause":"theft",
+               "claimType":"contents from an unattended car",
+               "claimDate":"2011-09-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Flat",
+      "propertySubType":"ground floor",
+      "yearBuilt":"2001",
+      "bedrooms":"5",
+      "receptionRooms":"5",
+      "bathrooms":"5",
+      "otherRooms":"5",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mr",
+      "firstName":"Xu",
+      "surname":"Twenty-Four",
+      "dateOfBirth":"1983-04-17 00:00:00Z",
+      "maritalStatus":"divorced-dissolved",
+      "employmentStatus":"unemployed",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

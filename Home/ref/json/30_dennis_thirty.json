@@ -1,0 +1,123 @@
+{
+   "documentVersion":1,
+   "riskId":"0b14fd94-6e0b-4c20-b52d-70878fb2bf1b",
+   "riskVersion":"18",
+   "policy":{
+      "coverType":"ContentsOnlyCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"31",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Broadgate Lane",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Deeping St. James",
+         "town":"Peterborough",
+         "traditionalCounty":"Lincolnshire",
+         "administrativeCounty":"Lincolnshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 8NW"
+      }
+   },
+   "property":{
+      "contentsCover":{
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"450"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"31",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Broadgate Lane",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Deeping St. James",
+         "town":"Peterborough",
+         "traditionalCounty":"Lincolnshire",
+         "administrativeCounty":"Lincolnshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE6 8NW"
+      },
+      "construction":{
+         "externalWallType":"brick",
+         "roofType":"tile",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"same-main-door",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"same-main-door",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"permanent main residence",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":""
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Bungalow",
+      "propertySubType":"end terraced",
+      "yearBuilt":"1980",
+      "bedrooms":"3",
+      "receptionRooms":"6",
+      "bathrooms":"7",
+      "otherRooms":"4"
+   },
+   "policyHolder":{
+      "title":"dr-male",
+      "firstName":"Dennis",
+      "surname":"Thirty",
+      "dateOfBirth":"1989-04-17 00:00:00Z",
+      "maritalStatus":"common law partnered-co-habiting",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

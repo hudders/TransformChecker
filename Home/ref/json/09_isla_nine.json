@@ -1,0 +1,172 @@
+{
+   "documentVersion":1,
+   "riskId":"c8c1d802-b1e1-4b22-b542-fce022c015ee",
+   "riskVersion":"25",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"true",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Temple Place",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Huntingdon",
+         "traditionalCounty":"",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE29 3RT"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"450"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"electrical goods",
+               "value":"2300",
+               "description":"Satnav"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"450"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"2",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Temple Place",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Huntingdon",
+         "traditionalCounty":"",
+         "administrativeCounty":"Cambridgeshire",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"Cambridgeshire",
+         "postcode":"PE29 3RT"
+      },
+      "construction":{
+         "externalWallType":"flint",
+         "roofType":"thatch",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"multi-point-locking-system",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"multi-point-locking-system",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"asylum seekers/refugees",
+         "numberOfNonFamilyMembers":"5",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"True",
+         "daysLeftEmpty":"365",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"ab687390-60fc-4510-a61f-48262dd00bd0",
+               "incidentCause":"flood",
+               "claimType":"contents away from the home",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            },
+            {
+               "claimId":"facca372-88fe-4187-b0d6-aeca524affae",
+               "incidentCause":"fire",
+               "claimType":"contents in the home (loss/damage)",
+               "claimDate":"2011-08-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"True"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Bungalow",
+      "propertySubType":"semi-detached",
+      "yearBuilt":"1988",
+      "bedrooms":"8",
+      "receptionRooms":"8",
+      "bathrooms":"8",
+      "otherRooms":"8",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mrs",
+      "firstName":"Isla",
+      "surname":"Nine",
+      "dateOfBirth":"1968-04-17 00:00:00Z",
+      "maritalStatus":"married",
+      "employmentStatus":"unableToWork",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"mrs",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"single",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"employer"
+   }
+}

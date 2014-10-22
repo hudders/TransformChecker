@@ -1,0 +1,155 @@
+{
+   "documentVersion":1,
+   "riskId":"c7fe9756-37d5-46c2-9cd8-729dc8bf9795",
+   "riskVersion":"23",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"false"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"100",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Uplands",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Peterborough",
+         "traditionalCounty":"Northamptonshire",
+         "administrativeCounty":"Peterborough",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE4 5AF"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"150"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"hearing aids",
+               "value":"1600",
+               "description":"Hearing aid"
+            },
+            {
+               "type":"stamp collection",
+               "value":"3000",
+               "description":"Stamp collection"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"150"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"100",
+         "dependentThoroughfare":"",
+         "thoroughfare":"Uplands",
+         "doubleDependentLocality":"",
+         "dependentLocality":"",
+         "town":"Peterborough",
+         "traditionalCounty":"Northamptonshire",
+         "administrativeCounty":"Peterborough",
+         "optionalCounty":"Cambridgeshire",
+         "postalCounty":"",
+         "postcode":"PE4 5AF"
+      },
+      "construction":{
+         "externalWallType":"timber frame with plaster panels",
+         "roofType":"thatch",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"False",
+         "locksOnExternalSlidingDoors":"",
+         "hasOtherExternalDoors":"False",
+         "locksOnOtherExternalDoors":"",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"2066cb33-b781-4047-85a4-ef38f5d130ab",
+               "incidentCause":"explosion",
+               "claimType":"items covered under buildings cover",
+               "claimDate":"2011-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Other",
+      "propertySubType":"residential caravan",
+      "yearBuilt":"1995",
+      "bedrooms":"3",
+      "receptionRooms":"3",
+      "bathrooms":"3",
+      "otherRooms":"3",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"dr-female",
+      "firstName":"Rebecca",
+      "surname":"Eiteen",
+      "dateOfBirth":"1977-04-17 00:00:00Z",
+      "maritalStatus":"single",
+      "employmentStatus":"unemployed",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}

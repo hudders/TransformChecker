@@ -1,0 +1,12 @@
+C:\Dev\TransformChecker\Car\bin\Release\TransformChecker.XML
+C:\Dev\TransformChecker\Car\bin\Release\TransformChecker.exe
+C:\Dev\TransformChecker\Car\bin\Release\TransformChecker.pdb
+C:\Dev\TransformChecker\Car\bin\Release\canopy.dll
+C:\Dev\TransformChecker\Car\bin\Release\FSharp.Data.dll
+C:\Dev\TransformChecker\Car\bin\Release\Newtonsoft.Json.dll
+C:\Dev\TransformChecker\Car\bin\Release\SizSelCsZzz.dll
+C:\Dev\TransformChecker\Car\bin\Release\WebDriver.dll
+C:\Dev\TransformChecker\Car\bin\Release\WebDriver.Support.dll
+C:\Dev\TransformChecker\Car\obj\x86\Release\TransformChecker.fsprojResolveAssemblyReference.cache
+C:\Dev\TransformChecker\Car\obj\x86\Release\TransformChecker.exe
+C:\Dev\TransformChecker\Car\obj\x86\Release\TransformChecker.pdb

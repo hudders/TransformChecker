@@ -1,0 +1,156 @@
+{
+   "documentVersion":1,
+   "riskId":"27e8814e-3ff4-4e95-aab7-5681625dba84",
+   "riskVersion":"23",
+   "policy":{
+      "coverType":"BuildingsAndContentsCover",
+      "startDate":"2014-07-01 00:00:00Z",
+      "yearsBuildingInsuranceHeld":"5 years or more",
+      "yearsContentsInsuranceHeld":"5 years or more",
+      "contentsAccidentalDamageCoverRequired":"false",
+      "buildingsAccidentalDamageCoverRequired":"true"
+   },
+   "contactDetails":{
+      "email":"michael.hudson@emailreaction.org",
+      "telephone":"01778852852",
+      "contactMeByEmail":"False",
+      "contactMeByPost":"False",
+      "contactMeByTelephone":"False",
+      "contactMeBySms":"False",
+      "outBoundingOptIn":"True",
+      "reasonForAlternateAddress":"",
+      "postalAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"1",
+         "dependentThoroughfare":"",
+         "thoroughfare":"London Road",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Osbournby",
+         "town":"Sleaford",
+         "traditionalCounty":"Lincolnshire",
+         "administrativeCounty":"Lincolnshire",
+         "optionalCounty":"Lincolnshire",
+         "postalCounty":"Lincolnshire",
+         "postcode":"NG34 0DG"
+      }
+   },
+   "property":{
+      "buildingsCover":{
+         "rebuildCost":"100000",
+         "excess":"400"
+      },
+      "contentsCover":{
+         "specifiedItems":[
+            {
+               "type":"skis (including water skis)",
+               "value":"2500",
+               "description":"Long jump skis"
+            }
+         ],
+         "highRiskAmount":"4000",
+         "mostExpensiveHighRiskItemAmount":"4000",
+         "coverAmount":"40000",
+         "excess":"400"
+      },
+      "insuredAddress":{
+         "organisationName":"",
+         "department":"",
+         "subBuilding":"",
+         "building":"",
+         "number":"1",
+         "dependentThoroughfare":"",
+         "thoroughfare":"London Road",
+         "doubleDependentLocality":"",
+         "dependentLocality":"Osbournby",
+         "town":"Sleaford",
+         "traditionalCounty":"Lincolnshire",
+         "administrativeCounty":"Lincolnshire",
+         "optionalCounty":"Lincolnshire",
+         "postalCounty":"Lincolnshire",
+         "postcode":"NG34 0DG"
+      },
+      "construction":{
+         "externalWallType":"other",
+         "roofType":"other",
+         "moreThanHalfRoofIsFlat":"False",
+         "flatRoofLastResurfacedYear":"",
+         "isInGoodStateOfRepair":"True",
+         "isWithIn400MOfWater":"False",
+         "hasOperationalSmokeDetectors":"True",
+         "propertyBusinessUse":"no business or professional use",
+         "propertyListedStatus":"not listed"
+      },
+      "security":{
+         "locksOnMainDoor":"multi-point-locking-system",
+         "hasExternalSlidingDoors":"True",
+         "locksOnExternalSlidingDoors":"multi-point-locking-system",
+         "hasOtherExternalDoors":"True",
+         "locksOnOtherExternalDoors":"multi-point-locking-system",
+         "hasKeyOperatedLocksOnWindows":"True",
+         "hasSeparateLockableEntrance":"False",
+         "hasNeighbourhoodWatch":"True",
+         "hasLockableSafeFitted":"True",
+         "isOccupiedBetween9And5":"True",
+         "hasBurglarAlarmFitted":"False",
+         "alarmMaintenanceStatus":""
+      },
+      "residents":{
+         "occupancyStatus":"holiday home",
+         "residentsType":"all family members",
+         "numberOfNonFamilyMembers":"",
+         "numberOfFosterChildren":"",
+         "durationOfFosterChildrenInCare":"",
+         "haveConvictions":"False",
+         "haveBeenBankrupt":"False",
+         "haveBeenRefusedInsurance":"False",
+         "emptyFor45Days":"False",
+         "daysLeftEmpty":"",
+         "selectedUnoccupiedForHowLong":"",
+         "selectedUnoccupiedReason":"",
+         "previousClaims":[
+            {
+               "claimId":"c49b265e-3424-447c-8f90-12b49a136546",
+               "incidentCause":"subsidence (sinking)",
+               "claimType":"both contents and buildings items",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"True",
+               "damageAmount":"1000",
+               "incidentOccuredAtThisProperty":"False"
+            }
+         ]
+      },
+      "ownershipStatus":"owned",
+      "tenantType":"",
+      "propertyType":"Other",
+      "propertySubType":"rooms only-bedsit",
+      "yearBuilt":"1000",
+      "bedrooms":"2",
+      "receptionRooms":"2",
+      "bathrooms":"2",
+      "otherRooms":"2",
+      "sufferedFromSubsidence":"False",
+      "cracksOnExternalWalls":"False",
+      "underpinningOrStructuralSupport":"False",
+      "continuesToSufferDamage":""
+   },
+   "policyHolder":{
+      "title":"mr",
+      "firstName":"Matthew",
+      "surname":"Thirteen",
+      "dateOfBirth":"1972-04-17 00:00:00Z",
+      "maritalStatus":"separated",
+      "employmentStatus":"employed",
+      "selfEmployed":true,
+      "occupationCode":"214",
+      "occupationType":"Motor Engineer",
+      "businessCode":"486",
+      "businessType":"Mechanical Handling",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":""
+   }
+}
