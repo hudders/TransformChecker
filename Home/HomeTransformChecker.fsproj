@@ -73,9 +73,9 @@
     <None Include="App.config" />
     <Compile Include="config.fs" />
     <Compile Include="xlsLoader.fs" />
+    <Compile Include="jsnLoader.fs" />
     <Compile Include="test_utils.fs" />
     <Compile Include="xmlLoader.fs" />
-    <Compile Include="jsnLoader.fs" />
     <Compile Include="dataLoader.fs" />
   </ItemGroup>
   <PropertyGroup>

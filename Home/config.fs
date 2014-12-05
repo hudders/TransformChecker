@@ -1,13 +1,15 @@
 ﻿module config
 
+open System.Text.RegularExpressions
+
 let nodeList  = [3..200]
 let startCell = 67
 
 let dloadFolder = @"C:\Users\mhudson\Downloads\"
 let savedFolder = @"C:\Dev\panel.testplans\Home\"
-let crrntFolder = @"C:\x_FSharpStuff\FSharp Test Projects\TransformChecker\Home\"
+let crrntFolder = @"C:\Dev\TransformChecker\Home\"
 let xlsRtFolder = @"C:\Dev\panel.testplans\"
-let jsnRtFolder = @"C:\Dev\HomeTransformChecker\HomeTransformChecker\ref\json\"
+let jsnRtFolder = crrntFolder + @"ref\json\"
 
 let contains lookFor inSeq = Seq.exists (fun elem -> elem = lookFor) inSeq
 
@@ -16,3 +18,7 @@ let (|Prefix|_|) (p:string) (s:string) =
         Some(s.Substring(p.Length))
     else
         None
+
+let (|RegExParse|_|) pattern input =
+    let m = Regex.Match(input, pattern) in
+    if m.Success then Some (List.tail [ for g in m.Groups -> g.Value ]) else None

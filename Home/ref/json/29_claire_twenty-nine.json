@@ -61,7 +61,7 @@
       },
       "construction":{
          "externalWallType":"brick",
-         "roofType":"tile",
+         "roofType":"asbestos",
          "moreThanHalfRoofIsFlat":"False",
          "flatRoofLastResurfacedYear":"",
          "isInGoodStateOfRepair":"True",
@@ -71,7 +71,7 @@
          "propertyListedStatus":"not listed"
       },
       "residents":{
-         "occupancyStatus":"permanent main residence",
+         "occupancyStatus":"holiday home",
          "residentsType":"all family members",
          "numberOfNonFamilyMembers":"",
          "numberOfFosterChildren":"",
@@ -90,9 +90,9 @@
       "propertySubType":"terraced",
       "yearBuilt":"1960",
       "bedrooms":"2",
-      "receptionRooms":"4",
+      "receptionRooms":"1",
       "bathrooms":"5",
-      "otherRooms":"3",
+      "otherRooms":"0",
       "sufferedFromSubsidence":"False",
       "cracksOnExternalWalls":"False",
       "underpinningOrStructuralSupport":"False",

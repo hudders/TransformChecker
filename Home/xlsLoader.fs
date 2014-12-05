@@ -6,9 +6,9 @@ open Microsoft.Office.Interop
 open config
 
 printfn "Enter product (PC or HH): "
-let productX = "HH" //System.Console.ReadLine()
+let productX = System.Console.ReadLine()
 printfn "Enter name of brand: "
-let brandX = "Home Protect" //System.Console.ReadLine()
+let brandX = System.Console.ReadLine()
 
 let xlsPath = match productX with
                 | Prefix "PC" rest -> xlsRtFolder + "Car\\" + brandX + "\PC Test Plan - " + brandX + ".xlsx"
@@ -33,64 +33,27 @@ let brand, brandCode =
 // Brand group sequences
 // ---------------------
 let brandGroup(brand : string) =
-    let cdlBrandFilterFreeSeq = 
-        seq ["Hastings Direct";
-             "Hastings Essentials";
-             "igo4insurance";
-             "One Quote";
-             "Aquote";
-             "Elite";
-             "Virgin Money PC";
-             "Esure Broker";
-             "Sheilas' Wheels Broker";
-             "Hastings Premier";
-             "Hastings People's Choice";
-             "Only Young Drivers";
-             "Saga Select";
-             "Hastings Direct SmartMiles";
-             "Castle Cover";
-             "Sure Thing!";
-             "John Lewis Insurance";
-             "RIAS"]
 
-    let cdlBrandFilteredSeq =
-        seq ["AutoNet";
-             "Direct Choice"]
+    match brand with
+    | "Hastings Direct" | "Hastings Essentials" | "igo4insurance" | "One Quote" | "Aquote"
+    | "Elite" | "Hastings Premier" | "Virgin" | "Esure Broker" | "Sheilas' Wheels Broker" 
+    | "People's Choice" | "Only Young Drivers" | "Saga Select" | "Hastings Direct SmartMiles"
+    | "Castle Cover" | "Sure Thing!" | "Sure Thing! Max" | "John Lewis" | "Insure Wiser"        -> "CDL-FilterFree"
+    | "AutoNet" | "Direct Choice"                                                               -> "AutoNet"
+    | "A Choice" | "Express" | "Octagon" | "Debenhams"                                          -> "OpenGI"
+    | "Drivology"                                                                               -> "SSP Multi Quote"
+    | _ -> brand
 
-    let opengiBrandSeq =
-        seq ["Express";
-             "Octagon"]
-
-    let sspBrandSeq =
-        seq ["Drivology"]
-
-    let qeBrandSeq =
-        seq ["More Than"]
-
-    if contains brand cdlBrandFilterFreeSeq then
-        "CDL-FilterFree"
-    elif contains brand cdlBrandFilteredSeq then
-        "AutoNet"
-    elif contains brand opengiBrandSeq then
-        "Open-GI"
-    elif contains brand sspBrandSeq then
-        "SSP Multi Quote"
-    elif contains brand qeBrandSeq then
-        "QuoteExchange"
-    else
-        brand
 // ---------------------
 
-let codeLookup(description : string, codeType : string) =
+let codeLookup(description : string, codeType : string) = // Caution - this has been modified after being copied from Car
     let xlsFile, lowerBound, upperBound =
-        if codeType = "<occCode>" then
-            getXLS("occupation codes"), 2, 1962
-        elif codeType = "<empCode>" then
-            getXLS("business codes"), 2, 939
-        elif codeType = "<conCode>" then
-            getXLS("conviction codes"), 2, 88
-        else
-            getXLS("car codes"), 2, 3           
+        match codeType with
+        | "<occCode>"                               -> getXLS("occupation codes"), 2, 1962
+        | "<empCode>"                               -> getXLS("business codes"), 2, 939
+        | "<conCode>" | "<conCode1>" | "<conCode2>" -> getXLS("conviction codes"), 2, 88
+        | _                                         -> getXLS("car codes"), 2, 3
+               
     let result = ref None in
         let rec loop n =
             if n <= upperBound then
@@ -100,8 +63,8 @@ let codeLookup(description : string, codeType : string) =
                     elif codeType = "<styleCode>" then
                         cellValue(xlsFile, "F", n).ToString()
                     else
-                        cellValue(xlsFile, "D", n).ToString()
-                let theDesc = (cellValue(xlsFile, "B", n).ToString())
+                        cellValue(xlsFile, "C", n).ToString() // Column changed from "D" to "C"
+                let theDesc = (cellValue(xlsFile, "A", n).ToString()) // Column changed from "C" to "A"
                 if description <> theDesc then
                     loop (n + 1)
                 else

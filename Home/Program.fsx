@@ -16,16 +16,16 @@ open System.Collections.Generic
 
 #load "config.fs"
 #load "xlsLoader.fs"
+#load "jsnLoader.fs"
 #load "test_utils.fs"
 #load "xmlLoader.fs"
-#load "jsnLoader.fs"
 #load "dataLoader.fs"
 
 open config
 open xlsLoader
+open jsnLoader
 open test_utils
 open xmlLoader
-open jsnLoader
 open dataLoader
 
 riskLoad()
@@ -53,15 +53,15 @@ let loadTests(testType : string, environment : string, journeyNumber : int) =
                 if testType = "PROPERTY" || testType = "ALL" then
                     loadData(productX, "Property", xmlFile, (pid - 1))
                 if testType = "CONTENTS" || testType = "ALL" then
-                    loadData(productX, "Contents", xmlFile, (pid - 1))
+                    loadData(productX, "Contents Cover", xmlFile, (pid - 1))
                 if testType = "BUILDINGS" || testType = "ALL" then
-                    loadData(productX, "Buildings", xmlFile, (pid - 1))
+                    loadData(productX, "Buildings Cover", xmlFile, (pid - 1))
                 if testType = "LOCKS" || testType = "ALL" then
                     loadData(productX, "Locks and Security", xmlFile, (pid - 1))
                 if testType = "CLAIMS" || testType = "ALL" then
-                    loadData(productX, "Claim", xmlFile, (pid - 1))
+                    loadData(productX, "Claims", xmlFile, (pid - 1))
                 if testType = "PRICES" || testType = "ALL" then
-                    loadData(productX, "Price", xmlFile, (pid - 1))
+                    loadData(productX, "Price Page", xmlFile, (pid - 1))
             let endTime = System.DateTime.Now
             let elapsed = endTime.Subtract(startTime)
             printfn ""
@@ -72,4 +72,4 @@ let loadTests(testType : string, environment : string, journeyNumber : int) =
             loop (n + 1)
     loop 0
 
-loadTests("ALL","UAT",4)
+loadTests("LOCKS","UAT",0)

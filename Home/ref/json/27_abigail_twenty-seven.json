@@ -67,7 +67,7 @@
       },
       "construction":{
          "externalWallType":"brick",
-         "roofType":"tile",
+         "roofType":"other",
          "moreThanHalfRoofIsFlat":"False",
          "flatRoofLastResurfacedYear":"",
          "isInGoodStateOfRepair":"True",
@@ -90,7 +90,7 @@
          "alarmMaintenanceStatus":""
       },
       "residents":{
-         "occupancyStatus":"permanent main residence",
+         "occupancyStatus":"weekend only",
          "residentsType":"all family members",
          "numberOfNonFamilyMembers":"",
          "numberOfFosterChildren":"",
@@ -108,14 +108,14 @@
       "propertyType":"Bungalow",
       "propertySubType":"detached",
       "yearBuilt":"2002",
-      "bedrooms":"4",
-      "receptionRooms":"5",
-      "bathrooms":"6",
-      "otherRooms":"5",
-      "sufferedFromSubsidence":"False",
+      "bedrooms":"1",
+      "receptionRooms":"0",
+      "bathrooms":"0",
+      "otherRooms":"0",
+      "sufferedFromSubsidence":"True",
       "cracksOnExternalWalls":"False",
       "underpinningOrStructuralSupport":"False",
-      "continuesToSufferDamage":""
+      "continuesToSufferDamage":"False"
    },
    "policyHolder":{
       "title":"mrs",

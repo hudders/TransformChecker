@@ -73,28 +73,28 @@
          "postcode":"PE28 5NZ"
       },
       "construction":{
-         "externalWallType":"concrete",
-         "roofType":"timber",
+         "externalWallType":"flint",
+         "roofType":"felt on timber",
          "moreThanHalfRoofIsFlat":"False",
          "flatRoofLastResurfacedYear":"",
          "isInGoodStateOfRepair":"True",
          "isWithIn400MOfWater":"False",
          "hasOperationalSmokeDetectors":"True",
-         "propertyBusinessUse":"no business or professional use",
+         "propertyBusinessUse":"other business use",
          "propertyListedStatus":"not listed"
       },
       "security":{
          "locksOnMainDoor":"multi-point-locking-system",
          "hasExternalSlidingDoors":"True",
-         "locksOnExternalSlidingDoors":"same-main-door",
+         "locksOnExternalSlidingDoors":"unlock-pull-down-lever",
          "hasOtherExternalDoors":"True",
-         "locksOnOtherExternalDoors":"same-main-door",
+         "locksOnOtherExternalDoors":"multi-point-locking-system",
          "hasKeyOperatedLocksOnWindows":"True",
          "hasNeighbourhoodWatch":"True",
          "hasLockableSafeFitted":"True",
          "isOccupiedBetween9And5":"True",
-         "hasBurglarAlarmFitted":"False",
-         "alarmMaintenanceStatus":""
+         "hasBurglarAlarmFitted":"True",
+         "alarmMaintenanceStatus":"yes by professional"
       },
       "residents":{
          "occupancyStatus":"unoccupied",
@@ -121,9 +121,9 @@
             }
          ]
       },
-      "ownershipStatus":"owned",
-      "tenantType":"",
-      "propertyType":"House",
+      "ownershipStatus":"other",
+      "tenantType":"employer-unfurnished",
+      "propertyType":"Bungalow",
       "propertySubType":"semi-detached",
       "yearBuilt":"1999",
       "bedrooms":"3",

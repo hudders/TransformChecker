@@ -8,8 +8,9 @@ open System.Xml.XPath
 open Microsoft.Office.Interop
 
 open config
-open test_utils
+open csvLoader
 open xlsLoader
+open test_utils
 
 // processXml
 // Sorts out any problems with the xml on a brand basis
@@ -21,6 +22,13 @@ let processXml (xmlString : string) =
         xmlString.Replace("a:","")
     else
         xmlString
+
+// hasAttribute
+// Determine whether value contains an attribute declaration
+let hasAttribute (value : string) =
+    match value with
+        | RegExParse "([\s\S]*\[@[\s\S]*=[\s\S]*\])" value -> true
+        | _ -> false
 
 // getXML
 // Downloads the appropriate XML files and returns a linkID
@@ -75,32 +83,52 @@ let getXML(environment, product, brand : string, lastName, email, xmlFile) =
         else
             printfn "No XML found in QuoteFinder. Skipping tests."
             null
-    let srcFile = ((dloadFolder + "Request_" + brandGroup(brand) + "_After_" + linkID.[3] + "_2.xml").ToString())
-    let errFile = ((dloadFolder + "Error_" + brandGroup(brand) + "_After_" + linkID.[3] + "_3.xml").ToString())
+    let srcFile = ((dloadFolder + "Request_" + linkID.[1] + "_After_" + linkID.[3] + "_2.xml").ToString())
+//    let errFile = ((dloadFolder + "Error_" + brandGroup(brand) + "_After_" + linkID.[3] + "_3.xml").ToString())
     if linkID <> null && File.Exists(srcFile) then
         printfn "Successfully downloaded XML"
+        printfn "%s" srcFile
         File.Copy(srcFile, xmlFile)
-    elif File.Exists(errFile) then
-        printfn "XML downloaded but contains errors:"
-        let xml = XDocument.Load(errFile).ToString()
-        let doc = new XmlDocument() in doc.LoadXml (processXml(xml))
-        let xSeq = doc.SelectNodes "//Messages/GeneralMessages/Message/MessageText" |> Seq.cast<XmlNode>
-        if Seq.isEmpty xSeq = false then
-            printfn ""
-            xSeq |> Seq.iter (fun node -> printfn "%s" node.InnerXml)
-            printfn ""
+//    elif File.Exists(errFile) then
+//        printfn "XML downloaded but contains errors:"
+//        let xml = XDocument.Load(errFile).ToString()
+//        let doc = new XmlDocument() in doc.LoadXml (processXml(xml))
+//        let xSeq = doc.SelectNodes "//Messages/GeneralMessages/Message/MessageText" |> Seq.cast<XmlNode>
+//        if Seq.isEmpty xSeq = false then
+//            printfn ""
+//            xSeq |> Seq.iter (fun node -> printfn "%s" node.InnerXml)
+//            printfn ""
     quit browser1
     printfn "Timestamp: %s" (System.DateTime.Now.ToString("hh:mm:ss"))
 
-let checkXml(expectedVal : string, expectedLoc : string, xmlFile : string, xlsFile : Excel.Worksheet, xlsNode : int) =
+let checkXml(expectedVal : string, expectedLoc : string, xmlFile : string, xlsFile : Excel.Worksheet, xlsNode : int, dataType : string) =
     if File.Exists(xmlFile) then
+        let f, j = xlsLoader.cellValue(xlsFile, "B", xlsNode).ToString(), xlsLoader.cellValue(xlsFile, "A", xlsNode).ToString()
+        //let expectedVal = codeConvert(dataType, f, expectedVal, j)
+        
         let xml = XDocument.Load(xmlFile).ToString()
         let doc = new XmlDocument() in doc.LoadXml (processXml(xml))
         
-        let xSeq = doc.SelectNodes expectedLoc |> Seq.cast<XmlNode>
-        if Seq.isEmpty xSeq then
-            matchToExpected(xlsFile, "[MISSING]", expectedVal, expectedLoc, xlsNode)
+        let xSeq(location : string) = 
+            doc.SelectNodes location
+                |> Seq.cast<XmlNode>
+
+        let expectedLoc, expectedVal =
+            if hasAttribute expectedVal then
+                // value[@attribute_name="attribute_val]"
+                let value = expectedVal.Split('[').[0]
+                let attribute_name = (expectedVal.Split('[').[1]).Split('"').[0]
+                let attribute_val = codeConvert(dataType,f, (expectedVal.Split('[').[1]).Split('"').[1], j)
+                expectedLoc + "[" + attribute_name + "\"" + attribute_val + "\"]", value
+            else
+                expectedLoc, expectedVal
+
+        printfn "%s %s" expectedLoc expectedVal
+
+        if Seq.isEmpty (xSeq(expectedLoc)) then
+            matchToExpected(xlsFile, "[MISSING]", (if expectedVal = "" then "[EMPTY]" else expectedVal), expectedLoc, xlsNode)
         else
-            xSeq |> Seq.iter (fun node -> matchToExpected(xlsFile, (if node.InnerXml = "" then "[EMPTY]" else node.InnerXml), expectedVal, expectedLoc, xlsNode))
+            xSeq(expectedLoc)
+                |> Seq.iter (fun node -> matchToExpected(xlsFile, (if node.InnerXml = "" then "[EMPTY]" else node.InnerXml), (if expectedVal = "" then "[EMPTY]" else expectedVal), expectedLoc, xlsNode))
     else
         printfn "Skipped test because xml file doesn't exist - check your filters!"

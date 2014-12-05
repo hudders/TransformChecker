@@ -152,5 +152,22 @@
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
       "secondaryBusinessType":""
+   },
+      "jointPolicyHolder":{
+      "title":"miss",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1980-01-01 00:00:00Z",
+      "maritalStatus":"single",
+      "employmentStatus":"student",
+      "occupationCode":"S34",
+      "occupationType":"Student",
+      "businessCode":"186",
+      "businessType":"Not In Employment",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"son-daughter"
    }
 }

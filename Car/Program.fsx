@@ -1,5 +1,4 @@
-﻿//#if INTERACTIVE
-#r @"ref\FSharp.Data.dll"
+﻿#r @"ref\FSharp.Data.dll"
 #r @"ref\WebDriver.dll"
 #r @"ref\Newtonsoft.Json.dll"
 #r @"ref\SizSelCsZzz.dll"
@@ -10,28 +9,27 @@
 #r "Microsoft.Office.Interop.Excel"
 #r "office"
 
+open FSharp.Data
+open System
+open System.IO
+open System.Text.RegularExpressions
+open Microsoft.Office.Interop
+
 #load "config.fs"
 #load "csvLoader.fs"
 #load "xlsLoader.fs"
 #load "test_utils.fs"
 #load "xmlLoader.fs"
 #load "dataLoader.fs"
-//#endif
-
-open System
-open System.IO
-open System.Text.RegularExpressions
-open Microsoft.Office.Interop
 
 open config
-
 open csvLoader
 open xlsLoader
 open test_utils
 open xmlLoader
 open dataLoader
 
-System.IO.Directory.SetCurrentDirectory(crrntFolder)
+//System.IO.Directory.SetCurrentDirectory(crrntFolder)
 
 csvLoader.personLoad(risk_csv)
 additionalLoad(additional_drivers_csv)
@@ -43,7 +41,7 @@ carUsageLoad(car_usage_csv)
 let loadClaim (xmlFile : string, claimId : string, pid : int) =
     let rec loop id =
         if claimCollection.[id].ClaimsId = (stripChars claimId " ") then
-            loadData("Claim", xmlFile, id, pid, pid)
+            loadData("PC", "Claims", xmlFile, id, pid, pid) // claim id / proposer id
         else
             if claimCollection.[id + 1].ClaimsId.Length > 0 then
                 loop (id + 1)
@@ -52,7 +50,7 @@ let loadClaim (xmlFile : string, claimId : string, pid : int) =
 let loadConviction (xmlFile : string, convictionId : string, pid : int) =
     let rec loop id =
         if convictionCollection.[id].ConvictionId = (stripChars convictionId " ") then
-            loadData("Conviction", xmlFile, id, pid, pid)
+            loadData("PC", "Convictions", xmlFile, id, pid, pid) // conviction id / proposer id
         else
             if convictionCollection.[id + 1].ConvictionId.Length > 0 then
                 loop (id + 1)
@@ -61,7 +59,7 @@ let loadConviction (xmlFile : string, convictionId : string, pid : int) =
 let loadAdditional (xmlFile : string, driverId : string, pid : int) =
     let rec loop id =
         if additionalCollection.[id].AdditionalDriverId = (stripChars driverId " ") then
-            loadData("Additional", xmlFile, id, pid, pid)
+            loadData("PC", "Additional Driver", xmlFile, id, pid, pid) // additional id / proposer id
         else
             if additionalCollection.[id + 1].AdditionalDriverId.Length > 0 then
                 loop (id + 1)
@@ -72,7 +70,7 @@ let loadVehicle (xmlFile : string, vehicleId : string, vehicleUsage : string, pi
         if vehicleCollection.[vid].VehicleId = (stripChars vehicleId " ") then
             let rec usageLoop uid =
                 if carUsageCollection.[uid].CarUsageId = (stripChars vehicleUsage " ") then
-                    loadData("Vehicle", xmlFile, vid, uid, pid)
+                    loadData("PC", "Vehicle", xmlFile, vid, uid, pid) // vehicle id / usage id / proposer id
                 else
                     if carUsageCollection.[uid + 1].CarUsageId.Length > 0 then
                         usageLoop (uid + 1)
@@ -85,7 +83,7 @@ let loadVehicle (xmlFile : string, vehicleId : string, vehicleUsage : string, pi
 let loadProposer (xmlFile : string, propId : string) =
     let rec loop id =
         if personCollection.[id].TestId = (stripChars propId " ") then
-            loadData("Proposer", xmlFile, id, id, id)
+            loadData("PC", "Proposer", xmlFile, id, id, id)
         else
             if personCollection.[id + 1].TestId.Length > 0 then
                 loop (id + 1)
@@ -160,7 +158,7 @@ let loadTests (testType : string, environment : string, journeyNumber : int) =
                     if testType = "VEHICLE" || testType = "ALL" then
                         loadVehicle(xmlFile, proposer.VehicleId, proposer.VehicleUsage, pid)
                     if testType = "POLICY" || testType = "ALL" then
-                        loadData("Policy", xmlFile, pid, pid, pid)
+                        loadData("PC", "Policy", xmlFile, pid, pid, pid)
                     deleteExt(dloadFolder, "xml")
                     deleteExt(dloadFolder, "tmp")
         if personCollection.Count > (n + 1) then

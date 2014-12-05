@@ -1,6 +1,7 @@
 ﻿module xmlLoader
 
 open canopy
+open jsnLoader
 open System.IO
 open System.Xml
 open System.Xml.Linq
@@ -14,7 +15,12 @@ open xlsLoader
 // processXml
 // Sorts out any problems with the xml on a brand basis
 let processXml (xmlString : string) =
-    let xmlString = xmlString.Replace("xmlns=","x=").Replace("tem:","").Replace("web:","").Replace("&lt;","<").Replace("&gt;",">")
+    let xmlString = xmlString.Replace("xmlns=","x=")
+                             .Replace("tem:","")
+                             .Replace("web:","")
+                             .Replace("&lt;","<")
+                             .Replace("&gt;",">")
+                             .Replace("&amp;","&")
     if brandGroup(brand) = "SSP Multi Quote" then
         xmlString.Replace("pmq:","")
     elif brandGroup(brand) = "QuoteExchange" then
@@ -22,11 +28,18 @@ let processXml (xmlString : string) =
     else
         xmlString
 
+// hasAttribute
+// Determine whether value contains an attribute declaration
+let hasAttribute (value : string) =
+    match value with
+        | RegExParse "([\s\S]*\[@[\s\S]*=[\s\S]*\])" value -> true
+        | _ -> false
+
 // getXML
 // Downloads the appropriate XML files and returns a linkID
 // so we can find the files later.
 let getXML(environment, product, brand : string, lastName, email, xmlFile) =
-    if product <> "HH" || brandGroup(brand) <> "CDL-FilterFree" then
+    if product <> "HH" || brandGroup(brand) <> "CDL-FilterFree" then  // Home brands on CDL-FF use Horizon, not QFinder. :(
         start chrome
         let browser1 = browser
         let environmentURL = match environment with
@@ -86,19 +99,37 @@ let getXML(environment, product, brand : string, lastName, email, xmlFile) =
         quit browser1
         printfn "Timestamp: %s" (System.DateTime.Now.ToString("hh:mm:ss"))
 
-let checkXml(expectedVal : string, expectedLoc : string, xmlFile : string, xlsFile : Excel.Worksheet, xlsNode : int) =
+let checkXml(expectedVal : string, expectedLoc : string, xmlFile : string, xlsFile : Excel.Worksheet, xlsNode : int, dataType : string, n : int) =
     if File.Exists(xmlFile) then
+        let f =
+            match xlsLoader.cellValue(xlsFile, "B", xlsNode).ToString() with
+            | "Address" -> (xlsLoader.cellValue(xlsFile, "C", xlsNode).ToString()).Split('\n').[n]
+            | _         -> xlsLoader.cellValue(xlsFile, "B", xlsNode).ToString()
+        let j = xlsLoader.cellValue(xlsFile, "A", xlsNode).ToString()      
         let xml = XDocument.Load(xmlFile).ToString()
         let doc = new XmlDocument() in doc.LoadXml (processXml(xml))
         
-        let xSeq = doc.SelectNodes expectedLoc
-                    |> Seq.cast<XmlNode>
-        
-        if Seq.isEmpty xSeq then
-            matchToExpected(xlsFile, "[MISSING]", expectedVal, expectedLoc, xlsNode)
+        let xSeq(location : string) = 
+            doc.SelectNodes location
+                |> Seq.cast<XmlNode>
+
+        let expectedLoc, expectedVal =
+            if hasAttribute expectedVal then
+                // value@attribute_name="attribute_val"
+                let value = expectedVal.Split('[').[0]
+                let attribute_name = expectedVal.Split('[').[1]
+                let attribute_val = expectedVal.Split('"').[1]
+                let inputData = convertMapping(attribute_val,dataType,f,j,risk)
+                let attribute_name = attribute_name.Replace(attribute_val, inputData)
+                expectedLoc + "[" + attribute_name, value
+            else
+                expectedLoc, convertMapping(expectedVal,dataType,f,j,risk)
+        printfn "%s / %s" expectedLoc expectedVal
+
+        if Seq.isEmpty (xSeq(expectedLoc)) then
+            matchToExpected(xlsFile, "[MISSING]", (if expectedVal = "" then "[ANYTHING]" else expectedVal), expectedLoc, xlsNode)
         else
-            xSeq
-                |> Seq.iter (fun node -> matchToExpected(xlsFile, (if node.InnerXml = "" then "[EMPTY]" else node.InnerXml), expectedVal, expectedLoc, xlsNode))
-                //|> Seq.iter (fun node -> printfn "%s - %s" node.InnerXml expectedVal)
+            xSeq(expectedLoc)
+                |> Seq.iter (fun node -> matchToExpected(xlsFile, (if node.InnerXml = "" then "[EMPTY]" else node.InnerXml), (if expectedVal = "" then "[ANYTHING]" else expectedVal), expectedLoc, xlsNode))
     else
         printfn "Skipped test because xml file doesn't exist - check your filters!"

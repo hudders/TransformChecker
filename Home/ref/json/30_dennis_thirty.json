@@ -85,7 +85,7 @@
          "alarmMaintenanceStatus":""
       },
       "residents":{
-         "occupancyStatus":"permanent main residence",
+         "occupancyStatus":"unoccupied",
          "residentsType":"all family members",
          "numberOfNonFamilyMembers":"",
          "numberOfFosterChildren":"",
@@ -95,8 +95,8 @@
          "haveBeenRefusedInsurance":"False",
          "emptyFor45Days":"False",
          "daysLeftEmpty":"",
-         "selectedUnoccupiedForHowLong":"",
-         "selectedUnoccupiedReason":""
+         "selectedUnoccupiedForHowLong":"until-sold",
+         "selectedUnoccupiedReason":"pending-sale"
       },
       "ownershipStatus":"owned",
       "tenantType":"",
@@ -104,9 +104,9 @@
       "propertySubType":"end terraced",
       "yearBuilt":"1980",
       "bedrooms":"3",
-      "receptionRooms":"6",
+      "receptionRooms":"2",
       "bathrooms":"7",
-      "otherRooms":"4"
+      "otherRooms":"0"
    },
    "policyHolder":{
       "title":"dr-male",

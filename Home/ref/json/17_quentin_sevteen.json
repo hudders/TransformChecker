@@ -129,7 +129,7 @@
       "ownershipStatus":"owned",
       "tenantType":"",
       "propertyType":"House",
-      "propertySubType":"terraced",
+      "propertySubType":"detached",
       "yearBuilt":"1994",
       "bedrooms":"2",
       "receptionRooms":"2",
@@ -146,15 +146,23 @@
       "surname":"Sevteen",
       "dateOfBirth":"1976-04-17 00:00:00Z",
       "maritalStatus":"common law partnered-co-habiting",
-      "employmentStatus":"employed",
-      "selfEmployed":false,
-      "occupationCode":"374",
-      "occupationType":"Zoologist",
-      "businessCode":"797",
-      "businessType":"Zoo Operator",
+      "employmentStatus":"unemployed",
       "secondaryOccupationCode":"",
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
       "secondaryBusinessType":""
+   },
+      "jointPolicyHolder":{
+      "title":"mrs",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"civil partnered",
+      "employmentStatus":"unemployed",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"other"
    }
 }

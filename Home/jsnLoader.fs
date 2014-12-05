@@ -36,7 +36,7 @@ type Risk() =
         [<DefaultValue>] val mutable postalAddress_optionalCounty : string
         [<DefaultValue>] val mutable postalAddress_postalCounty : string
         [<DefaultValue>] val mutable postalAddress_postcode : string
-        [<DefaultValue>] val mutable telephoneNumber : int
+        [<DefaultValue>] val mutable telephoneNumber : string
         [<DefaultValue>] val mutable emailAddress : string
         [<DefaultValue>] val mutable occupationCode : string
         [<DefaultValue>] val mutable businessType : string
@@ -65,15 +65,22 @@ type Risk() =
         [<DefaultValue>] val mutable riskAddress_optionalCounty : string
         [<DefaultValue>] val mutable riskAddress_postalCounty : string
         [<DefaultValue>] val mutable riskAddress_postcode : string
+        [<DefaultValue>] val mutable unoccupiedDays : string
+        [<DefaultValue>] val mutable yearBuilt : string
+        [<DefaultValue>] val mutable dateRoofRecovered : string
         // Contents Cover
         [<DefaultValue>] val mutable contents_sumInsured : int
         [<DefaultValue>] val mutable contents_highRisk : int
         [<DefaultValue>] val mutable contents_mostExpensive : int
+        [<DefaultValue>] val mutable contents_awayFromHome : int
         // Buildings Cover
         [<DefaultValue>] val mutable buildings_sumInsured : int
         // Locks & Security
         // Claims
         // Price Page
+        // Meta
+        [<DefaultValue>] val mutable riskAddress_lineOne : string
+        [<DefaultValue>] val mutable postalAddress_lineOne : string
     end
 
 let mutable risk = new List<Risk>()
@@ -149,17 +156,29 @@ let riskLoad() =
         obj.riskAddress_optionalCounty <- jsonFile.Property.InsuredAddress.OptionalCounty
         obj.riskAddress_postalCounty <- jsonFile.Property.InsuredAddress.PostalCounty
         obj.riskAddress_postcode <- jsonFile.Property.InsuredAddress.Postcode
+        obj.unoccupiedDays <- jsonFile.Property.Residents.DaysLeftEmpty
+        obj.yearBuilt <- (jsonFile.Property.YearBuilt.ToString())
+        if (jsonFile.Property.Construction.JsonValue.TryGetProperty("flatRoofLastResurfacedYear")).IsSome then
+            if jsonFile.Property.Construction.FlatRoofLastResurfacedYear.ToString() = "more than 10 years ago" then
+                obj.dateRoofRecovered <- ((System.DateTime.Today.Year) - 10).ToString()
+            else
+                obj.dateRoofRecovered <- (jsonFile.Property.Construction.FlatRoofLastResurfacedYear.ToString())
         // Contents Cover is not mandatory either:
-        if (jsonFile.JsonValue.TryGetProperty("contentsCover")).IsSome then
+        if (jsonFile.Property.JsonValue.TryGetProperty("contentsCover")).IsSome then
             obj.contents_sumInsured <- jsonFile.Property.ContentsCover.CoverAmount
             obj.contents_highRisk <- jsonFile.Property.ContentsCover.HighRiskAmount
             obj.contents_mostExpensive <- jsonFile.Property.ContentsCover.MostExpensiveHighRiskItemAmount
+            if (jsonFile.Property.ContentsCover.JsonValue.TryGetProperty("personalPossessionsCoverAmount")).IsSome then
+                obj.contents_awayFromHome <- jsonFile.Property.ContentsCover.PersonalPossessionsCoverAmount
         // Buildings Cover
-        if (jsonFile.JsonValue.TryGetProperty("buildingsCover")).IsSome then
+        if (jsonFile.Property.JsonValue.TryGetProperty("buildingsCover")).IsSome then
             obj.buildings_sumInsured <- jsonFile.Property.BuildingsCover.RebuildCost
         // Locks & Security
         // Claims
         // Price Page
+        // Meta
+        obj.riskAddress_lineOne   <- (obj.riskAddress_number).ToString() + " " + (obj.riskAddress_thoroughfare).ToString()
+        obj.postalAddress_lineOne <- (obj.postalAddress_number).ToString() + " " + (obj.postalAddress_thoroughfare).ToString()
         risk.Add(obj)
         if numberOfFiles > n then
             loop (n + 1)
@@ -196,7 +215,7 @@ let itemCollectionLoad() =
                 let rec contentsLoop x =
                     let obj = new SpecifiedItem()
                     obj.riskID <- n
-                    obj.itemType <- (jsonFile.Property.ContentsCover.Bicycles.[x].Type).ToString()
+                    obj.itemType <- "Bicycle"
                     obj.itemValue <- (jsonFile.Property.ContentsCover.Bicycles.[x].Value).ToString()
                     obj.itemDesc <- jsonFile.Property.ContentsCover.Bicycles.[x].Description
                     itemCollection.Add(obj)

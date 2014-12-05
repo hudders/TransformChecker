@@ -79,7 +79,7 @@
       },
       "construction":{
          "externalWallType":"timber frame with plaster panels",
-         "roofType":"timber",
+         "roofType":"thatch",
          "moreThanHalfRoofIsFlat":"True",
          "flatRoofLastResurfacedYear":"2011",
          "isInGoodStateOfRepair":"True",
@@ -129,7 +129,7 @@
       "ownershipStatus":"owned",
       "tenantType":"",
       "propertyType":"House",
-      "propertySubType":"terraced",
+      "propertySubType":"semi-detached",
       "yearBuilt":"1993",
       "bedrooms":"5",
       "receptionRooms":"5",
@@ -151,5 +151,18 @@
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
       "secondaryBusinessType":""
+   },
+   "jointPolicyHolder":{
+      "title":"mr",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"widowed-surviving civil partner",
+      "employmentStatus":"unableToWork",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"other-family"
    }
 }

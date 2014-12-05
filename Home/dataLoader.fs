@@ -4,159 +4,31 @@ open config
 open test_utils
 open jsnLoader
 
-let rowList = [3..125]
+let rowList = [3..200]
 
 let loadData (product : string, dataType : string, xmlFile : string, a : int) =
     let dataSrc =
-        if dataType = "Proposer" then
-            xlsLoader.getXLS("2.1 Proposer");
-        elif dataType = "Additional Driver" || dataType = "Joint Proposer" then
-            xlsLoader.getXLS("2.2 " + dataType)
-        elif (dataType = "Claim" && product = "PC") || dataType = "Property" then
-            xlsLoader.getXLS("2.3 " + dataType)
-        elif dataType = "Conviction" then
-            xlsLoader.getXLS("2.4 Convictions")
-        elif dataType = "Contents"then
-            xlsLoader.getXLS("2.4 Contents Cover")
-        elif dataType = "Vehicle" then
-            xlsLoader.getXLS("2.5 Vehicle")
-        elif dataType = "Buildings" then
-            xlsLoader.getXLS("2.5 Buildings Cover")
-        elif dataType = "Policy" || dataType = "Locks and Security" then
-            xlsLoader.getXLS("2.6 " + dataType)
-        elif dataType = "Claim" && product = "HH" then
-            xlsLoader.getXLS("2.7 Claims")
-        elif dataType = "Price" then
-            xlsLoader.getXLS("2.8 Price Page")
-        else
-            xlsLoader.getXLS("")
+        match product, dataType with
+            | "PC", "Proposer" | "HH", "Proposer" -> xlsLoader.getXLS("2.1 " + dataType)
+            | "PC", "Additional Driver" | "HH", "Joint Proposer" -> xlsLoader.getXLS("2.2 " + dataType)
+            | "PC", "Claim" | "HH", "Property" -> xlsLoader.getXLS("2.3 " + dataType)
+            | "PC", "Conviction" | "HH", "Contents Cover" -> xlsLoader.getXLS("2.4 " + dataType)
+            | "PC", "Vehicle" | "HH", "Buildings Cover" -> xlsLoader.getXLS("2.5 " + dataType)
+            | "PC", "Policy" | "HH", "Locks and Security" -> xlsLoader.getXLS("2.6 " + dataType)
+            | "HH", "Claims" -> xlsLoader.getXLS("2.7 " + dataType)
+            | "HH", "Price Page" -> xlsLoader.getXLS("2.8 " + dataType)
+            | _ -> xlsLoader.getXLS("")
+
     for xlRow in rowList do
-        if xlsLoader.cellValue(dataSrc, "A", xlRow) <> null && xlsLoader.cellValue(dataSrc, "A", xlRow).ToString() = (risk.[a].testID).ToString() then
-            let fName = xlsLoader.cellValue(dataSrc, "B", xlRow).ToString()
-            let xVal = xlsLoader.cellValue(dataSrc, "D", xlRow).ToString()
+        if xlsLoader.cellValue(dataSrc, "A", xlRow) <> null && xlsLoader.cellValue(dataSrc, "A", xlRow).ToString() = (risk.[a].testID).ToString() then     
+            let xVal = xlsLoader.cellValue(dataSrc, "D", xlRow)
             let xLoc = xlsLoader.cellValue(dataSrc, "E", xlRow)
-            if xLoc = null then
-                let notApplicableCell = "I" + xlRow.ToString()
-                dataSrc.Range(notApplicableCell, notApplicableCell).Value2 <- "Not Applicable"
+            if xLoc = null || xVal = null then
+                dataSrc.Range(("I" + xlRow.ToString()), ("I" + xlRow.ToString())).Value2 <- "Not Applicable"
             else
-                let xLoc = xLoc.ToString()
-                let xLoc, xVal = xLoc.Split('\n'), xVal.Split('\n')
+                let xLoc, xVal = (xLoc.ToString()).Split('\n'), (xVal.ToString()).Split('\n')
                 let rec loop n =
-                    let xValue =
-                        if xVal.[n] = "as input" then
-                            if fName = "FirstName" || fName = "First Name" || fName = "Forename" then
-                                if dataType = "Joint Proposer" then
-                                    risk.[a].jp_firstName
-                                else
-                                    risk.[a].firstName
-                            elif fName = "Lastname" || fName = "Surname" then
-                                if dataType = "Joint Proposer" then
-                                    risk.[a].jp_lastName
-                                else
-                                    risk.[a].lastName
-                            elif fName = "Address" || fName = "Postcode" || fName = "House Number / Name" then
-                                let addressParts = (xlsLoader.cellValue(dataSrc, "C", xlRow).ToString()).Split('\n')
-                                if dataType = "Proposer" then
-                                    if addressParts.[n] = "Address Line 1" || fName = "House Number / Name" then
-                                        if risk.[a].postalAddress_number = "" then
-                                            risk.[a].postalAddress_building
-                                        else
-                                            risk.[a].postalAddress_number
-                                    elif addressParts.[n] = "Address Line 2" then
-                                        risk.[a].postalAddress_thoroughfare
-                                    elif addressParts.[n] = "Address Line 3" then
-                                        risk.[a].postalAddress_dependentLocality
-                                    elif addressParts.[n] = "Address Line 4" then
-                                        risk.[a].postalAddress_town
-                                    elif addressParts.[n] = "Address Line 5" then
-                                        risk.[a].postalAddress_postalCounty
-                                    elif addressParts.[n] = "Postcode" || fName = "Postcode" then
-                                        risk.[a].postalAddress_postcode
-                                    else
-                                        ""
-                                else
-                                    if addressParts.[n] = "Address Line 1" || fName = "House Number / Name" then
-                                        if risk.[a].riskAddress_number = "" then
-                                            risk.[a].riskAddress_building
-                                        else
-                                            risk.[a].riskAddress_number
-                                    elif addressParts.[n] = "Address Line 2" then
-                                        risk.[a].riskAddress_thoroughfare
-                                    elif addressParts.[n] = "Address Line 3" then
-                                        risk.[a].riskAddress_dependentLocality
-                                    elif addressParts.[n] = "Address Line 4" then
-                                        risk.[a].riskAddress_town
-                                    elif addressParts.[n] = "Address Line 5" then
-                                        risk.[a].riskAddress_postalCounty
-                                    elif addressParts.[n] = "Postcode" || fName = "Postcode" then
-                                        risk.[a].riskAddress_postcode
-                                    else
-                                        ""
-                            elif fName = "Total value of the contents to be insured" then
-                                risk.[a].contents_sumInsured.ToString()
-                            elif fName = "Total value of the high risk items of your home" then
-                                risk.[a].contents_highRisk.ToString()
-                            elif fName = "Value of the most expensive high risk item in your home" then
-                                risk.[a].contents_mostExpensive.ToString()
-                            elif fName = "What is the rebuild cost of the property?" then
-                                risk.[a].buildings_sumInsured.ToString()
-                            elif dataType = "Contents" && fName = "Description" then
-                                let rec itemLoop itemID =
-                                    if itemCollection.[itemID].riskID = risk.[a].testID then
-                                        itemCollection.[itemID].itemDesc
-                                    elif itemCollection.Count > itemID then
-                                        itemLoop (itemID + 1)
-                                    else
-                                        ""
-                                itemLoop 0
-                            elif dataType = "Contents" && fName = "Value £" then
-                                let rec itemLoop itemID =
-                                    if itemCollection.[itemID].riskID = risk.[a].testID then
-                                        itemCollection.[itemID].itemValue
-                                    elif itemCollection.Count > itemID then
-                                        itemLoop (itemID + 1)
-                                    else
-                                        ""
-                                itemLoop 0
-                             elif dataType = "Claim" && fName = "Cost (best estimate)" then
-                                let rec claimLoop claimID =
-                                    if claimCollection.[claimID].riskID = risk.[a].testID then
-                                        (claimCollection.[claimID].claim_cost).ToString()
-                                    elif claimCollection.Count > claimID then
-                                        claimLoop (claimID + 1)
-                                    else
-                                        ""
-                                claimLoop 0
-                            else
-                                ""
-                        elif contains xVal.[n] ["<conCode>"; "<carCode>"; "<styleCode>"; "<occCode>"; "<empCode>"] then
-                            "Aaron"
-                        elif contains xVal.[n] ["YYYY-MM-DD"; "YYYY-MM-01"; "DD-MM-YYYY"; "DD MM YYYY"; "YYYY/MM/DD"] then
-                            if dataType = "Claim" then
-                                let rec claimLoop claimID =
-                                    if claimCollection.[claimID].riskID = risk.[a].testID then
-                                        dateTester (xVal.[n], (claimCollection.[claimID].claim_date.Day).ToString(), (claimCollection.[claimID].claim_date.Month).ToString(), (claimCollection.[claimID].claim_date.Year).ToString())
-                                    elif claimCollection.Count > claimID then
-                                        claimLoop (claimID + 1)
-                                    else
-                                        ""
-                                claimLoop 0
-                            else
-                                let dateOffset = xlsLoader.cellValue(dataSrc, "C", xlRow).ToString()
-                                if fName = "DOB" || fName = "Date of Birth" || dateOffset = "since birth" then
-                                    if dataType = "Joint Proposer" then
-                                        dateTester (xVal.[n], risk.[a].jp_dateOfBirthDay, risk.[a].jp_dateOfBirthMonth, risk.[a].jp_dateOfBirthYear)
-                                    else
-                                        dateTester (xVal.[n], risk.[a].dateOfBirthDay, risk.[a].dateOfBirthMonth, risk.[a].dateOfBirthYear)
-                                else
-                                    ""
-                        elif xVal.[n] = "<age>" then
-                            "Aaron" //TODO
-                        elif xVal.[n] = "YYYY" then
-                            "Aaron" //TODO
-                        else
-                            xVal.[n]
-                    xmlLoader.checkXml (xValue, xLoc.[n], xmlFile, dataSrc, xlRow)
+                    xmlLoader.checkXml (xVal.[n], xLoc.[n], xmlFile, dataSrc, xlRow, dataType, n)
                     if xLoc.Length <> n + 1 then
                         loop (n + 1)
                 loop 0

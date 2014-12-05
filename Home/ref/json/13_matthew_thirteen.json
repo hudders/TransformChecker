@@ -152,5 +152,23 @@
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
       "secondaryBusinessType":""
+   },
+      "jointPolicyHolder":{
+      "title":"mrs",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"divorced-dissolved",
+      "employmentStatus":"employed",
+      "selfEmployed":true,
+      "occupationCode":"C55",
+      "occupationType":"Computer Consultant",
+      "businessCode":"818",
+      "businessType":"Computer Aided Design",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"employer"
    }
 }

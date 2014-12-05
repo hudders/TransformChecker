@@ -5,11 +5,6 @@ open Microsoft.Office.Interop
 
 open config
 
-printf "Enter name of brand: "
-//let brandX = System.Console.ReadLine()
-let productX = "PC"
-let brandX = "Drivology"
-
 let xlsPath = xlsRtFolder + "\Car\\" + brandX + "\PC Test Plan - " + brandX + ".xlsx"
 let savPath = xlsRtFolder + "\Car\\" + brandX + "\PC Test Plan - " + brandX + (System.DateTime.Today).ToString() + ".xlsx"
 
@@ -32,61 +27,27 @@ let brand, brandCode =
 // Brand group sequences
 // ---------------------
 let brandGroup(brand : string) =
-    let cdlBrandFilterFreeSeq = 
-        seq ["Hastings Direct";
-             "Hastings Essentials";
-             "igo4insurance";
-             "One Quote";
-             "Aquote";
-             "Elite";
-             "Virgin Money PC";
-             "Esure Broker";
-             "Sheilas' Wheels Broker";
-             "Hastings Premier";
-             "Hastings People's Choice";
-             "Only Young Drivers";
-             "Saga Select";
-             "Hastings Direct SmartMiles";
-             "Castle Cover";
-             "Sure Thing!";
-             "Sure Thing! Max";
-             "John Lewis Insurance";
-             "Insure Wiser"]
 
-    let cdlBrandFilteredSeq =
-        seq ["AutoNet";
-             "Direct Choice"]
+    match brand with
+    | "Hastings Direct" | "Hastings Essentials" | "igo4insurance" | "One Quote" | "Aquote"
+    | "Elite" | "Hastings Premier" | "Virgin" | "Esure Broker" | "Sheilas' Wheels Broker" 
+    | "People's Choice" | "Only Young Drivers" | "Saga Select" | "Hastings Direct SmartMiles"
+    | "Castle Cover" | "Sure Thing!" | "Sure Thing! Max" | "John Lewis" | "Insure Wiser"        -> "CDL-FilterFree"
+    | "AutoNet" | "Direct Choice"                                                               -> "AutoNet"
+    | "A Choice" | "Express" | "Octagon" | "Debenhams"                                          -> "OpenGI"
+    | "Drivology"                                                                               -> "SSP Multi Quote"
+    | _ -> brand
 
-    let opengiBrandSeq =
-        seq ["Express";
-             "Octagon"]
-
-    let sspBrandSeq =
-        seq ["Drivology"]
-
-
-    if contains brand cdlBrandFilterFreeSeq then
-        "CDL-FilterFree"
-    elif contains brand cdlBrandFilteredSeq then
-        "AutoNet"
-    elif contains brand opengiBrandSeq then
-        "Open-GI"
-    elif contains brand sspBrandSeq then
-        "SSP Multi Quote"
-    else
-        brand
 // ---------------------
 
-let codeLookup(description : string, codeType : string) =
+let codeLookup(description : string, codeType : string) =         
     let xlsFile, lowerBound, upperBound =
-        if codeType = "<occCode>" then
-            getXLS("occupation codes"), 2, 1962
-        elif codeType = "<empCode>" then
-            getXLS("business codes"), 2, 939
-        elif codeType = "<conCode>" then
-            getXLS("conviction codes"), 2, 88
-        else
-            getXLS("car codes"), 2, 3           
+        match codeType with
+        | "<occCode>"                               -> getXLS("occupation codes"), 2, 1962
+        | "<empCode>"                               -> getXLS("business codes"), 2, 939
+        | "<conCode>" | "<conCode1>" | "<conCode2>" -> getXLS("conviction codes"), 2, 88
+        | _                                         -> getXLS("car codes"), 2, 3
+           
     let result = ref None in
         let rec loop n =
             if n <= upperBound then
@@ -101,7 +62,12 @@ let codeLookup(description : string, codeType : string) =
                 if description <> theDesc then
                     loop (n + 1)
                 else
-                    result := Some theCode
+                    if codeType = "<conCode1>" then
+                        result := Some (theCode.Substring(0,2))
+                    elif codeType = "<conCode2>" then
+                        result := Some (theCode.Substring(2,(theCode.Length-2)))
+                    else
+                        result := Some theCode
         loop lowerBound
     !result
 

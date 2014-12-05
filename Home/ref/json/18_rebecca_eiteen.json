@@ -145,11 +145,24 @@
       "firstName":"Rebecca",
       "surname":"Eiteen",
       "dateOfBirth":"1977-04-17 00:00:00Z",
-      "maritalStatus":"single",
+      "maritalStatus":"civil partnered",
       "employmentStatus":"unemployed",
       "secondaryOccupationCode":"",
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
       "secondaryBusinessType":""
+   },
+      "jointPolicyHolder":{
+      "title":"dr-female",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"civil partnered",
+      "employmentStatus":"retired",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"civil-partner"
    }
 }

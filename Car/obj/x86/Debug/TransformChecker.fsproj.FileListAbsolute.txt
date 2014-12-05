@@ -1,7 +1,6 @@
 C:\x_FSharpStuff\FSharp Test Projects\TransformChecker\obj\x86\Debug\TransformChecker.fsprojResolveAssemblyReference.cache
 C:\Dev\TransformChecker\Car\obj\x86\Debug\TransformChecker.fsprojResolveAssemblyReference.cache
 C:\Dev\TransformChecker\Car\bin\Debug\TransformChecker.XML
-C:\Dev\TransformChecker\Car\bin\Debug\TransformChecker.exe
 C:\Dev\TransformChecker\Car\bin\Debug\TransformChecker.pdb
 C:\Dev\TransformChecker\Car\bin\Debug\canopy.dll
 C:\Dev\TransformChecker\Car\bin\Debug\FSharp.Data.dll
@@ -9,5 +8,12 @@ C:\Dev\TransformChecker\Car\bin\Debug\Newtonsoft.Json.dll
 C:\Dev\TransformChecker\Car\bin\Debug\SizSelCsZzz.dll
 C:\Dev\TransformChecker\Car\bin\Debug\WebDriver.dll
 C:\Dev\TransformChecker\Car\bin\Debug\WebDriver.Support.dll
-C:\Dev\TransformChecker\Car\obj\x86\Debug\TransformChecker.exe
 C:\Dev\TransformChecker\Car\obj\x86\Debug\TransformChecker.pdb
+C:\Dev\TransformChecker\Car\bin\Debug\App.config
+C:\Dev\TransformChecker\Car\bin\Debug\TransformChecker.exe.config
+C:\Dev\TransformChecker\Car\bin\Debug\TransformChecker.exe
+C:\Dev\TransformChecker\Car\obj\x86\Debug\TransformChecker.exe
+C:\Dev\TransformChecker\Car\bin\Debug\FSharp.Core.dll
+C:\Dev\TransformChecker\Car\bin\Debug\policy.2.3.FSharp.Core.dll
+C:\Dev\TransformChecker\Car\bin\Debug\FSharp.Core.xml
+C:\Dev\TransformChecker\Car\bin\Debug\pub.config

@@ -147,10 +147,10 @@
       "occupationType":"Ground Worker",
       "businessCode":"681",
       "businessType":"Sports Ground",
-      "secondaryOccupationCode":"",
-      "secondaryOccupationType":"",
-      "secondaryBusinessCode":"",
-      "secondaryBusinessType":""
+      "secondaryOccupationCode":"487",
+      "secondaryOccupationType":"Research Scientist",
+      "secondaryBusinessCode":"803",
+      "secondaryBusinessType":"Medical research"
    },
    "jointPolicyHolder":{
       "title":"ms",

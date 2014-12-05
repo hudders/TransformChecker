@@ -4,6 +4,7 @@ open System
 open System.Text.RegularExpressions
 open Microsoft.Office.Interop
 
+open csvLoader
 open config
 open xlsLoader
 
@@ -25,7 +26,7 @@ let mutable fillCell =
 
 let dateTester (dateFormat : string, day : string, month : string, year : string) =
     let date =
-        if month.Length > 0 then
+        if month <> null && month.Length > 0 then
             if day.Length > 0 then
                 day + "/" + month + "/" + year
             else
@@ -37,9 +38,10 @@ let dateTester (dateFormat : string, day : string, month : string, year : string
     parsedDate.ToString(dateFormat)
 
 let matchToExpected(dataSrc : Excel.Worksheet, acVal : string, exVal : string, exLoc : string, xlRow : int) =
+    let acVal, exVal, exLoc, eCol = acVal.Replace("–","-"), exVal.Replace("–","-"), exLoc.Replace("–","-"), cellValue(dataSrc,"E",xlRow).ToString().Replace("–","-")
     let lineNumber =
         let rec loop n =
-            if (cellValue(dataSrc,"E",xlRow).ToString()).Split('\n').[n] = exLoc then
+            if eCol.Split('\n').[n] = exLoc || eCol.Split('\n').[n] = exLoc.Split('[').[0] then
                 n
             else
                 loop (n + 1)
@@ -59,7 +61,7 @@ let matchToExpected(dataSrc : Excel.Worksheet, acVal : string, exVal : string, e
                 else
                     "N"
             fillCell(dataExt, "B", row, runNumber)
-            fillCell(dataExt, "D", row, exVal)
+            fillCell(dataExt, "D", row, exVal + " in " + exLoc)
             fillCell(dataExt, "E", row, acVal)
             fillCell(dataExt, "F", row, matchResult)
             let rec DataMergeLoop n =
@@ -105,3 +107,42 @@ let deleteExt(path : string, extension : string) =
         let tempPath = System.IO.Path.Combine(dloadFolder, file)
         //printf "%s" tempPath
         System.IO.File.Delete(tempPath)
+
+// howManySince
+// Returns number of X between two dates
+let howManySince(X : string, date2 : string) =
+    let date1 = System.DateTime.Today
+    let date2 = System.DateTime.Parse(date2)
+    match X with
+        | "Y"   -> (date1.Year - date2.Year).ToString()
+        | "M"   -> (((date1.Year - date2.Year)*12) + (date1.Month - date2.Month)).ToString()
+        | _     -> ""
+
+
+//codeConvert
+// Experimental function to process "<occCode>" and "<empCode>" values / "as input" values - eventually should replace dataLoader.fs
+let codeConvert (dataType : string, fName : string, value : string, journeyNumber : string) =
+    let j = toInt(journeyNumber)-1
+    match value with
+        | "<occCode>"                 -> match dataType with
+                                             | "Proposer"   -> value.Replace(value, (codeLookup(personCollection.[j].OccupationTitleDescription, value).Value))
+                                             | _            -> value.Replace(value, (codeLookup(additionalCollection.[j].OccupationTitleDescription, value).Value))
+        | "<empCode>" | "<busCode>"   -> match dataType with
+                                             | "Proposer"   -> value.Replace(value, (codeLookup(personCollection.[j].BusinessTypeDescription, "<empCode>").Value))
+                                             | _            -> value.Replace(value, (codeLookup(additionalCollection.[j].BusinessTypeDescription, "<empCode>").Value))
+        | "<MM>"                      -> match dataType, fName with
+                                             | "Proposer", "Period licence held for?"    -> howManySince("M",dateTester("dd/mm/yyyy",personCollection.[j].LicenceDateDay,personCollection.[j].LicenceDateMonth,(System.DateTime.Today.Year - (toInt(personCollection.[j].LicenceHeldCode) - 1)).ToString()))
+                                             | "Proposer", "Permanent UK Resident Since" -> howManySince("M",dateTester("dd/mm/yyyy",personCollection.[j].IsLivingInUkSinceDay,personCollection.[j].IsLivingInUkSinceMonthCode,personCollection.[j].IsLivingInUkSinceYear))
+                                             | _                                         -> ""
+        | "<YY>"                      -> match dataType, fName with
+                                             | "Proposer", "Period licence held for?"    -> howManySince("Y",dateTester("dd/mm/yyyy",personCollection.[j].LicenceDateDay,personCollection.[j].LicenceDateMonth,(System.DateTime.Today.Year - (toInt(personCollection.[j].LicenceHeldCode) - 1)).ToString()))
+                                             | "Proposer", "Permanent UK Resident Since" -> howManySince("Y",dateTester("dd/mm/yyyy",personCollection.[j].IsLivingInUkSinceDay,personCollection.[j].IsLivingInUkSinceMonthCode,personCollection.[j].IsLivingInUkSinceYear))
+                                             | _                                         -> ""
+        | "dd/mm/yyyy" | "01/mm/yyyy" -> match dataType, fName with
+                                             | "Proposer", "Period licence held for?"    -> dateTester(value,personCollection.[j].LicenceDateDay,personCollection.[j].LicenceDateMonth,(System.DateTime.Today.Year - (toInt(personCollection.[j].LicenceHeldCode) - 1)).ToString())
+                                             | _                                         -> ""
+        | _ -> value
+
+
+//"Proposer", "Permanent UK Resident Since" -> let lastOfMonth = (DateTime(personCollection.[j].IsLivingInUkSinceYear, personCollection.[j].IsLivingInUkSinceMonthCode, 1).AddMonths(1).AddDays(-1)).Day.ToString()
+//howManySince("M",dateTester("dd/mm/yyyy","1",personCollection.[j].IsLivingInUkSinceMonthCode,personCollection.[j].IsLivingInUkSinceYear)

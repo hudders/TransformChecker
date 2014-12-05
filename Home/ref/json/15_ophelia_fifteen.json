@@ -79,7 +79,7 @@
       },
       "construction":{
          "externalWallType":"brick",
-         "roofType":"tile",
+         "roofType":"concrete",
          "moreThanHalfRoofIsFlat":"True",
          "flatRoofLastResurfacedYear":"2008",
          "isInGoodStateOfRepair":"True",
@@ -129,7 +129,7 @@
       "ownershipStatus":"owned",
       "tenantType":"",
       "propertyType":"House",
-      "propertySubType":"terraced",
+      "propertySubType":"end terraced",
       "yearBuilt":"1992",
       "bedrooms":"4",
       "receptionRooms":"4",
@@ -151,5 +151,23 @@
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
       "secondaryBusinessType":""
+   },
+      "jointPolicyHolder":{
+      "title":"mr",
+      "firstName":"Joint",
+      "surname":"Policyholder",
+      "dateOfBirth":"1960-01-01 00:00:00Z",
+      "maritalStatus":"married",
+      "employmentStatus":"employed",
+      "selfEmployed":false,
+      "occupationCode":"222",
+      "occupationType":"Nuclear Scientist",
+      "businessCode":"141",
+      "businessType":"Nuclear Energy",
+      "secondaryOccupationCode":"",
+      "secondaryOccupationType":"",
+      "secondaryBusinessCode":"",
+      "secondaryBusinessType":"",
+      "relationshipStatus":"spouse"
    }
 }

@@ -73,28 +73,29 @@
          "postcode":"NG12 3EE"
       },
       "construction":{
-         "externalWallType":"brick",
-         "roofType":"tile",
+         "externalWallType":"concrete",
+         "roofType":"",
          "moreThanHalfRoofIsFlat":"False",
          "flatRoofLastResurfacedYear":"",
          "isInGoodStateOfRepair":"True",
          "isWithIn400MOfWater":"False",
          "hasOperationalSmokeDetectors":"True",
-         "propertyBusinessUse":"no business or professional use",
+         "propertyBusinessUse":"clerical business use only",
          "propertyListedStatus":"not listed"
       },
       "security":{
-         "locksOnMainDoor":"multi-point-locking-system",
+         "locksOnMainDoor":"multiple-keys",
          "hasExternalSlidingDoors":"True",
          "locksOnExternalSlidingDoors":"same-main-door",
          "hasOtherExternalDoors":"True",
-         "locksOnOtherExternalDoors":"same-main-door",
-         "hasKeyOperatedLocksOnWindows":"True",
-         "hasNeighbourhoodWatch":"True",
-         "hasLockableSafeFitted":"True",
-         "isOccupiedBetween9And5":"True",
-         "hasBurglarAlarmFitted":"False",
-         "alarmMaintenanceStatus":""
+         "locksOnOtherExternalDoors":"unlock-pull-down-lever",
+         "hasKeyOperatedLocksOnWindows":"False",
+		 "hasSeparateLockableEntrance":"True",
+         "hasNeighbourhoodWatch":"False",
+         "hasLockableSafeFitted":"False",
+         "isOccupiedBetween9And5":"False",
+         "hasBurglarAlarmFitted":"True",
+         "alarmMaintenanceStatus":"no"
       },
       "residents":{
          "occupancyStatus":"holiday home",
@@ -121,10 +122,10 @@
             }
          ]
       },
-      "ownershipStatus":"owned",
-      "tenantType":"",
-      "propertyType":"House",
-      "propertySubType":"end terraced",
+      "ownershipStatus":"rented",
+      "tenantType":"private-furnished",
+      "propertyType":"Flat",
+      "propertySubType":"other floor",
       "yearBuilt":"1998",
       "bedrooms":"2",
       "receptionRooms":"2",

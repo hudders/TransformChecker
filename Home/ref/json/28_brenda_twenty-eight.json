@@ -67,11 +67,11 @@
       },
       "construction":{
          "externalWallType":"brick",
-         "roofType":"tile",
+         "roofType":"slate",
          "moreThanHalfRoofIsFlat":"False",
          "flatRoofLastResurfacedYear":"",
          "isInGoodStateOfRepair":"True",
-         "isWithIn400MOfWater":"False",
+         "isWithIn400MOfWater":"True",
          "hasOperationalSmokeDetectors":"True",
          "propertyBusinessUse":"no business or professional use",
          "propertyListedStatus":"not listed"
@@ -90,16 +90,16 @@
          "alarmMaintenanceStatus":"yes"
       },
       "residents":{
-         "occupancyStatus":"permanent main residence",
+         "occupancyStatus":"weekday only",
          "residentsType":"all family members",
          "numberOfNonFamilyMembers":"",
          "numberOfFosterChildren":"",
          "durationOfFosterChildrenInCare":"",
-         "haveConvictions":"False",
-         "haveBeenBankrupt":"False",
-         "haveBeenRefusedInsurance":"False",
-         "emptyFor45Days":"False",
-         "daysLeftEmpty":"",
+         "haveConvictions":"True",
+         "haveBeenBankrupt":"True",
+         "haveBeenRefusedInsurance":"True",
+         "emptyFor45Days":"True",
+         "daysLeftEmpty":"50",
          "selectedUnoccupiedForHowLong":"",
          "selectedUnoccupiedReason":"",
          "previousClaims":[
@@ -119,10 +119,10 @@
       "propertyType":"House",
       "propertySubType":"terraced",
       "yearBuilt":"2008",
-      "bedrooms":"5",
-      "receptionRooms":"2",
+      "bedrooms":"1",
+      "receptionRooms":"1",
       "bathrooms":"3",
-      "otherRooms":"6",
+      "otherRooms":"0",
       "sufferedFromSubsidence":"False",
       "cracksOnExternalWalls":"False",
       "underpinningOrStructuralSupport":"False",
@@ -155,6 +155,6 @@
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
       "secondaryBusinessType":"",
-      "relationshipStatus":"other-family"
+      "relationshipStatus":"other"
    }
 }

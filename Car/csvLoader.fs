@@ -4,6 +4,8 @@ open System
 open System.Collections.Generic
 open FSharp.Data.Csv
 
+open config
+
 // PERSON LOADER
 type Person() =
     class
@@ -20,6 +22,7 @@ type Person() =
         [<DefaultValue>] val mutable  DateOfBirthYear : string
         [<DefaultValue>] val mutable  OccupationTitleDescription : string
         [<DefaultValue>] val mutable  BusinessTypeDescription : string
+        [<DefaultValue>] val mutable  IsLivingInUkSinceDay : string
         [<DefaultValue>] val mutable  IsLivingInUkSinceMonthCode : string
         [<DefaultValue>] val mutable  IsLivingInUkSinceYear : string
         [<DefaultValue>] val mutable  LicenceDateDay : string
@@ -34,6 +37,7 @@ type Person() =
         [<DefaultValue>] val mutable  Email : string
         [<DefaultValue>] val mutable  MainTelephoneNumber : string
         [<DefaultValue>] val mutable  AdditionalDriverIds : string
+        [<DefaultValue>] val mutable  Postcode : string
     end
 
 let mutable personCollection = new List<Person>()
@@ -53,22 +57,43 @@ let personLoad (csv_filename : string) =
         obj.DateOfBirthDay <- row.GetColumn("DateOfBirthDayCode")
         obj.DateOfBirthMonth <- row.GetColumn("DateOfBirthMonthCode")
         obj.DateOfBirthYear <- row.GetColumn("DateOfBirthYear")
-        obj.OccupationTitleDescription <- row.GetColumn("OccupationTitleDescription")
-        obj.BusinessTypeDescription <- row.GetColumn("BusinessTypeDescription")
-        obj.IsLivingInUkSinceMonthCode <- row.GetColumn("IsLivingInUkSinceMonthCode")
-        obj.IsLivingInUkSinceYear <- row.GetColumn("IsLivingInUkSinceYear")
+        let occDesc, busDesc =
+            if row.GetColumn("EmploymentStatusCode") = "currentlynotworking" then
+                row.GetColumn("WhyNotWorking"), if row.GetColumn("WhyNotWorking") = "Unemployed" then
+                                                    "None - Unemployed"
+                                                elif row.GetColumn("WhyNotWorking") = "Houseperson" then
+                                                    "None - Household Duties"
+                                                elif row.GetColumn("WhyNotWorking") = "Retired" then
+                                                    "None - Retired"
+                                                else
+                                                    "None - Not Employed due to Disability"
+            elif row.GetColumn("EmploymentStatusCode") = "F" then
+                row.GetColumn("StudentType"), "None - Student"
+            else
+                row.GetColumn("OccupationTitleDescription"), row.GetColumn("BusinessTypeDescription")
+        obj.OccupationTitleDescription <- occDesc
+        obj.BusinessTypeDescription <- busDesc
+        if row.GetColumn("IsLivingInUkSinceBirth") = "No" then
+            obj.IsLivingInUkSinceDay <- (DateTime(toInt(row.GetColumn("IsLivingInUkSinceYear")), toInt(row.GetColumn("IsLivingInUkSinceMonthCode")), 1).AddMonths(1).AddDays(float(-1))).Day.ToString()
+            obj.IsLivingInUkSinceMonthCode <- row.GetColumn("IsLivingInUkSinceMonthCode")
+            obj.IsLivingInUkSinceYear <- row.GetColumn("IsLivingInUkSinceYear")
+        else
+            obj.IsLivingInUkSinceDay <- row.GetColumn("DateOfBirthDayCode")
+            obj.IsLivingInUkSinceMonthCode <- row.GetColumn("DateOfBirthMonthCode")
+            obj.IsLivingInUkSinceYear <- row.GetColumn("DateOfBirthYear")
         obj.LicenceDateDay <- row.GetColumn("LicenceDateDayCode")
         obj.LicenceDateMonth <- row.GetColumn("LicenceDateMonthCode")
         obj.LicenceDateYear <- row.GetColumn("LicenceDateYear")
         obj.LicenceHeldCode <- row.GetColumn("LicenceHeldCode")
         obj.ObtainedMonth <- row.GetColumn("ObtainedMonthCode")
-        obj.ObtainedYear <- row.GetColumn("ObtainedYearCode")
+        obj.ObtainedYear <- row.GetColumn("ObtainedYear")
         obj.ClaimIds <- row.GetColumn("ClaimIds")
         obj.ConvictionIds <- row.GetColumn("ConvictionIds")
         obj.PolicyStartDateOffset <- row.GetColumn("PolicyStartDateOffset")
         obj.Email <- row.GetColumn("Email")
-        obj.MainTelephoneNumber <- row.GetColumn("MainTelephoneNumber")
+        obj.MainTelephoneNumber <- row.GetColumn("MainTelephoneNumber").Replace(" ","")
         obj.AdditionalDriverIds <- row.GetColumn("AdditionalDriverIds")
+//        obj.Postcode <- TODO
         personCollection.Add(obj)
 //
 // ADDITIONAL DRIVER LOADER
@@ -83,6 +108,7 @@ type Additional() =
         [<DefaultValue>] val mutable  Relationship : string
         [<DefaultValue>] val mutable  OccupationTitleDescription : string
         [<DefaultValue>] val mutable  BusinessTypeDescription : string
+        [<DefaultValue>] val mutable  IsLivingInUkSinceDay : string
         [<DefaultValue>] val mutable  IsLivingInUkSinceMonthCode : string
         [<DefaultValue>] val mutable  IsLivingInUkSinceYear : string
         [<DefaultValue>] val mutable  LicenceDateDay : string
@@ -106,10 +132,30 @@ let additionalLoad (csv_filename : string) =
         obj.DateOfBirthMonth <- row.GetColumn("DateOfBirthMonthCode")
         obj.DateOfBirthYear <- row.GetColumn("DateOfBirthYear")
         obj.Relationship <- row.GetColumn("Relationship")
-        obj.OccupationTitleDescription <- row.GetColumn("OccupationTitleDescription")
-        obj.BusinessTypeDescription <- row.GetColumn("BusinessTypeDescription")
-        obj.IsLivingInUkSinceMonthCode <- row.GetColumn("IsLivingInUkSinceMonthCode")
-        obj.IsLivingInUkSinceYear <- row.GetColumn("IsLivingInUkSinceYear")
+        let occDesc, busDesc =
+            if row.GetColumn("EmploymentStatusCode") = "currentlynotworking" then
+                row.GetColumn("WhyNotWorking"), "Not In E;mployment" //if row.GetColumn("WhyNotWorking") = "Unemployed" then
+                                                                    //    "None - Unemployed"
+                                                                    //elif row.GetColumn("WhyNotWorking") = "Houseperson" then
+                                                                    //    "None - Household Duties"
+                                                                    //elif row.GetColumn("WhyNotWorking") = "Retired" then
+                                                                    //    "None - Retired"
+                                                                    //else
+                                                                    //    "None - Not Employed due to Disability"
+            elif row.GetColumn("EmploymentStatusCode") = "F" then
+                row.GetColumn("StudentType"), "None - Student"
+            else
+                row.GetColumn("OccupationTitleDescription"), row.GetColumn("BusinessTypeDescription")
+        obj.OccupationTitleDescription <- occDesc
+        obj.BusinessTypeDescription <- busDesc
+        if row.GetColumn("IsLivingInUkSinceBirth") = "No" then
+            obj.IsLivingInUkSinceDay <- (DateTime(toInt(row.GetColumn("IsLivingInUkSinceYear")), toInt(row.GetColumn("IsLivingInUkSinceMonthCode")), 1).AddMonths(1).AddDays(float(-1))).Day.ToString()
+            obj.IsLivingInUkSinceMonthCode <- row.GetColumn("IsLivingInUkSinceMonthCode")
+            obj.IsLivingInUkSinceYear <- row.GetColumn("IsLivingInUkSinceYear")
+        else
+            obj.IsLivingInUkSinceDay <- row.GetColumn("DateOfBirthDayCode")
+            obj.IsLivingInUkSinceMonthCode <- row.GetColumn("DateOfBirthMonthCode")
+            obj.IsLivingInUkSinceYear <- row.GetColumn("DateOfBirthYear")
         obj.LicenceDateDay <- row.GetColumn("LicenceDateDayCode")
         obj.LicenceDateMonth <- row.GetColumn("LicenceDateMonthCode")
         obj.LicenceDateYear <- row.GetColumn("LicenceDateYear")

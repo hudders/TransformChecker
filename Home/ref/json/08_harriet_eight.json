@@ -54,9 +54,17 @@
                "value":"2300",
                "description":"Expensive optical zoom camera"
             }
+		 ],
+		 "bicycles":[
+            {
+               "type":"3",
+               "value":"350",
+               "description":"Really Big Bike"
+            }
          ],
          "highRiskAmount":"4000",
          "mostExpensiveHighRiskItemAmount":"4000",
+		 "personalPossessionsCoverAmount":"2000",
          "coverAmount":"40000",
          "excess":"350"
       },
@@ -158,7 +166,7 @@
       "surname":"Policyholder",
       "dateOfBirth":"1960-01-01 00:00:00Z",
       "maritalStatus":"married",
-      "employmentStatus":"unemployed",
+      "employmentStatus":"houseperson",
       "secondaryOccupationCode":"",
       "secondaryOccupationType":"",
       "secondaryBusinessCode":"",
