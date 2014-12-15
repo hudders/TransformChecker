@@ -72,4 +72,4 @@ let loadTests(testType : string, environment : string, journeyNumber : int) =
             loop (n + 1)
     loop 0
 
-loadTests("LOCKS","UAT",0)
+loadTests("ALL","UAT",0)

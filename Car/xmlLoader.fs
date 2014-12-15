@@ -83,9 +83,13 @@ let getXML(environment, product, brand : string, lastName, email, xmlFile) =
         else
             printfn "No XML found in QuoteFinder. Skipping tests."
             null
-    let srcFile = ((dloadFolder + "Request_" + linkID.[1] + "_After_" + linkID.[3] + "_2.xml").ToString())
+    let srcFile = 
+        if linkID <> null then
+            ((dloadFolder + "Request_" + (linkID.[1].Replace("+"," ")) + "_After_" + linkID.[3] + "_2.xml").ToString())
+        else
+            "NOTEXIST"
 //    let errFile = ((dloadFolder + "Error_" + brandGroup(brand) + "_After_" + linkID.[3] + "_3.xml").ToString())
-    if linkID <> null && File.Exists(srcFile) then
+    if File.Exists(srcFile) then
         printfn "Successfully downloaded XML"
         printfn "%s" srcFile
         File.Copy(srcFile, xmlFile)
