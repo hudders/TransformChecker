@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <Household>
+      <a:QuoteRequest Version="1" xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+        <a:Header>
+          <a:Sender>
+            <a:SourceCode>CM02</a:SourceCode>
+            <a:PartnerRef />
+          </a:Sender>
+        </a:Header>
+        <a:Lead>
+          <a:Proposer>1</a:Proposer>
+          <a:PostalAddress>1</a:PostalAddress>
+          <a:MarketingOptOut>
+            <a:EmailOptOut>Y</a:EmailOptOut>
+            <a:PostOptOut>Y</a:PostOptOut>
+            <a:PhoneOptOut>N</a:PhoneOptOut>
+            <a:SMSOptOut>Y</a:SMSOptOut>
+          </a:MarketingOptOut>
+          <a:Persons>
+            <a:Person id="1">
+              <a:Title>MS</a:Title>
+              <a:FirstName>Deborah</a:FirstName>
+              <a:Surname>Four</a:Surname>
+              <a:DOB>1963-04-17</a:DOB>
+              <a:MaritalStatus>D</a:MaritalStatus>
+              <a:EmploymentStatus>E</a:EmploymentStatus>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>E11</a:OccupationCode>
+                <a:BusinessCode>166</a:BusinessCode>
+              </a:PrimaryOccupation>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+              </a:Resident>
+              <a:Ghost>false</a:Ghost>
+              <a:LargestCCBike i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+              <a:Gender>F</a:Gender>
+            </a:Person>
+            <a:Person id="2">
+              <a:Title>MS</a:Title>
+              <a:FirstName>Joint</a:FirstName>
+              <a:Surname>Policyholder</a:Surname>
+              <a:DOB>1960-01-01</a:DOB>
+              <a:MaritalStatus>D</a:MaritalStatus>
+              <a:EmploymentStatus>S</a:EmploymentStatus>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>C55</a:OccupationCode>
+                <a:BusinessCode>818</a:BusinessCode>
+              </a:PrimaryOccupation>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+              </a:Resident>
+              <a:RelationshipToProposer>B</a:RelationshipToProposer>
+              <a:Ghost>false</a:Ghost>
+              <a:LargestCCBike i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+              <a:Gender>F</a:Gender>
+            </a:Person>
+          </a:Persons>
+          <a:Addresses>
+            <a:Address id="1">
+              <a:AddressLine1>Byways</a:AddressLine1>
+              <a:AddressLine2>Rippons Drove</a:AddressLine2>
+              <a:AddressLine3>Northborough</a:AddressLine3>
+              <a:AddressLine4>Peterborough</a:AddressLine4>
+              <a:AddressLine5></a:AddressLine5>
+              <a:PostCode>PE6 9AG</a:PostCode>
+            </a:Address>
+            <a:Address id="2">
+              <a:AddressLine1>Anchor Cottage</a:AddressLine1>
+              <a:AddressLine2>Goose Green</a:AddressLine2>
+              <a:AddressLine3>Gomshall</a:AddressLine3>
+              <a:AddressLine4>Guildford</a:AddressLine4>
+              <a:AddressLine5></a:AddressLine5>
+              <a:PostCode>GU5 9LL</a:PostCode>
+            </a:Address>
+          </a:Addresses>
+          <a:ContactDetails>
+            <a:Phone type="work">
+              <a:PhoneCode>01778</a:PhoneCode>
+              <a:PhoneNumber>852852</a:PhoneNumber>
+            </a:Phone>
+            <a:EmailAdr>michael.hudson@emailreaction.org</a:EmailAdr>
+          </a:ContactDetails>
+          <a:Products>
+            <a:Homes>
+              <a:Home id="1">
+                <a:HomeCover>
+                  <a:CommencementDate>2014-08-06</a:CommencementDate>
+                  <a:JointHolderId>2</a:JointHolderId>
+                </a:HomeCover>
+                <a:HomeRisks>
+                  <a:House>
+                    <a:AddressId>2</a:AddressId>
+                    <a:OwnerStatus>03</a:OwnerStatus>
+                    <a:Occupancy>HH</a:Occupancy>
+                    <a:Residents>P</a:Residents>
+                    <a:NumNonFamilyMembers>20</a:NumNonFamilyMembers>
+                    <a:TypeOfProperty>02</a:TypeOfProperty>
+                    <a:NumBedrooms>3</a:NumBedrooms>
+                    <a:NumberOfRooms>9</a:NumberOfRooms>
+                    <a:ListedBuilding>3</a:ListedBuilding>
+                    <a:TypeOfUse>O</a:TypeOfUse>
+                    <a:YearBuilt>1983</a:YearBuilt>
+                    <a:TypeOfWall>03</a:TypeOfWall>
+                    <a:Roof>
+                      <a:TypeOfRoof>04</a:TypeOfRoof>
+                      <a:FlatRoof>N</a:FlatRoof>
+                      <a:YearRecovered></a:YearRecovered>
+                      <a:ReCovered10Years></a:ReCovered10Years>
+                    </a:Roof>
+                    <a:Water400M>N</a:Water400M>
+                    <a:SmokeDetectors>Y</a:SmokeDetectors>
+                    <a:GoodStateOfRepair>Y</a:GoodStateOfRepair>
+                    <a:Unoccupied>
+                      <a:Over45Days>N</a:Over45Days>
+                      <a:NumUnoccupiedDays>0</a:NumUnoccupiedDays>
+                    </a:Unoccupied>
+                    <a:AddressDiffReason>05</a:AddressDiffReason>
+                    <a:AnyClaims>Y</a:AnyClaims>
+                    <a:AnyConvictions>N</a:AnyConvictions>
+                    <a:Bankruptcy>N</a:Bankruptcy>
+                    <a:RefusedInsurance>N</a:RefusedInsurance>
+                    <a:Claims>
+                      <a:Claim>
+                        <a:ID>1</a:ID>
+                        <a:IncidentCause>05</a:IncidentCause>
+                        <a:IncidentDate>2011-09-01</a:IncidentDate>
+                        <a:IncidentType>04</a:IncidentType>
+                        <a:Damage>Y</a:Damage>
+                        <a:IncidentValue>9999999</a:IncidentValue>
+                        <a:ThisAddress>N</a:ThisAddress>
+                      </a:Claim>
+                    </a:Claims>
+                  </a:House>
+                  <a:Buildings>
+                    <a:CoverType>S</a:CoverType>
+                    <a:YearsHeld>3</a:YearsHeld>
+                    <a:RebuildCost>100000</a:RebuildCost>
+                    <a:Subsidence>N</a:Subsidence>
+                    <a:CrackedWalls>Y</a:CrackedWalls>
+                    <a:Underpinning>N</a:Underpinning>
+                    <a:DamageOngoing>N</a:DamageOngoing>
+                    <a:BuildExcess>100</a:BuildExcess>
+                  </a:Buildings>
+                  <a:Contents>
+                    <a:CoverType>N</a:CoverType>
+                    <a:YearsHeld>3</a:YearsHeld>
+                    <a:ContentsCoverAmt>99000</a:ContentsCoverAmt>
+                    <a:HighRiskCoverAmt>49500</a:HighRiskCoverAmt>
+                    <a:SingleItemCoverAmt>10000</a:SingleItemCoverAmt>
+                    <a:Locks>
+                      <a:MainDoor>04</a:MainDoor>
+                      <a:SlidingDoor>03</a:SlidingDoor>
+                      <a:ExternalDoor>04</a:ExternalDoor>
+                      <a:WindowLocks>Y</a:WindowLocks>
+                    </a:Locks>
+                    <a:NeighbourhoodWatch>Y</a:NeighbourhoodWatch>
+                    <a:Occupied9to5>Y</a:Occupied9to5>
+                    <a:SafeFitted>Y</a:SafeFitted>
+                    <a:BurglarAlarm>
+                      <a:FittedandUsed>N</a:FittedandUsed>
+                      <a:MaintContract></a:MaintContract>
+                      <a:Approved></a:Approved>
+                    </a:BurglarAlarm>
+                    <a:UnspecifiedItemCoverAmt>0</a:UnspecifiedItemCoverAmt>
+                    <a:ContentExcess>100</a:ContentExcess>
+                  </a:Contents>
+                  <a:SpecifiedItems>
+                    <a:SpecifiedItem>
+                      <a:Item>M03</a:Item>
+                      <a:Description>HTC Diamond Encrusted</a:Description>
+                      <a:Value>1800</a:Value>
+                    </a:SpecifiedItem>
+                  </a:SpecifiedItems>
+                  <a:KeyCover>N</a:KeyCover>
+                  <a:LegalProtection>N</a:LegalProtection>
+                  <a:PaymentProtection>N</a:PaymentProtection>
+                  <a:HomeAssistance>N</a:HomeAssistance>
+                </a:HomeRisks>
+              </a:Home>
+            </a:Homes>
+          </a:Products>
+        </a:Lead>
+      </a:QuoteRequest>
+    </Household>
+  </soap:Body>
+</soap:Envelope>

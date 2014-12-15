@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:tem="http://WebServices.ssp-uk.com/HouseholdAggregator/">
+  <soap:Header>
+    <ssp:Security>
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soap:Header>
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:quote CoverStart="2014-12-08" CoverStartTime="00:00:00" IsMultiProposer="false" CoverType="ContentsAndBuildings" PaymentFrequency="U" PaymentFrequencyDescription="Unknown">
+        <SingleQuoteRequest QuoteMultipleBroker="true" BrokerSCIDs="C00057-001,C00057-002" />
+        <Proposer ProposerType="MainProposer" RelationshipToProposer="P" DateOfBirth="1978-04-17" Sex="Female" MaritalStatus="CommonLaw" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" EmailAddress="michael.hudson@emailreaction.org" Title="Mrs" FirstName="Sarah" LastName="Niteen" DayTimePhone="01778852852">
+          <Occupation IsFullTime="true" EmploymentStatus="Employed" OccupationCode="374" BusinessCode="797" />
+          <CorrespondenceAddress HouseName="" AddressLine1="13 Hardman Street" AddressLine2="Liverpool" AddressLine3="" AddressLine4="Lancashire" Postcode="L1 9AS" />
+        </Proposer>
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2012-01-01" ClaimType="04" CoverType="ContentsAndBuildings" />
+        <Premises YearBuilt="1996" PremisesType="26" NumberOfBedrooms="4" NumberOfBathrooms="1" TotalNumberOfRooms="12" IsOccupiedNight="true" OccupancyStatus="HolidayHome" OwnerShipType="03" IsSoleOccupancy="true" ListedBuildingType="3" IsUsedForBusiness="false" IsClericalWorkOnly="false" SelfContainedAndLockable="true" MaxDaysUnoccupied="30" HasSmokeDetector="true" SecurityDeviceDiscountRequired="false" IsFurnished="true" OccupantsOver18="0" OccupantsUnder18="0" HasExteriorLighting="false" IsSecurityActivated="false" ConstructionWall="18" IsFreeFromFlooding="true" IsNearRiverBank="false" IsGoodStateOfRepair="true" IsSOMaintained="false" IsTreesVicinity="false" HasExtension="false" IsOccupiedDay="true" HasStandardAlarm="false" AlarmProfMaintained="" HasApprovedAlarm="" MemberOfNeighbourHoodWatch="true" HasSafeInstalled="true" HasApprovedLocks="true" MainDoorLockType="240" HasPatioDoors="false" HasOtherDoors="false" AccessibleWindowLocks="KeyOperatedLocks" IsFreeFromSubsidence="true" IsFreeFromUnderpinning="true">
+          <Address HouseName="" AddressLine1="13 Hardman Street" AddressLine2="Liverpool" AddressLine3="" AddressLine4="Lancashire" Postcode="L1 9AS" />
+        </Premises>
+        <CoverRequired>
+          <Buildings RebuildingCost="100000" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullValue="true" />
+          <Contents ValuablesSumInsured="4000" ContentsCoverType="NewForOld" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullReplacementValue="true" ValueMostExpensiveItem="4000" AllRisksRequired="false" PersonalEffectsSumInsured="0" TotalSumInsured="40000">
+            <SpecifiedItems>
+              <SpecifiedItem ItemType="G04" Description="Shooter" Value="3100" />
+              <SpecifiedItem ItemType="C19" Description="Old coins" Value="2500" />
+            </SpecifiedItems>
+          </Contents>
+        </CoverRequired>
+      </tem:quote>
+      <tem:sourceOfBusiness>CompareTheMarket</tem:sourceOfBusiness>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

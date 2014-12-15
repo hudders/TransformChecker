@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tem="http://tempuri.org/" xmlns:web="http://www.webmoney.co.uk/xsd/Hp2Xml.xsd">
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:userName>Compare the Market</tem:userName>
+      <tem:passWord>1254CTM2014</tem:passWord>
+      <tem:quotationDataXml>&lt;web:QuestionData xmlns:web="http://www.webmoney.co.uk/xsd/Hp2Xml.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;web:TitleID&gt;004&lt;/web:TitleID&gt;
+  &lt;web:FirstName&gt;Abigail&lt;/web:FirstName&gt;
+  &lt;web:LastName&gt;Twenty-Seven&lt;/web:LastName&gt;
+  &lt;web:DateOfBirth&gt;1986-04-17&lt;/web:DateOfBirth&gt;
+  &lt;web:Sex&gt;F&lt;/web:Sex&gt;
+  &lt;web:MaritalStatusID originalvalueid="Married"&gt;2&lt;/web:MaritalStatusID&gt;
+  &lt;web:OccupationID originalvalueid="Houseperson"&gt;427&lt;/web:OccupationID&gt;
+  &lt;web:BusinessID originalvalueid="Houseperson"&gt;186&lt;/web:BusinessID&gt;
+  &lt;web:Email&gt;michael.hudson@emailreaction.org&lt;/web:Email&gt;
+  &lt;web:DaytimeTelephoneNumber&gt;01778 852852&lt;/web:DaytimeTelephoneNumber&gt;
+  &lt;web:HouseNumber&gt;2&lt;/web:HouseNumber&gt;
+  &lt;web:Street1&gt;Temple Place&lt;/web:Street1&gt;
+  &lt;web:Street2 /&gt;
+  &lt;web:TownCity&gt;Huntingdon&lt;/web:TownCity&gt;
+  &lt;web:County&gt;Cambridgeshire&lt;/web:County&gt;
+  &lt;web:Postcode&gt;PE29 3RT&lt;/web:Postcode&gt;
+  &lt;web:IsSameAsRiskAddress&gt;1&lt;/web:IsSameAsRiskAddress&gt;
+  &lt;web:PropertyHouseNumber&gt;2&lt;/web:PropertyHouseNumber&gt;
+  &lt;web:PropertyStreet1&gt;Temple Place&lt;/web:PropertyStreet1&gt;
+  &lt;web:PropertyStreet2 /&gt;
+  &lt;web:PropertyTownCity&gt;Huntingdon&lt;/web:PropertyTownCity&gt;
+  &lt;web:PropertyCounty&gt;Cambridgeshire&lt;/web:PropertyCounty&gt;
+  &lt;web:PropertyPostcode&gt;PE29 3RT&lt;/web:PropertyPostcode&gt;
+  &lt;web:IsJointApplicant&gt;0&lt;/web:IsJointApplicant&gt;
+  &lt;web:SoleOccupancy originalvalueid="All family members"&gt;1&lt;/web:SoleOccupancy&gt;
+  &lt;web:HaveConvictions&gt;0&lt;/web:HaveConvictions&gt;
+  &lt;web:BankruptOrCCJOrIVA&gt;0&lt;/web:BankruptOrCCJOrIVA&gt;
+  &lt;web:RefusedCancelled&gt;0&lt;/web:RefusedCancelled&gt;
+  &lt;web:PreviouslyBoughtHomeInsurance&gt;1&lt;/web:PreviouslyBoughtHomeInsurance&gt;
+  &lt;web:StartDate&gt;2014-10-30&lt;/web:StartDate&gt;
+  &lt;web:CoverTypeID originalvalueid="Buildings &amp;amp; Contents Cover"&gt;1&lt;/web:CoverTypeID&gt;
+  &lt;web:NumberOfYearsInsuranceHeld originalvalueid="5 years or more"&gt;5&lt;/web:NumberOfYearsInsuranceHeld&gt;
+  &lt;web:PreviousClaims&gt;0&lt;/web:PreviousClaims&gt;
+  &lt;web:PropertyTypeID originalvalueid="Detached Bungalow"&gt;1&lt;/web:PropertyTypeID&gt;
+  &lt;web:YearBuilt&gt;2002&lt;/web:YearBuilt&gt;
+  &lt;web:Bedrooms originalvalueid="Four"&gt;4&lt;/web:Bedrooms&gt;
+  &lt;web:WallConstructionID originalvalueid="Brick"&gt;02&lt;/web:WallConstructionID&gt;
+  &lt;web:RoofConstructionID originalvalueid="Tile"&gt;15&lt;/web:RoofConstructionID&gt;
+  &lt;web:Roof33PercentFlat&gt;0&lt;/web:Roof33PercentFlat&gt;
+  &lt;web:RoofThatched&gt;0&lt;/web:RoofThatched&gt;
+  &lt;web:PropertyListed&gt;0&lt;/web:PropertyListed&gt;
+  &lt;web:SignsOfSubsidence&gt;0&lt;/web:SignsOfSubsidence&gt;
+  &lt;web:IssueRectified&gt;1&lt;/web:IssueRectified&gt;
+  &lt;web:underpinned&gt;0&lt;/web:underpinned&gt;
+  &lt;web:GoodStateOfRepair&gt;1&lt;/web:GoodStateOfRepair&gt;
+  &lt;web:OwnershipTypeID originalvalueid="Renting - Council – Furnished"&gt;RLA01&lt;/web:OwnershipTypeID&gt;
+  &lt;web:OccupiedWhenID originalvalueid="Occupied Day and Night"&gt;OCC03&lt;/web:OccupiedWhenID&gt;
+  &lt;web:ConsecutiveDaysUnoccupiedID originalvalueid="Up to 45"&gt;30&lt;/web:ConsecutiveDaysUnoccupiedID&gt;
+  &lt;web:DomesticUseOnly originalvalueid="No business or professional use"&gt;1&lt;/web:DomesticUseOnly&gt;
+  &lt;web:PropertyUseType&gt;OWN01&lt;/web:PropertyUseType&gt;
+  &lt;web:MainLocksID originalvalueid="UPVC or aluminium door with multi-point locking system"&gt;3&lt;/web:MainLocksID&gt;
+  &lt;web:PatioLocksID originalvalueid="UPVC or aluminium door with multi-point locking system"&gt;3&lt;/web:PatioLocksID&gt;
+  &lt;web:OtherLocksID originalvalueid="UPVC or aluminium door with multi-point locking system"&gt;3&lt;/web:OtherLocksID&gt;
+  &lt;web:KeyOperatedWindows&gt;1&lt;/web:KeyOperatedWindows&gt;
+  &lt;web:BurglarAlarm&gt;0&lt;/web:BurglarAlarm&gt;
+  &lt;web:NACOSSApproved&gt;0&lt;/web:NACOSSApproved&gt;
+  &lt;web:Safe&gt;1&lt;/web:Safe&gt;
+  &lt;web:SmokeAlarm&gt;1&lt;/web:SmokeAlarm&gt;
+  &lt;web:Within200mWater&gt;0&lt;/web:Within200mWater&gt;
+  &lt;web:BuildingsSumInsured&gt;100000&lt;/web:BuildingsSumInsured&gt;
+  &lt;web:BuildingsAccidentalDamage&gt;0&lt;/web:BuildingsAccidentalDamage&gt;
+  &lt;web:BuildingsVolExcess originalvalueid="100"&gt;100&lt;/web:BuildingsVolExcess&gt;
+  &lt;web:ContentsSumInsured&gt;40000&lt;/web:ContentsSumInsured&gt;
+  &lt;web:ContentsAccidentalDamage&gt;0&lt;/web:ContentsAccidentalDamage&gt;
+  &lt;web:ContentsVolExcess originalvalueid="100"&gt;100&lt;/web:ContentsVolExcess&gt;
+&lt;/web:QuestionData&gt;</tem:quotationDataXml>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

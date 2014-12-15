@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <tns:aggregateQuoteRequest xmlns:tns="http://schemas.cdlis.co.uk/aggregator/api/v3-8">
+      <userid>CTM</userid>
+      <password>tys82HS63BjS</password>
+      <broker results="1">hastings-dir</broker>
+      <broker results="1">hastings-ess</broker>
+      <broker results="1">igi3</broker>
+      <broker results="1">onequote</broker>
+      <broker results="1">elite</broker>
+      <broker results="1">virgin</broker>
+      <broker results="1">esurebroker</broker>
+      <broker results="1">sheilasbroker</broker>
+      <broker results="1">hastings-prem</broker>
+      <broker results="1">hastings-peoples</broker>
+      <broker results="1">selecter-oyd</broker>
+      <broker results="1">sagaselect</broker>
+      <broker results="1">smartmiles</broker>
+      <broker results="1">castlecover-ageas50</broker>
+      <broker results="1">surething</broker>
+      <broker results="1">igo4asp-santander</broker>
+      <broker results="1">igo4asp-renault</broker>
+      <broker results="1">insurewiser</broker>
+      <broker results="1">coverbox</broker>
+      <broker results="1">drivestyle</broker>
+      <broker results="1">sheilaswheelsmd</broker>
+      <broker results="1">SureThing-Max</broker>
+      <policyType>PC</policyType>
+      <returnNoQuotes>Y</returnNoQuotes>
+      <store>true</store>
+      <risk xsi:type="tns:privateCarRiskType">
+        <policy>
+          <inceptionDate>2014-10-24</inceptionDate>
+          <frequency>A</frequency>
+          <protectedBonus>N</protectedBonus>
+          <cover>C</cover>
+          <volXS>800</volXS>
+          <restrict>ND</restrict>
+          <totalMileage>4999</totalMileage>
+          <classOfUse>SDPexC</classOfUse>
+          <drivingExperience>
+            <type>CS</type>
+            <yearsClaimFree>2</yearsClaimFree>
+          </drivingExperience>
+        </policy>
+        <proposer driverId="1">
+          <name>
+            <title>Ms</title>
+            <forenames>Charlotte</forenames>
+            <surname>Three</surname>
+          </name>
+          <gender>F</gender>
+          <dateOfBirth>1979-03-03</dateOfBirth>
+          <maritalStatus>S</maritalStatus>
+          <residentSince>1979-03-03</residentSince>
+          <insuranceRefused>N</insuranceRefused>
+          <nonRtaConviction>N</nonRtaConviction>
+          <fullTimeOccupation>
+            <type>E</type>
+            <occCode>066</occCode>
+            <empCode>054</empCode>
+          </fullTimeOccupation>
+          <claim claimId="1">
+            <code>M102</code>
+            <date>2010-01-01</date>
+            <cost>0.00</cost>
+            <thirdPartyCost>0</thirdPartyCost>
+            <fault>Y</fault>
+            <personalInjury>N</personalInjury>
+            <thisPolicy>N</thisPolicy>
+          </claim>
+          <licence>
+            <type>E</type>
+            <date>2012-03-01</date>
+          </licence>
+          <vehicleUse>M</vehicleUse>
+          <accessToOtherVehicles>NDOC</accessToOtherVehicles>
+          <motoringOrg>NONE</motoringOrg>
+          <smoker>Y</smoker>
+          <address>
+            <addressLine1>174 Partington Lane</addressLine1>
+            <addressLine2>Swinton</addressLine2>
+            <addressLine3>Manchester</addressLine3>
+            <addressLine4></addressLine4>
+            <postCode>M27 0WN</postCode>
+            <abodeType>H</abodeType>
+          </address>
+          <daytimeTelephone>01733345678</daytimeTelephone>
+          <eveningTelephone>01733345678</eveningTelephone>
+          <email>oliver.neal@emailreaction.org</email>
+        </proposer>
+        <driver driverId="2">
+          <name>
+            <title>Mr</title>
+            <forenames>Charles</forenames>
+            <surname>Three</surname>
+          </name>
+          <gender>M</gender>
+          <dateOfBirth>1978-08-06</dateOfBirth>
+          <maritalStatus>S</maritalStatus>
+          <residentSince>1978-08-06</residentSince>
+          <insuranceRefused>N</insuranceRefused>
+          <nonRtaConviction>N</nonRtaConviction>
+          <fullTimeOccupation>
+            <type>U</type>
+            <occCode>U03</occCode>
+            <empCode>186</empCode>
+          </fullTimeOccupation>
+          <claim claimId="2">
+            <code>T002</code>
+            <date>2011-10-01</date>
+            <cost>500.00</cost>
+            <thirdPartyCost>0</thirdPartyCost>
+            <fault>Y</fault>
+            <personalInjury>N</personalInjury>
+            <thisPolicy>N</thisPolicy>
+          </claim>
+          <licence>
+            <type>F</type>
+            <date>2013-03-01</date>
+          </licence>
+          <vehicleUse>F</vehicleUse>
+          <accessToOtherVehicles>CCSU</accessToOtherVehicles>
+          <relationshipToProposer>CS</relationshipToProposer>
+        </driver>
+        <vehicle>
+          <regNumber>AK05VNH</regNumber>
+          <abiCode>31520102</abiCode>
+          <yearOfManufacture>2005</yearOfManufacture>
+          <whereKept>D</whereKept>
+          <keeper>N</keeper>
+          <owner>Other</owner>
+          <purchased>2009-08-01</purchased>
+          <value>5000</value>
+          <paid>5000</paid>
+          <vehicleOthers>2</vehicleOthers>
+          <LHD>N</LHD>
+          <ABS>N</ABS>
+          <seats>3</seats>
+          <modifications>
+            <modified>Y</modified>
+            <otherModifications>BB</otherModifications>
+            <bodystylingModifications>FA</bodystylingModifications>
+            <bodystylingModifications>FB</bodystylingModifications>
+          </modifications>
+          <immob>FACT</immob>
+          <alarm>FACT</alarm>
+          <tracker>NONE</tracker>
+        </vehicle>
+        <duqs>
+          <question number="11">N</question>
+          <question number="15">Y</question>
+          <question number="190">2012</question>
+          <question number="266">A</question>
+          <question number="40">OPUB</question>
+          <question number="579">CS</question>
+          <question number="580">2</question>
+          <question number="578">Y</question>
+          <question number="282">F</question>
+          <question number="527">N</question>
+          <question number="675">N</question>
+          <question number="544">Y</question>
+        </duqs>
+      </risk>
+      <brokerOptionalExtensions>
+        <brokerOptionalExtension>
+          <type>Premier Mandatory Bundle</type>
+        </brokerOptionalExtension>
+      </brokerOptionalExtensions>
+    </tns:aggregateQuoteRequest>
+  </soap:Body>
+</soap:Envelope>

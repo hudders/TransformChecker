@@ -5,10 +5,10 @@ open System.Text.RegularExpressions
 let nodeList = [3..200]
 
 let dloadFolder = @"C:\Users\mhudson\Downloads\"
-let savedFolder = @"C:\Dev\panel.testplans\Car\"
+let savedFolder = @"C:\Dev\TransformChecker\TestPlans\Car\"
 //let crrntFolder = @"C:\x_FSharpStuff\FSharp Test Projects\TransformChecker\Car\"
 let crrntFolder = @"C:\Dev\TransformChecker\Car\"
-let xlsRtFolder = @"C:\Dev\panel.testplans\"
+let xlsRtFolder = @"C:\Dev\TransformChecker\TestPlans\"
 let csvRtFolder = @"C:\Dev\motor_data_driven\motor.canopy.data_driven\"
 
 let risk_csv = csvRtFolder + "risks.csv"

@@ -1,0 +1,688 @@
+<QuoteRequest xmlns="http://comparethemarket.co.uk/RiskServices/2009/V1/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <Sender>
+      <ProductClass>HH</ProductClass>
+      <SourceCode>CM02</SourceCode>
+      <PartnerRef>a131ee4d-ada6-4a7d-8f6c-6df29228a8bf</PartnerRef>
+      <AffinityCode>CTM</AffinityCode>
+    </Sender>
+  </Header>
+  <Lead>
+    <RiskMaster>
+      <QuotePlatformID>2</QuotePlatformID>
+      <RetrievedRiskHeaderID>3</RetrievedRiskHeaderID>
+      <ClientReference>ClientReference</ClientReference>
+      <ProposerID>1</ProposerID>
+      <PostalAddressID>1</PostalAddressID>
+      <MarketingOptOut>
+        <EmailOptOut>
+          <Value>true</Value>
+        </EmailOptOut>
+        <PostOptOut>
+          <Value>true</Value>
+        </PostOptOut>
+        <PhoneOptOut>
+          <Value>false</Value>
+        </PhoneOptOut>
+        <SMSOptOut>
+          <Value>true</Value>
+        </SMSOptOut>
+      </MarketingOptOut>
+      <Persons>
+        <Person>
+          <ID>1</ID>
+          <Title>
+            <Value>MS</Value>
+            <Description>Ms</Description>
+            <RecID>3</RecID>
+          </Title>
+          <FirstName>
+            <Value>Deborah</Value>
+          </FirstName>
+          <Surname>
+            <Value>Four</Value>
+          </Surname>
+          <DOB>
+            <Value>1963-04-17T00:00:00</Value>
+          </DOB>
+          <Gender>
+            <Value>F</Value>
+            <Description i:nil="true"></Description>
+            <RecID>0</RecID>
+          </Gender>
+          <ContactDetails>
+            <PhoneNumbers>
+              <Phone>
+                <Type>1</Type>
+                <Code>
+                  <Value>01778</Value>
+                </Code>
+                <Number>
+                  <Value>852852</Value>
+                </Number>
+              </Phone>
+            </PhoneNumbers>
+            <EmailAdr>
+              <Value>michael.hudson@emailreaction.org</Value>
+            </EmailAdr>
+            <NoEmail>
+              <Value>false</Value>
+            </NoEmail>
+          </ContactDetails>
+          <MaritalStatus>
+            <Value>D</Value>
+            <Description>Divorced/Dissolved</Description>
+            <RecID>0</RecID>
+          </MaritalStatus>
+          <EmploymentStatus>
+            <Value>E</Value>
+            <Description>employed</Description>
+            <RecID>0</RecID>
+          </EmploymentStatus>
+          <PrimaryOccupation>
+            <OccupationCode>
+              <Value>E11</Value>
+              <Description>Broadcasting Engineer</Description>
+              <RecID>0</RecID>
+            </OccupationCode>
+            <BusinessCode>
+              <Value>166</Value>
+              <Description>Television</Description>
+              <RecID>0</RecID>
+            </BusinessCode>
+          </PrimaryOccupation>
+          <Resident>
+            <ResidentSince>
+              <Value i:nil="true"></Value>
+            </ResidentSince>
+          </Resident>
+          <AddressAsProposer>
+            <Value>true</Value>
+          </AddressAsProposer>
+          <HomeOwner>
+            <Value>false</Value>
+          </HomeOwner>
+          <MotorInsuranceCancelled>
+            <Value>false</Value>
+          </MotorInsuranceCancelled>
+          <HaveNonMotorConviction>
+            <Value>false</Value>
+          </HaveNonMotorConviction>
+          <Ghost>false</Ghost>
+          <LargestCCBike i:nil="true"></LargestCCBike>
+        </Person>
+        <Person>
+          <ID>2</ID>
+          <Title>
+            <Value>MS</Value>
+            <Description>Ms</Description>
+            <RecID>3</RecID>
+          </Title>
+          <FirstName>
+            <Value>Joint</Value>
+          </FirstName>
+          <Surname>
+            <Value>Policyholder</Value>
+          </Surname>
+          <DOB>
+            <Value>1960-01-01T00:00:00</Value>
+          </DOB>
+          <Gender>
+            <Value>F</Value>
+            <Description i:nil="true"></Description>
+            <RecID>0</RecID>
+          </Gender>
+          <ContactDetails>
+            <PhoneNumbers></PhoneNumbers>
+            <EmailAdr>
+              <Value i:nil="true"></Value>
+            </EmailAdr>
+            <NoEmail>
+              <Value>false</Value>
+            </NoEmail>
+          </ContactDetails>
+          <MaritalStatus>
+            <Value>D</Value>
+            <Description>Divorced/Dissolved</Description>
+            <RecID>0</RecID>
+          </MaritalStatus>
+          <EmploymentStatus>
+            <Value>S</Value>
+            <Description>self-employed</Description>
+            <RecID>0</RecID>
+          </EmploymentStatus>
+          <PrimaryOccupation>
+            <OccupationCode>
+              <Value>C55</Value>
+              <Description>Computer Consultant</Description>
+              <RecID>0</RecID>
+            </OccupationCode>
+            <BusinessCode>
+              <Value>818</Value>
+              <Description>Computer Aided Design</Description>
+              <RecID>0</RecID>
+            </BusinessCode>
+          </PrimaryOccupation>
+          <Resident>
+            <ResidentSince>
+              <Value i:nil="true"></Value>
+            </ResidentSince>
+          </Resident>
+          <RelationshipToProposer>
+            <Value>B</Value>
+            <Description>Employer</Description>
+            <RecID>0</RecID>
+          </RelationshipToProposer>
+          <AddressAsProposer>
+            <Value>false</Value>
+          </AddressAsProposer>
+          <HomeOwner>
+            <Value>false</Value>
+          </HomeOwner>
+          <MotorInsuranceCancelled>
+            <Value>false</Value>
+          </MotorInsuranceCancelled>
+          <HaveNonMotorConviction>
+            <Value>false</Value>
+          </HaveNonMotorConviction>
+          <Ghost>false</Ghost>
+          <LargestCCBike i:nil="true"></LargestCCBike>
+        </Person>
+      </Persons>
+      <Addresses>
+        <Address>
+          <ID>1</ID>
+          <AddressLine1>
+            <Value>Byways</Value>
+          </AddressLine1>
+          <AddressLine2>
+            <Value>Rippons Drove</Value>
+          </AddressLine2>
+          <AddressLine3>
+            <Value>Northborough</Value>
+          </AddressLine3>
+          <AddressLine4>
+            <Value>Peterborough</Value>
+          </AddressLine4>
+          <AddressLine5>
+            <Value></Value>
+          </AddressLine5>
+          <PostCode>
+            <Value>PE6 9AG</Value>
+          </PostCode>
+          <DPSCode>
+            <Value></Value>
+          </DPSCode>
+          <LocationIDFK>
+            <Value></Value>
+          </LocationIDFK>
+          <LocationDetails>
+            <LocationID>0</LocationID>
+            <Name i:nil="true"></Name>
+            <OrganisationName>
+              <Value></Value>
+            </OrganisationName>
+            <Department>
+              <Value></Value>
+            </Department>
+            <SubBuilding>
+              <Value></Value>
+            </SubBuilding>
+            <Building>
+              <Value>Byways</Value>
+            </Building>
+            <Number>
+              <Value></Value>
+            </Number>
+            <DependentThoroughfare>
+              <Value></Value>
+            </DependentThoroughfare>
+            <Thoroughfare>
+              <Value>Rippons Drove</Value>
+            </Thoroughfare>
+            <DoubleDependentLocality>
+              <Value></Value>
+            </DoubleDependentLocality>
+            <DependentLocality>
+              <Value>Northborough</Value>
+            </DependentLocality>
+            <Town>
+              <Value>Peterborough</Value>
+            </Town>
+            <PostalCounty>
+              <Value>Cambridgeshire</Value>
+            </PostalCounty>
+            <AbbreviatedPostalCounty i:nil="true"></AbbreviatedPostalCounty>
+            <OptionalCounty i:nil="true"></OptionalCounty>
+            <AbbreviatedOptionalCounty i:nil="true"></AbbreviatedOptionalCounty>
+            <TraditionalCounty i:nil="true"></TraditionalCounty>
+            <AdministrativeCounty i:nil="true"></AdministrativeCounty>
+            <Postcode>
+              <Value>PE6 9AG</Value>
+            </Postcode>
+            <DPS i:nil="true"></DPS>
+            <PostcodeFrom i:nil="true"></PostcodeFrom>
+            <PostcodeType i:nil="true"></PostcodeType>
+            <MailsortCode i:nil="true"></MailsortCode>
+            <AddressType i:nil="true"></AddressType>
+            <AddressTypeDescription i:nil="true"></AddressTypeDescription>
+            <Country i:nil="true"></Country>
+            <CountryISO i:nil="true"></CountryISO>
+            <GridE i:nil="true"></GridE>
+            <GridN i:nil="true"></GridN>
+            <Latitude i:nil="true"></Latitude>
+            <Longitude i:nil="true"></Longitude>
+          </LocationDetails>
+        </Address>
+        <Address>
+          <ID>2</ID>
+          <AddressLine1>
+            <Value>Anchor Cottage</Value>
+          </AddressLine1>
+          <AddressLine2>
+            <Value>Goose Green</Value>
+          </AddressLine2>
+          <AddressLine3>
+            <Value>Gomshall</Value>
+          </AddressLine3>
+          <AddressLine4>
+            <Value>Guildford</Value>
+          </AddressLine4>
+          <AddressLine5>
+            <Value></Value>
+          </AddressLine5>
+          <PostCode>
+            <Value>GU5 9LL</Value>
+          </PostCode>
+          <DPSCode>
+            <Value></Value>
+          </DPSCode>
+          <LocationIDFK>
+            <Value></Value>
+          </LocationIDFK>
+          <LocationDetails>
+            <LocationID>0</LocationID>
+            <Name i:nil="true"></Name>
+            <OrganisationName>
+              <Value></Value>
+            </OrganisationName>
+            <Department>
+              <Value></Value>
+            </Department>
+            <SubBuilding>
+              <Value></Value>
+            </SubBuilding>
+            <Building>
+              <Value>Anchor Cottage</Value>
+            </Building>
+            <Number>
+              <Value></Value>
+            </Number>
+            <DependentThoroughfare>
+              <Value></Value>
+            </DependentThoroughfare>
+            <Thoroughfare>
+              <Value>Goose Green</Value>
+            </Thoroughfare>
+            <DoubleDependentLocality>
+              <Value></Value>
+            </DoubleDependentLocality>
+            <DependentLocality>
+              <Value>Gomshall</Value>
+            </DependentLocality>
+            <Town>
+              <Value>Guildford</Value>
+            </Town>
+            <PostalCounty>
+              <Value>Surrey</Value>
+            </PostalCounty>
+            <AbbreviatedPostalCounty i:nil="true"></AbbreviatedPostalCounty>
+            <OptionalCounty i:nil="true"></OptionalCounty>
+            <AbbreviatedOptionalCounty i:nil="true"></AbbreviatedOptionalCounty>
+            <TraditionalCounty i:nil="true"></TraditionalCounty>
+            <AdministrativeCounty i:nil="true"></AdministrativeCounty>
+            <Postcode>
+              <Value>GU5 9LL</Value>
+            </Postcode>
+            <DPS i:nil="true"></DPS>
+            <PostcodeFrom i:nil="true"></PostcodeFrom>
+            <PostcodeType i:nil="true"></PostcodeType>
+            <MailsortCode i:nil="true"></MailsortCode>
+            <AddressType i:nil="true"></AddressType>
+            <AddressTypeDescription i:nil="true"></AddressTypeDescription>
+            <Country i:nil="true"></Country>
+            <CountryISO i:nil="true"></CountryISO>
+            <GridE i:nil="true"></GridE>
+            <GridN i:nil="true"></GridN>
+            <Latitude i:nil="true"></Latitude>
+            <Longitude i:nil="true"></Longitude>
+          </LocationDetails>
+        </Address>
+      </Addresses>
+      <Products>
+        <PropertyRisk>
+          <Version>2.1</Version>
+          <ID>0</ID>
+          <PropertyDetail>
+            <ID>0</ID>
+            <AddressID>
+              <Value>2</Value>
+            </AddressID>
+            <OwnerStatus>
+              <Value>03</Value>
+              <Description>Mortgaged/Owned - Not rented out</Description>
+              <RecID>0</RecID>
+            </OwnerStatus>
+            <Occupancy>
+              <Value>HH</Value>
+              <Description>holiday home</Description>
+              <RecID>0</RecID>
+            </Occupancy>
+            <Residents>
+              <Value>P</Value>
+              <Description>Shared by working people</Description>
+              <RecID>0</RecID>
+            </Residents>
+            <NumberOfNonFamilyMembers>
+              <Value>20</Value>
+            </NumberOfNonFamilyMembers>
+            <TypeOfProperty>
+              <Value>02</Value>
+              <Description>House - detached</Description>
+              <RecID>0</RecID>
+            </TypeOfProperty>
+            <NumberOfBedrooms>
+              <Value>3</Value>
+              <Description>Three</Description>
+              <RecID>0</RecID>
+            </NumberOfBedrooms>
+            <NumberOfRooms>
+              <Value>9</Value>
+              <Description>Nine</Description>
+              <RecID>0</RecID>
+            </NumberOfRooms>
+            <ListBuilding>
+              <Value>3</Value>
+              <Description>Not listed</Description>
+              <RecID>0</RecID>
+            </ListBuilding>
+            <TypeOfUse>
+              <Value>O</Value>
+              <Description>Other business use</Description>
+              <RecID>0</RecID>
+            </TypeOfUse>
+            <YearBuilt>
+              <Value>1983</Value>
+            </YearBuilt>
+            <TypeOfWall>
+              <Value>03</Value>
+              <Description>Timber frame with brick walls</Description>
+              <RecID>0</RecID>
+            </TypeOfWall>
+            <RoofDetails>
+              <RoofConstruction>
+                <Value>04</Value>
+                <Description>Felt on timber</Description>
+                <RecID>0</RecID>
+              </RoofConstruction>
+              <MoreThanHalfRoofFlat>
+                <Value>false</Value>
+              </MoreThanHalfRoofFlat>
+              <YearRecovered>
+                <Value i:nil="true"></Value>
+              </YearRecovered>
+              <Recovered10Years>
+                <Value i:nil="true"></Value>
+              </Recovered10Years>
+            </RoofDetails>
+            <Water400m>
+              <Value>false</Value>
+            </Water400m>
+            <OperationalSmokeDetectors>
+              <Value>true</Value>
+            </OperationalSmokeDetectors>
+            <GoodStateOfRepair>
+              <Value>true</Value>
+            </GoodStateOfRepair>
+            <Unoccupied45DaysPlus>
+              <Value>false</Value>
+            </Unoccupied45DaysPlus>
+            <DaysConsecutivelyUnoccupied>
+              <Value>0</Value>
+            </DaysConsecutivelyUnoccupied>
+            <AddressDiffReason>
+              <Value>05</Value>
+              <Description>Corresponding with a family member</Description>
+              <RecID>0</RecID>
+            </AddressDiffReason>
+          </PropertyDetail>
+          <PropertyRiskDetail>
+            <AnyClaims>
+              <Value>true</Value>
+            </AnyClaims>
+            <AnyConvictions>
+              <Value>false</Value>
+            </AnyConvictions>
+            <Bankruptcy>
+              <Value>false</Value>
+            </Bankruptcy>
+            <RefusedInsurance>
+              <Value>false</Value>
+            </RefusedInsurance>
+            <PropertyClaims>
+              <PropertyClaim>
+                <ID>1</ID>
+                <IncidentCause>
+                  <Value>05</Value>
+                  <Description>escape of water</Description>
+                  <RecID>0</RecID>
+                </IncidentCause>
+                <IncidentDate>
+                  <Value>2011-09-01T00:00:00</Value>
+                </IncidentDate>
+                <IncidentType>
+                  <Value>04</Value>
+                  <Description>Items covered under buildings cover</Description>
+                  <RecID>0</RecID>
+                </IncidentType>
+                <AnyDamage>
+                  <Value>true</Value>
+                </AnyDamage>
+                <IncidentValue>
+                  <Value>9999999</Value>
+                </IncidentValue>
+                <ThisAddress>
+                  <Value>false</Value>
+                </ThisAddress>
+              </PropertyClaim>
+            </PropertyClaims>
+            <LockDetails>
+              <MainDoor>
+                <Value>04</Value>
+                <Description>yale</Description>
+                <RecID>-1</RecID>
+              </MainDoor>
+              <SlidingDoor>
+                <Value>03</Value>
+                <Description>multi-point-locking-system</Description>
+                <RecID>-1</RecID>
+              </SlidingDoor>
+              <ExternalDoor>
+                <Value>04</Value>
+                <Description>2-key</Description>
+                <RecID>-1</RecID>
+              </ExternalDoor>
+              <WindowLocks>
+                <Value>true</Value>
+              </WindowLocks>
+            </LockDetails>
+            <NeighbourhoodWatch>
+              <Value>true</Value>
+            </NeighbourhoodWatch>
+            <Occupied9to5>
+              <Value>true</Value>
+            </Occupied9to5>
+            <SelfContained>
+              <Value>false</Value>
+            </SelfContained>
+            <SafeFitted>
+              <Value>true</Value>
+            </SafeFitted>
+            <BurglarAlarmDetails>
+              <FittedAndUsed>
+                <Value>false</Value>
+              </FittedAndUsed>
+              <MaintenanceContract>
+                <Value i:nil="true"></Value>
+              </MaintenanceContract>
+              <Approved>
+                <Value i:nil="true"></Value>
+              </Approved>
+            </BurglarAlarmDetails>
+          </PropertyRiskDetail>
+          <PropertyCover>
+            <CommencementDate>
+              <Value>2014-08-01T00:00:00</Value>
+            </CommencementDate>
+            <CoverType>
+              <Value>BC</Value>
+              <Description>Buildings and Contents Cover</Description>
+              <RecID>0</RecID>
+            </CoverType>
+            <JointPolicyHolder>
+              <Value>true</Value>
+            </JointPolicyHolder>
+            <JointPolicyHolderID>2</JointPolicyHolderID>
+            <Buildings>
+              <CoverType>
+                <Value>BS</Value>
+                <Description>Standard</Description>
+                <RecID>0</RecID>
+              </CoverType>
+              <YearsHeld>
+                <Value>3</Value>
+                <Description>3 years</Description>
+                <RecID>0</RecID>
+              </YearsHeld>
+              <RebuildCost>
+                <Value>100000</Value>
+              </RebuildCost>
+              <Subsidence>
+                <Value>false</Value>
+              </Subsidence>
+              <CrackedWalls>
+                <Value>true</Value>
+              </CrackedWalls>
+              <Underpinning>
+                <Value>false</Value>
+              </Underpinning>
+              <DamageOngoing>
+                <Value>false</Value>
+              </DamageOngoing>
+              <BuildExcess>
+                <Value>100</Value>
+              </BuildExcess>
+            </Buildings>
+            <ContentsCover>
+              <CoverType>
+                <Value>CS</Value>
+                <Description>Standard</Description>
+                <RecID>0</RecID>
+              </CoverType>
+              <YearHeld>
+                <Value>3</Value>
+                <Description>3 years</Description>
+                <RecID>0</RecID>
+              </YearHeld>
+              <ContentsCoverAmount>
+                <Value>95</Value>
+                <Description>99000</Description>
+                <RecID>0</RecID>
+              </ContentsCoverAmount>
+              <HighRiskAmount>
+                <Value>981</Value>
+                <Description>49500</Description>
+                <RecID>0</RecID>
+              </HighRiskAmount>
+              <SingleItemCover>
+                <Value>18</Value>
+                <Description>10000</Description>
+                <RecID>0</RecID>
+              </SingleItemCover>
+              <Excess>
+                <Value>100</Value>
+              </Excess>
+            </ContentsCover>
+            <HasSpecifiedItems>
+              <Value>true</Value>
+            </HasSpecifiedItems>
+            <SpecifiedItems>
+              <SpecifiedItem>
+                <ID>1</ID>
+                <Code>
+                  <Value>M03</Value>
+                  <Description>mobile phones</Description>
+                  <RecID>0</RecID>
+                </Code>
+                <ItemValue>
+                  <Value>1800</Value>
+                </ItemValue>
+                <Text>
+                  <Value>HTC Diamond Encrusted</Value>
+                </Text>
+              </SpecifiedItem>
+            </SpecifiedItems>
+            <HasBicycles>
+              <Value>false</Value>
+            </HasBicycles>
+            <Bicycles></Bicycles>
+            <KeyCover>
+              <Value>false</Value>
+            </KeyCover>
+            <HomeAssistance>
+              <Value>false</Value>
+            </HomeAssistance>
+            <PaymentProtection>
+              <Value>false</Value>
+            </PaymentProtection>
+            <LegalProtection>
+              <Value>false</Value>
+            </LegalProtection>
+          </PropertyCover>
+        </PropertyRisk>
+      </Products>
+      <ModifiedFlags>
+        <RiskHeader>false</RiskHeader>
+        <Persons>false</Persons>
+        <Addresses>false</Addresses>
+        <ContactDetails>false</ContactDetails>
+        <PrivateCar>false</PrivateCar>
+        <PrivateCarCover>false</PrivateCarCover>
+        <CommercialVehicle>false</CommercialVehicle>
+        <CommercialVehicleCover>false</CommercialVehicleCover>
+        <Claims>false</Claims>
+        <Convictions>false</Convictions>
+        <HomeCover>false</HomeCover>
+        <PropertyDetails>false</PropertyDetails>
+        <PropertyBuildingsCover>false</PropertyBuildingsCover>
+        <PropertyContentsCover>false</PropertyContentsCover>
+        <PropertyClaims>false</PropertyClaims>
+        <PropertyLocks>false</PropertyLocks>
+        <PropertyAdditionalDetails>false</PropertyAdditionalDetails>
+        <LifeCover>false</LifeCover>
+        <Bike>false</Bike>
+        <BikeCover>false</BikeCover>
+        <PetDetails>false</PetDetails>
+        <PetMoreDetails>false</PetMoreDetails>
+        <PetCover>false</PetCover>
+        <PetDogSpecific>false</PetDogSpecific>
+        <Vehicle>false</Vehicle>
+        <VehicleDetails>false</VehicleDetails>
+        <VehicleUsage>false</VehicleUsage>
+        <VehicleOwnership>false</VehicleOwnership>
+        <PolicyDetails>false</PolicyDetails>
+        <DrivingHistory>false</DrivingHistory>
+      </ModifiedFlags>
+    </RiskMaster>
+  </Lead>
+</QuoteRequest>

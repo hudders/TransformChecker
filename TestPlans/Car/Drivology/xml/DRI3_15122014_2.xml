@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:mot="http://WebServices.ssp-uk.com/MotorAggregator/" xmlns:pmq="http://ssp.web.services/MotorAggregator/schemas/PMQuoteData.xsd">
+  <soapenv:Header>
+    <ssp:Security xmlns="http://WebServices.ssp-uk.com/MotorAggregator/">
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <mot:GetQuote>
+      <mot:PMQuoteData>
+        <pmq:PMQuoteDataID>20646</pmq:PMQuoteDataID>
+        <pmq:Control>
+          <pmq:ProcessQuoteDetail>true</pmq:ProcessQuoteDetail>
+          <pmq:ProcessDocuments>true</pmq:ProcessDocuments>
+          <pmq:ProcessEndorsements>false</pmq:ProcessEndorsements>
+          <pmq:ProcessUseDetail>true</pmq:ProcessUseDetail>
+          <pmq:ProcessUWNotes>true</pmq:ProcessUWNotes>
+          <pmq:ProcessWarnings>true</pmq:ProcessWarnings>
+          <pmq:ProcessPremiumBreakdown>false</pmq:ProcessPremiumBreakdown>
+          <pmq:ProcessExcesses>true</pmq:ProcessExcesses>
+          <pmq:LOB>
+            <pmq:Description>PMC</pmq:Description>
+            <pmq:Abi>1</pmq:Abi>
+          </pmq:LOB>
+          <pmq:QuotePanel>
+            <pmq:Description>Broker Panel</pmq:Description>
+            <pmq:Abi>2</pmq:Abi>
+          </pmq:QuotePanel>
+          <pmq:Polaris>true</pmq:Polaris>
+          <pmq:SSP>true</pmq:SSP>
+          <pmq:SingleQuoteRequest>
+            <pmq:QuoteMultipleBroker>true</pmq:QuoteMultipleBroker>
+            <pmq:BrokerSCIDs>A09961</pmq:BrokerSCIDs>
+          </pmq:SingleQuoteRequest>
+          <pmq:CreditControlConsent>false</pmq:CreditControlConsent>
+          <pmq:EnrichmentReference>12345ABD</pmq:EnrichmentReference>
+          <pmq:TransactionType>NewBusiness</pmq:TransactionType>
+        </pmq:Control>
+        <pmq:Policy>
+          <pmq:CoverDate>2014-12-19</pmq:CoverDate>
+          <pmq:CoverType>
+            <pmq:Description>Comprehensive</pmq:Description>
+            <pmq:Abi>01</pmq:Abi>
+          </pmq:CoverType>
+          <pmq:DrivingRestriction>
+            <pmq:Description>Insured and Named Drivers</pmq:Description>
+            <pmq:Abi>7</pmq:Abi>
+          </pmq:DrivingRestriction>
+          <pmq:VehicleUsage>
+            <pmq:Description>Social, Domestic and Pleasure</pmq:Description>
+            <pmq:Abi>1</pmq:Abi>
+          </pmq:VehicleUsage>
+          <pmq:VoluntaryExcess>900</pmq:VoluntaryExcess>
+        </pmq:Policy>
+        <pmq:Proposer>
+          <pmq:Address>
+            <pmq:Address1>174 Partington Lane</pmq:Address1>
+            <pmq:Address2>Swinton</pmq:Address2>
+            <pmq:Town>Manchester</pmq:Town>
+            <pmq:County />
+            <pmq:PostCode>M27 0WN</pmq:PostCode>
+          </pmq:Address>
+          <pmq:HomeTelephone>01733345678</pmq:HomeTelephone>
+          <pmq:Email>transformerPC02@emailreaction.org</pmq:Email>
+          <pmq:PaymentFrequency>
+            <pmq:Description>Annually</pmq:Description>
+            <pmq:Abi>A</pmq:Abi>
+          </pmq:PaymentFrequency>
+          <pmq:PreviousInsurance>
+            <pmq:PreviousInsuranceEndDate>2014-12-19</pmq:PreviousInsuranceEndDate>
+            <pmq:PreviousInsurer>
+              <pmq:Description>UNKNOWN</pmq:Description>
+              <pmq:Abi>997</pmq:Abi>
+            </pmq:PreviousInsurer>
+          </pmq:PreviousInsurance>
+          <pmq:ProposerType>
+            <pmq:Description>Private</pmq:Description>
+            <pmq:Abi>P</pmq:Abi>
+          </pmq:ProposerType>
+          <pmq:NumberOfCarsInFamily>2</pmq:NumberOfCarsInFamily>
+        </pmq:Proposer>
+        <pmq:NCD>
+          <pmq:Protected>false</pmq:Protected>
+          <pmq:NCDType>
+            <pmq:Description>Private Motor</pmq:Description>
+            <pmq:Abi>11</pmq:Abi>
+          </pmq:NCDType>
+          <pmq:Years>0</pmq:Years>
+        </pmq:NCD>
+        <pmq:Drivers>
+          <pmq:Driver>
+            <pmq:AccessOtherCars>1</pmq:AccessOtherCars>
+            <pmq:Claims>
+              <pmq:Claim>
+                <pmq:CostOwn>0</pmq:CostOwn>
+                <pmq:DateMade>2012-05-01</pmq:DateMade>
+                <pmq:FaultType>
+                  <pmq:Description>Non Fault (Full Recovery Of Costs Made)</pmq:Description>
+                  <pmq:Abi>A5</pmq:Abi>
+                </pmq:FaultType>
+                <pmq:NCDLost>false</pmq:NCDLost>
+                <pmq:ThisPolicy>true</pmq:ThisPolicy>
+                <pmq:ClaimType>
+                  <pmq:Description>Accident</pmq:Description>
+                  <pmq:Abi>A</pmq:Abi>
+                </pmq:ClaimType>
+              </pmq:Claim>
+            </pmq:Claims>
+            <pmq:Commuting>false</pmq:Commuting>
+            <pmq:CriminalConvictions>false</pmq:CriminalConvictions>
+            <pmq:Disabled>false</pmq:Disabled>
+            <pmq:DOB>1980-02-02</pmq:DOB>
+            <pmq:HomeOwner>true</pmq:HomeOwner>
+            <pmq:Children>0</pmq:Children>
+            <pmq:Licence>
+              <pmq:LicenceDate>2013-03-01</pmq:LicenceDate>
+              <pmq:LicenceType>
+                <pmq:Description>Full (U.K.)</pmq:Description>
+                <pmq:Abi>F</pmq:Abi>
+              </pmq:LicenceType>
+              <pmq:RestrictionNature>
+                <pmq:Description>Automatic Transmission</pmq:Description>
+                <pmq:Abi>1</pmq:Abi>
+              </pmq:RestrictionNature>
+            </pmq:Licence>
+            <pmq:MaritalStatus>
+              <pmq:Description>Partnered - Civil</pmq:Description>
+              <pmq:Abi>B</pmq:Abi>
+            </pmq:MaritalStatus>
+            <pmq:Title>
+              <pmq:Description>Mrs</pmq:Description>
+              <pmq:Abi>004</pmq:Abi>
+            </pmq:Title>
+            <pmq:FirstName>Barbara</pmq:FirstName>
+            <pmq:Surname>Two</pmq:Surname>
+            <pmq:Occupations>
+              <pmq:Occupation>
+                <pmq:Business>
+                  <pmq:Description>Butchers</pmq:Description>
+                  <pmq:Abi>250</pmq:Abi>
+                </pmq:Business>
+                <pmq:EmploymentStatus>
+                  <pmq:Description>Self Employed</pmq:Description>
+                  <pmq:Abi>S</pmq:Abi>
+                </pmq:EmploymentStatus>
+                <pmq:OccupationType>
+                  <pmq:Description>Bacon Curer</pmq:Description>
+                  <pmq:Abi>031</pmq:Abi>
+                </pmq:OccupationType>
+              </pmq:Occupation>
+            </pmq:Occupations>
+            <pmq:OwnOtherCars>1</pmq:OwnOtherCars>
+            <pmq:Refused>false</pmq:Refused>
+            <pmq:RelationshipToProposer>
+              <pmq:Description>Proposer</pmq:Description>
+              <pmq:Abi>P</pmq:Abi>
+            </pmq:RelationshipToProposer>
+            <pmq:Residency>
+              <pmq:DateToUK>1980-02-02</pmq:DateToUK>
+              <pmq:Permanent>true</pmq:Permanent>
+              <pmq:Years>34</pmq:Years>
+            </pmq:Residency>
+            <pmq:Sex>
+              <pmq:Description>Female</pmq:Description>
+              <pmq:Abi>F</pmq:Abi>
+            </pmq:Sex>
+            <pmq:SpecialTerms>false</pmq:SpecialTerms>
+            <pmq:UsageFrequency>
+              <pmq:Description>Main User</pmq:Description>
+              <pmq:Abi>M</pmq:Abi>
+            </pmq:UsageFrequency>
+          </pmq:Driver>
+          <pmq:Driver>
+            <pmq:AccessOtherCars>1</pmq:AccessOtherCars>
+            <pmq:Claims>
+              <pmq:Claim>
+                <pmq:CostOwn>0</pmq:CostOwn>
+                <pmq:DateMade>2011-09-01</pmq:DateMade>
+                <pmq:FaultType>
+                  <pmq:Description>Theft</pmq:Description>
+                  <pmq:Abi>T</pmq:Abi>
+                </pmq:FaultType>
+                <pmq:NCDLost>false</pmq:NCDLost>
+                <pmq:ThisPolicy>true</pmq:ThisPolicy>
+                <pmq:ClaimType>
+                  <pmq:Description>Theft</pmq:Description>
+                  <pmq:Abi>T</pmq:Abi>
+                </pmq:ClaimType>
+              </pmq:Claim>
+            </pmq:Claims>
+            <pmq:Commuting>false</pmq:Commuting>
+            <pmq:CriminalConvictions>false</pmq:CriminalConvictions>
+            <pmq:Disabled>false</pmq:Disabled>
+            <pmq:DOB>1977-07-05</pmq:DOB>
+            <pmq:HomeOwner>false</pmq:HomeOwner>
+            <pmq:Licence>
+              <pmq:LicenceDate>2014-02-01</pmq:LicenceDate>
+              <pmq:LicenceType>
+                <pmq:Description>Full (U.K.)</pmq:Description>
+                <pmq:Abi>F</pmq:Abi>
+              </pmq:LicenceType>
+            </pmq:Licence>
+            <pmq:MaritalStatus>
+              <pmq:Description>Partnered - Civil</pmq:Description>
+              <pmq:Abi>B</pmq:Abi>
+            </pmq:MaritalStatus>
+            <pmq:Title>
+              <pmq:Description>Mrs</pmq:Description>
+              <pmq:Abi>004</pmq:Abi>
+            </pmq:Title>
+            <pmq:FirstName>Betty</pmq:FirstName>
+            <pmq:Surname>Two</pmq:Surname>
+            <pmq:Occupations>
+              <pmq:Occupation>
+                <pmq:Business>
+                  <pmq:Description>Builder</pmq:Description>
+                  <pmq:Abi>246</pmq:Abi>
+                </pmq:Business>
+                <pmq:EmploymentStatus>
+                  <pmq:Description>Self Employed</pmq:Description>
+                  <pmq:Abi>S</pmq:Abi>
+                </pmq:EmploymentStatus>
+                <pmq:OccupationType>
+                  <pmq:Description>Builder</pmq:Description>
+                  <pmq:Abi>B15</pmq:Abi>
+                </pmq:OccupationType>
+              </pmq:Occupation>
+            </pmq:Occupations>
+            <pmq:Refused>false</pmq:Refused>
+            <pmq:RelationshipToProposer>
+              <pmq:Description>Partner - Civil</pmq:Description>
+              <pmq:Abi>J</pmq:Abi>
+            </pmq:RelationshipToProposer>
+            <pmq:Residency>
+              <pmq:DateToUK>1977-07-05</pmq:DateToUK>
+              <pmq:Permanent>true</pmq:Permanent>
+              <pmq:Years>37</pmq:Years>
+            </pmq:Residency>
+            <pmq:Sex>
+              <pmq:Description>Female</pmq:Description>
+              <pmq:Abi>F</pmq:Abi>
+            </pmq:Sex>
+            <pmq:SpecialTerms>false</pmq:SpecialTerms>
+            <pmq:UsageFrequency>
+              <pmq:Description>Infrequent (Casual)</pmq:Description>
+              <pmq:Abi>C</pmq:Abi>
+            </pmq:UsageFrequency>
+          </pmq:Driver>
+        </pmq:Drivers>
+        <pmq:Vehicles>
+          <pmq:Vehicle>
+            <pmq:BodyType>
+              <pmq:Description>Estate</pmq:Description>
+              <pmq:Abi>03</pmq:Abi>
+            </pmq:BodyType>
+            <pmq:BusinessMiles>0</pmq:BusinessMiles>
+            <pmq:DateManufactured>1997-12-19</pmq:DateManufactured>
+            <pmq:DatePurchased>2014-07-01</pmq:DatePurchased>
+            <pmq:DriveSide>
+              <pmq:Description>Left Hand Drive</pmq:Description>
+              <pmq:Abi>L</pmq:Abi>
+            </pmq:DriveSide>
+            <pmq:EngineSize>1781</pmq:EngineSize>
+            <pmq:Fuel>
+              <pmq:Description>Petrol</pmq:Description>
+              <pmq:Abi>002</pmq:Abi>
+            </pmq:Fuel>
+            <pmq:Imported>false</pmq:Imported>
+            <pmq:KeptAtProposerAddress>true</pmq:KeptAtProposerAddress>
+            <pmq:KeptLocation>
+              <pmq:Description>Garaged</pmq:Description>
+              <pmq:Abi>1</pmq:Abi>
+            </pmq:KeptLocation>
+            <pmq:KeptAddress>
+              <pmq:Address1>174 Partington Lane</pmq:Address1>
+              <pmq:Address2>Swinton</pmq:Address2>
+              <pmq:Town>Manchester</pmq:Town>
+              <pmq:County />
+              <pmq:PostCode>M27 0WN</pmq:PostCode>
+              <pmq:KeptHere>Yes</pmq:KeptHere>
+            </pmq:KeptAddress>
+            <pmq:Make>Audi</pmq:Make>
+            <pmq:Model>A4</pmq:Model>
+            <pmq:Modifications />
+            <pmq:PleasureMiles>4999</pmq:PleasureMiles>
+            <pmq:NumberDoors>5</pmq:NumberDoors>
+            <pmq:NumberSeats>2</pmq:NumberSeats>
+            <pmq:VehicleOwner>
+              <pmq:Description>Partner - Civil</pmq:Description>
+              <pmq:Abi>E</pmq:Abi>
+            </pmq:VehicleOwner>
+            <pmq:VehicleKeeper>
+              <pmq:Description>Partner - Civil</pmq:Description>
+              <pmq:Abi>E</pmq:Abi>
+            </pmq:VehicleKeeper>
+            <pmq:Registration>R974LGH</pmq:Registration>
+            <pmq:SecurityDevices>
+              <pmq:SecurityDevice>
+                <pmq:DeviceFitter>
+                  <pmq:Description>Unknown</pmq:Description>
+                  <pmq:Abi>6</pmq:Abi>
+                </pmq:DeviceFitter>
+                <pmq:DeviceType>
+                  <pmq:Description>Unknown Immobiliser</pmq:Description>
+                  <pmq:Abi>93</pmq:Abi>
+                </pmq:DeviceType>
+              </pmq:SecurityDevice>
+            </pmq:SecurityDevices>
+            <pmq:TransmissionType>
+              <pmq:Description>Manual</pmq:Description>
+              <pmq:Abi>002</pmq:Abi>
+            </pmq:TransmissionType>
+            <pmq:Value>6000</pmq:Value>
+            <pmq:VehicleDetails>
+              <pmq:Description>1997 Audi A4 Avant Se, 1781CC Petrol, 5DR, Manual</pmq:Description>
+              <pmq:Abi>04060903</pmq:Abi>
+            </pmq:VehicleDetails>
+          </pmq:Vehicle>
+        </pmq:Vehicles>
+      </mot:PMQuoteData>
+      <mot:sourceOfBusiness>CompareTheMarket</mot:sourceOfBusiness>
+    </mot:GetQuote>
+  </soapenv:Body>
+</soapenv:Envelope>

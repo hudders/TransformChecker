@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:tem="http://WebServices.ssp-uk.com/HouseholdAggregator/">
+  <soap:Header>
+    <ssp:Security>
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soap:Header>
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:quote CoverStart="2014-12-08" CoverStartTime="00:00:00" IsMultiProposer="true" CoverType="ContentsAndBuildings" PaymentFrequency="U" PaymentFrequencyDescription="Unknown">
+        <SingleQuoteRequest QuoteMultipleBroker="true" BrokerSCIDs="C00057-001,C00057-002" />
+        <Proposer ProposerType="MainProposer" RelationshipToProposer="P" DateOfBirth="1973-04-17" Sex="Female" MaritalStatus="Widowed" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" EmailAddress="michael.hudson@emailreaction.org" Title="Miss" FirstName="Nicola" LastName="Forteen" DayTimePhone="01778852852">
+          <Occupation IsFullTime="true" EmploymentStatus="Retired" OccupationCode="R09" BusinessCode="186" />
+          <CorrespondenceAddress HouseName="" AddressLine1="7 Westbury Avenue" AddressLine2="Wembley" AddressLine3="" AddressLine4="Middlesex" Postcode="HA0 4JX" />
+        </Proposer>
+        <Proposer ProposerType="CoProposer" RelationshipToProposer="M" DateOfBirth="1960-01-01" Sex="Female" MaritalStatus="Separated" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" Title="Dr" FirstName="Joint" LastName="Policyholder">
+          <Occupation IsFullTime="false" EmploymentStatus="Self-Employed" OccupationCode="C55" BusinessCode="818" />
+          <Occupation IsFullTime="false" EmploymentStatus="Self-Employed" OccupationCode="593" BusinessCode="632" />
+        </Proposer>
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2010-01-01" ClaimType="37" CoverType="Buildings" />
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2010-01-01" ClaimType="09" CoverType="Contents" />
+        <Premises YearBuilt="1999" PremisesType="19" NumberOfBedrooms="3" NumberOfBathrooms="1" TotalNumberOfRooms="9" IsOccupiedNight="true" OccupancyStatus="HolidayHome" OwnerShipType="03" IsSoleOccupancy="true" ListedBuildingType="3" IsUsedForBusiness="false" IsClericalWorkOnly="false" SelfContainedAndLockable="true" MaxDaysUnoccupied="30" HasSmokeDetector="true" SecurityDeviceDiscountRequired="false" IsFurnished="true" OccupantsOver18="0" OccupantsUnder18="0" HasExteriorLighting="false" IsSecurityActivated="false" ConstructionWall="02b" ConstructionRoof="15a" RoofFlatPercentage="51" IsFreeFromFlooding="true" IsNearRiverBank="false" IsGoodStateOfRepair="true" IsSOMaintained="false" IsTreesVicinity="false" HasExtension="false" IsOccupiedDay="true" HasStandardAlarm="false" AlarmProfMaintained="" HasApprovedAlarm="" MemberOfNeighbourHoodWatch="true" HasSafeInstalled="true" HasApprovedLocks="true" MainDoorLockType="240" HasPatioDoors="false" HasOtherDoors="false" AccessibleWindowLocks="KeyOperatedLocks" IsFreeFromSubsidence="true" IsFreeFromUnderpinning="true">
+          <Address HouseName="" AddressLine1="7 Westbury Avenue" AddressLine2="Wembley" AddressLine3="" AddressLine4="Middlesex" Postcode="HA0 4JX" />
+        </Premises>
+        <CoverRequired>
+          <Buildings RebuildingCost="50000" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullValue="true" />
+          <Contents ValuablesSumInsured="4000" ContentsCoverType="NewForOld" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullReplacementValue="true" ValueMostExpensiveItem="4000" AllRisksRequired="false" PersonalEffectsSumInsured="0" TotalSumInsured="40000">
+            <SpecifiedItems>
+              <SpecifiedItem ItemType="A04" Description="16 metre Maver Pole" Value="2600" />
+              <SpecifiedItem ItemType="P19" Description="Pearly pearls" Value="2700" />
+            </SpecifiedItems>
+          </Contents>
+        </CoverRequired>
+      </tem:quote>
+      <tem:sourceOfBusiness>CompareTheMarket</tem:sourceOfBusiness>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

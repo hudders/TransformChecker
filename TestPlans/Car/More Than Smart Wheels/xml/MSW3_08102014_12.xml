@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <Quote xmlns="http://TGSL/TES_Aggregator">
+      <lxmlTGSLXML>
+        <tgsl xmlns="http://www.transactorgsl.com/schemas">
+          <aggregator>comparethemarket</aggregator>
+          <domain>http://localhost</domain>
+          <partner>
+            <partnerName>trak</partnerName>
+            <broker>morethan</broker>
+          </partner>
+          <product>motor</product>
+        </tgsl>
+      </lxmlTGSLXML>
+      <lstrRiskXML>
+        <p:motorRisk xmlns:p="http://www.transactorgsl.com/schemas" xmlns="http://www.transactorgsl.com/schemas">
+          <p:insuredParty instance="1">
+            <p:accessToOtherVehicles>false</p:accessToOtherVehicles>
+            <p:client>true</p:client>
+            <p:clubMember>0</p:clubMember>
+            <p:criminalOffence>false</p:criminalOffence>
+            <p:dateLicenceObtained>2002-10-22T00:00:00</p:dateLicenceObtained>
+            <p:dob>1970-01-01T00:00:00</p:dob>
+            <p:email>oliver.neal@emailreaction.org</p:email>
+            <p:forename>Louise</p:forename>
+            <p:homeOwner>true</p:homeOwner>
+            <p:insurancePreviouslyRefused>false</p:insurancePreviouslyRefused>
+            <p:licenceRestrictionsID>8</p:licenceRestrictionsID>
+            <p:licenceTypeID>F</p:licenceTypeID>
+            <p:mainDriver>true</p:mainDriver>
+            <p:maritalStatusID>M</p:maritalStatusID>
+            <p:mothersMaidenName />
+            <p:numberOfVehiclesAccessTo>1</p:numberOfVehiclesAccessTo>
+            <p:password>compareDM</p:password>
+            <p:sex>F</p:sex>
+            <p:surname>Twelve</p:surname>
+            <p:titleID>004</p:titleID>
+            <p:ukResidenceYears>44</p:ukResidenceYears>
+            <p:vehicleUseID>01</p:vehicleUseID>
+            <p:numberOfOtherVehiclesOwned>0</p:numberOfOtherVehiclesOwned>
+            <p:numberOfVehiclesInFamily>0</p:numberOfVehiclesInFamily>
+          </p:insuredParty>
+          <p:insuredParty instance="2">
+            <p:accessToOtherVehicles>false</p:accessToOtherVehicles>
+            <p:client>false</p:client>
+            <p:clubMember>0</p:clubMember>
+            <p:criminalOffence>false</p:criminalOffence>
+            <p:dateLicenceObtained>2003-10-22T00:00:00</p:dateLicenceObtained>
+            <p:dob>1970-05-15T00:00:00</p:dob>
+            <p:email />
+            <p:forename>Louis</p:forename>
+            <p:homeOwner>true</p:homeOwner>
+            <p:insurancePreviouslyRefused>false</p:insurancePreviouslyRefused>
+            <p:licenceRestrictionsID>9</p:licenceRestrictionsID>
+            <p:licenceTypeID>F</p:licenceTypeID>
+            <p:mainDriver>false</p:mainDriver>
+            <p:maritalStatusID>S</p:maritalStatusID>
+            <p:mothersMaidenName />
+            <p:relationshipID>F</p:relationshipID>
+            <p:password>compareDM</p:password>
+            <p:sex>M</p:sex>
+            <p:surname>Twelve</p:surname>
+            <p:titleID>003</p:titleID>
+            <p:ukResidenceYears>44</p:ukResidenceYears>
+            <p:vehicleUseID>01</p:vehicleUseID>
+            <p:numberOfOtherVehiclesOwned>0</p:numberOfOtherVehiclesOwned>
+            <p:numberOfVehiclesInFamily>0</p:numberOfVehiclesInFamily>
+          </p:insuredParty>
+          <p:correspondanceAddress instance="1">
+            <p:city>Malvern</p:city>
+            <p:country />
+            <p:county>Worcestershire</p:county>
+            <p:house>2</p:house>
+            <p:locality />
+            <p:postcode>WR14 1AZ</p:postcode>
+            <p:street>Duke of Edinburgh Way</p:street>
+          </p:correspondanceAddress>
+          <p:occupation instance="1" insuredPartyInstance="1">
+            <p:employersBusinessID>175</p:employersBusinessID>
+            <p:employmentStatusID>E</p:employmentStatusID>
+            <p:occupationID>875</p:occupationID>
+            <p:parttime>false</p:parttime>
+            <p:primaryOccupation>true</p:primaryOccupation>
+          </p:occupation>
+          <p:occupation instance="1" insuredPartyInstance="2">
+            <p:employersBusinessID>455</p:employersBusinessID>
+            <p:employmentStatusID>E</p:employmentStatusID>
+            <p:occupationID>504</p:occupationID>
+            <p:parttime>false</p:parttime>
+            <p:primaryOccupation>true</p:primaryOccupation>
+          </p:occupation>
+          <p:telephone instance="1">
+            <p:telephoneNumber>01734320301</p:telephoneNumber>
+            <p:telephoneTypeID>3AJPQ7C4</p:telephoneTypeID>
+          </p:telephone>
+          <p:health instance="1" insuredPartyInstance="1">
+            <p:dateDiagnosed>2013-10-22T00:00:00</p:dateDiagnosed>
+            <p:dvlaNotified>true</p:dvlaNotified>
+            <p:licenceExpiryDate />
+            <p:licenceIssued>false</p:licenceIssued>
+            <p:medicalConditionID>2</p:medicalConditionID>
+          </p:health>
+          <p:health instance="2" insuredPartyInstance="2">
+            <p:dateDiagnosed>2013-10-22T00:00:00</p:dateDiagnosed>
+            <p:dvlaNotified>true</p:dvlaNotified>
+            <p:licenceExpiryDate />
+            <p:licenceIssued>true</p:licenceIssued>
+            <p:medicalConditionID>3</p:medicalConditionID>
+          </p:health>
+          <p:cover instance="1">
+            <p:coverRequiredID>01</p:coverRequiredID>
+            <p:coverStartDate>2014-10-22T00:00:00</p:coverStartDate>
+            <p:previousInsurance>true</p:previousInsurance>
+            <p:previousInsuranceExpiryDate>2014-10-22T00:00:00</p:previousInsuranceExpiryDate>
+            <p:previousInsurancePolicyNumber>1</p:previousInsurancePolicyNumber>
+            <p:previousInsurerID>999</p:previousInsurerID>
+            <p:voluntaryExcess>100</p:voluntaryExcess>
+          </p:cover>
+          <p:vehicle instance="1">
+            <p:abiCode>07025303</p:abiCode>
+            <p:annualMileage>4999</p:annualMileage>
+            <p:bodyTypeID>03</p:bodyTypeID>
+            <p:businessMileage>0</p:businessMileage>
+            <p:currentMileage>0</p:currentMileage>
+            <p:dateOfPurchase>2014-10-22T00:00:00</p:dateOfPurchase>
+            <p:fuelTypeID>001</p:fuelTypeID>
+            <p:gearboxTypeID>002</p:gearboxTypeID>
+            <p:imported>false</p:imported>
+            <p:increasedBHP>0</p:increasedBHP>
+            <p:keeperID>B</p:keeperID>
+            <p:kitCar>false</p:kitCar>
+            <p:leftHandDrive>false</p:leftHandDrive>
+            <p:modifiedWhilstOwned>false</p:modifiedWhilstOwned>
+            <p:numberOfDoors>5</p:numberOfDoors>
+            <p:numberOfSeats>4</p:numberOfSeats>
+            <p:ownerID>B</p:ownerID>
+            <p:overnightParkingID>1</p:overnightParkingID>
+            <p:pricePaid>5000</p:pricePaid>
+            <p:qPlated>false</p:qPlated>
+            <p:registrationNumber>RA03TVV</p:registrationNumber>
+            <p:usedForTrackDays>false</p:usedForTrackDays>
+            <p:value>5000</p:value>
+            <p:vehicleCC>1995</p:vehicleCC>
+            <p:vehicleMake>BMW</p:vehicleMake>
+            <p:vehicleModel>320</p:vehicleModel>
+            <p:yearOfManufacture>2003</p:yearOfManufacture>
+          </p:vehicle>
+          <p:ncd instance="1">
+            <p:ncdYears>11</p:ncdYears>
+            <p:protectedNCD>false</p:protectedNCD>
+          </p:ncd>
+          <p:garageAddress instance="1">
+            <p:city>Malvern</p:city>
+            <p:country />
+            <p:county>Worcestershire</p:county>
+            <p:house>2</p:house>
+            <p:locality />
+            <p:postcode>WR14 1AZ</p:postcode>
+            <p:street>Duke of Edinburgh Way</p:street>
+          </p:garageAddress>
+          <p:security instance="1">
+            <p:dateFitted>2014-10-08T00:00:00</p:dateFitted>
+            <p:fittedByID>4</p:fittedByID>
+            <p:securityID>92</p:securityID>
+          </p:security>
+        </p:motorRisk>
+      </lstrRiskXML>
+    </Quote>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:tem="http://WebServices.ssp-uk.com/HouseholdAggregator/">
+  <soap:Header>
+    <ssp:Security>
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soap:Header>
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:quote CoverStart="2014-12-08" CoverStartTime="00:00:00" IsMultiProposer="false" CoverType="ContentsAndBuildings" PaymentFrequency="U" PaymentFrequencyDescription="Unknown">
+        <SingleQuoteRequest QuoteMultipleBroker="true" BrokerSCIDs="C00057-001,C00057-002" />
+        <Proposer ProposerType="MainProposer" RelationshipToProposer="P" DateOfBirth="1980-04-17" Sex="Male" MaritalStatus="Single" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" EmailAddress="michael.hudson@emailreaction.org" Title="Mr" FirstName="Ulric" LastName="Twenty-One" DayTimePhone="01778852852">
+          <Occupation IsFullTime="true" EmploymentStatus="InEducation" OccupationCode="S34" BusinessCode="186" />
+          <CorrespondenceAddress HouseName="" AddressLine1="2 Nevile Drive" AddressLine2="Kinoulton" AddressLine3="Nottingham" AddressLine4="Nottinghamshire" Postcode="NG12 3EE" />
+        </Proposer>
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2011-06-01" ClaimType="02" CoverType="Buildings" />
+        <Premises YearBuilt="1998" PremisesType="29" NumberOfBedrooms="2" NumberOfBathrooms="1" TotalNumberOfRooms="6" IsOccupiedNight="true" OccupancyStatus="HolidayHome" OwnerShipType="13" IsSoleOccupancy="true" ListedBuildingType="3" IsUsedForBusiness="true" IsClericalWorkOnly="true" SelfContainedAndLockable="true" MaxDaysUnoccupied="30" HasSmokeDetector="true" SecurityDeviceDiscountRequired="false" IsFurnished="true" OccupantsOver18="0" OccupantsUnder18="0" HasExteriorLighting="false" IsSecurityActivated="false" ConstructionWall="05" IsFreeFromFlooding="true" IsNearRiverBank="false" IsGoodStateOfRepair="true" IsSOMaintained="false" IsTreesVicinity="false" HasExtension="false" IsOccupiedDay="false" HasStandardAlarm="true" AlarmProfMaintained="false" HasApprovedAlarm="false" MemberOfNeighbourHoodWatch="false" HasSafeInstalled="false" HasApprovedLocks="false" MainDoorLockType="999" HasPatioDoors="true" PatioDoorLockType="999" HasOtherDoors="true" OtherDoorLockType="908" AccessibleWindowLocks="None" IsFreeFromSubsidence="true" IsFreeFromUnderpinning="true">
+          <Address HouseName="" AddressLine1="2 Nevile Drive" AddressLine2="Kinoulton" AddressLine3="Nottingham" AddressLine4="Nottinghamshire" Postcode="NG12 3EE" />
+        </Premises>
+        <CoverRequired>
+          <Buildings RebuildingCost="100000" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullValue="true" />
+          <Contents ValuablesSumInsured="4000" ContentsCoverType="NewForOld" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullReplacementValue="true" ValueMostExpensiveItem="4000" AllRisksRequired="false" PersonalEffectsSumInsured="0" TotalSumInsured="40000">
+            <SpecifiedItems>
+              <SpecifiedItem ItemType="C08" Description="John Lennon Suit" Value="3300" />
+            </SpecifiedItems>
+          </Contents>
+        </CoverRequired>
+      </tem:quote>
+      <tem:sourceOfBusiness>CompareTheMarket</tem:sourceOfBusiness>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <Quote xmlns="http://TGSL/TES_Aggregator">
+      <lxmlTGSLXML>
+        <tgsl xmlns="http://www.transactorgsl.com/schemas">
+          <aggregator>comparethemarket</aggregator>
+          <domain>http://localhost</domain>
+          <partner>
+            <partnerName>acorn</partnerName>
+            <broker>acorn</broker>
+          </partner>
+          <product>motor</product>
+        </tgsl>
+      </lxmlTGSLXML>
+      <lstrRiskXML>
+        <p:motorRisk xmlns:p="http://www.transactorgsl.com/schemas" xmlns="http://www.transactorgsl.com/schemas">
+          <p:insuredParty instance="1">
+            <p:accessToOtherVehicles>true</p:accessToOtherVehicles>
+            <p:client>true</p:client>
+            <p:clubMember>0</p:clubMember>
+            <p:criminalOffence>false</p:criminalOffence>
+            <p:dateLicenceObtained>2011-02-01T00:00:00</p:dateLicenceObtained>
+            <p:dob>1978-04-04T00:00:00</p:dob>
+            <p:email>transformerPC04@emailreaction.org</p:email>
+            <p:forename>Debbie</p:forename>
+            <p:homeOwner>true</p:homeOwner>
+            <p:insurancePreviouslyRefused>false</p:insurancePreviouslyRefused>
+            <p:licenceRestrictionsID>8</p:licenceRestrictionsID>
+            <p:licenceTypeID>H</p:licenceTypeID>
+            <p:mainDriver>true</p:mainDriver>
+            <p:maritalStatusID>S</p:maritalStatusID>
+            <p:mothersMaidenName />
+            <p:numberOfVehiclesAccessTo>5</p:numberOfVehiclesAccessTo>
+            <p:password>compareDM</p:password>
+            <p:sex>Female</p:sex>
+            <p:surname>Four</p:surname>
+            <p:titleID>002</p:titleID>
+            <p:ukResidenceYears>36</p:ukResidenceYears>
+            <p:vehicleUseID>03</p:vehicleUseID>
+            <p:numberOfOtherVehiclesOwned>0</p:numberOfOtherVehiclesOwned>
+            <p:numberOfVehiclesInFamily>0</p:numberOfVehiclesInFamily>
+          </p:insuredParty>
+          <p:insuredParty instance="2">
+            <p:accessToOtherVehicles>true</p:accessToOtherVehicles>
+            <p:client>false</p:client>
+            <p:clubMember>0</p:clubMember>
+            <p:criminalOffence>false</p:criminalOffence>
+            <p:dateLicenceObtained>2006-11-19T00:00:00</p:dateLicenceObtained>
+            <p:dob>1979-09-07T00:00:00</p:dob>
+            <p:email />
+            <p:forename>Denise</p:forename>
+            <p:homeOwner>true</p:homeOwner>
+            <p:insurancePreviouslyRefused>false</p:insurancePreviouslyRefused>
+            <p:licenceRestrictionsID>8</p:licenceRestrictionsID>
+            <p:licenceTypeID>P</p:licenceTypeID>
+            <p:mainDriver>false</p:mainDriver>
+            <p:maritalStatusID>S</p:maritalStatusID>
+            <p:mothersMaidenName />
+            <p:relationshipID>O</p:relationshipID>
+            <p:password>compareDM</p:password>
+            <p:sex>Female</p:sex>
+            <p:surname>Four</p:surname>
+            <p:titleID>005</p:titleID>
+            <p:ukResidenceYears>35</p:ukResidenceYears>
+            <p:vehicleUseID>03</p:vehicleUseID>
+            <p:numberOfOtherVehiclesOwned>0</p:numberOfOtherVehiclesOwned>
+            <p:numberOfVehiclesInFamily>0</p:numberOfVehiclesInFamily>
+          </p:insuredParty>
+          <p:correspondanceAddress instance="1">
+            <p:house>2</p:house>
+            <p:street>Duke of Edinburgh Way</p:street>
+            <p:locality />
+            <p:city>Malvern</p:city>
+            <p:county />
+            <p:country />
+            <p:postcode>WR14 1AZ</p:postcode>
+          </p:correspondanceAddress>
+          <p:occupation instance="1" insuredPartyInstance="1">
+            <p:employersBusinessID>186</p:employersBusinessID>
+            <p:employmentStatusID>F</p:employmentStatusID>
+            <p:occupationID>S52</p:occupationID>
+            <p:parttime>false</p:parttime>
+            <p:primaryOccupation>true</p:primaryOccupation>
+          </p:occupation>
+          <p:occupation instance="1" insuredPartyInstance="2">
+            <p:employersBusinessID>186</p:employersBusinessID>
+            <p:employmentStatusID>H</p:employmentStatusID>
+            <p:occupationID>H09</p:occupationID>
+            <p:parttime>false</p:parttime>
+            <p:primaryOccupation>true</p:primaryOccupation>
+          </p:occupation>
+          <p:telephone instance="1">
+            <p:telephoneNumber>01733320300</p:telephoneNumber>
+            <p:telephoneTypeID>3AJPQ7C6</p:telephoneTypeID>
+          </p:telephone>
+          <p:claim instance="1" insuredPartyInstance="1">
+            <p:atFault>true</p:atFault>
+            <p:claimDetailsID>1</p:claimDetailsID>
+            <p:claimStatusID>001</p:claimStatusID>
+            <p:claimTypeID>A</p:claimTypeID>
+            <p:dateOfClaim>2012-04-01T00:00:00</p:dateOfClaim>
+            <p:injuryInvolved>false</p:injuryInvolved>
+            <p:ncdAffected>false</p:ncdAffected>
+            <p:totalCost>0.00</p:totalCost>
+          </p:claim>
+          <p:claim instance="2" insuredPartyInstance="2">
+            <p:atFault>true</p:atFault>
+            <p:claimDetailsID>1</p:claimDetailsID>
+            <p:claimStatusID>001</p:claimStatusID>
+            <p:claimTypeID>X</p:claimTypeID>
+            <p:dateOfClaim>2011-11-01T00:00:00</p:dateOfClaim>
+            <p:injuryInvolved>false</p:injuryInvolved>
+            <p:ncdAffected>false</p:ncdAffected>
+            <p:totalCost>0.00</p:totalCost>
+          </p:claim>
+          <p:cover instance="1">
+            <p:coverRequiredID>01</p:coverRequiredID>
+            <p:coverStartDate>2014-11-19T00:00:00</p:coverStartDate>
+            <p:previousInsurance>false</p:previousInsurance>
+            <p:voluntaryExcess>700</p:voluntaryExcess>
+          </p:cover>
+          <p:vehicle instance="1">
+            <p:abiCode>16553803</p:abiCode>
+            <p:annualMileage>10000</p:annualMileage>
+            <p:bodyTypeID>01</p:bodyTypeID>
+            <p:businessMileage>5000</p:businessMileage>
+            <p:currentMileage>0</p:currentMileage>
+            <p:dateOfPurchase>2012-09-01T00:00:00</p:dateOfPurchase>
+            <p:fuelTypeID>002</p:fuelTypeID>
+            <p:gearboxTypeID>002</p:gearboxTypeID>
+            <p:imported>false</p:imported>
+            <p:increasedBHP>0</p:increasedBHP>
+            <p:keeperID>8</p:keeperID>
+            <p:kitCar>false</p:kitCar>
+            <p:leftHandDrive>false</p:leftHandDrive>
+            <p:modifiedWhilstOwned>true</p:modifiedWhilstOwned>
+            <p:numberOfDoors>5</p:numberOfDoors>
+            <p:numberOfSeats>4</p:numberOfSeats>
+            <p:ownerID>8</p:ownerID>
+            <p:overnightParkingID>3</p:overnightParkingID>
+            <p:pricePaid>3000</p:pricePaid>
+            <p:qPlated>false</p:qPlated>
+            <p:registrationNumber>WM11ENP</p:registrationNumber>
+            <p:usedForTrackDays>false</p:usedForTrackDays>
+            <p:value>3000</p:value>
+            <p:vehicleCC>1368</p:vehicleCC>
+            <p:vehicleMake>Fiat</p:vehicleMake>
+            <p:vehicleModel>Punto</p:vehicleModel>
+            <p:yearOfManufacture>2011</p:yearOfManufacture>
+          </p:vehicle>
+          <p:ncd instance="1">
+            <p:ncdYears>0</p:ncdYears>
+            <p:protectedNCD>false</p:protectedNCD>
+          </p:ncd>
+          <p:garageAddress instance="1">
+            <p:house>2</p:house>
+            <p:street>Duke of Edinburgh Way</p:street>
+            <p:locality />
+            <p:city>Malvern</p:city>
+            <p:county />
+            <p:country />
+            <p:postcode>WR14 1AZ</p:postcode>
+          </p:garageAddress>
+          <p:modification instance="1">
+            <p:forMedicalReasons>false</p:forMedicalReasons>
+            <p:modificationID>29</p:modificationID>
+            <p:value>0</p:value>
+          </p:modification>
+          <p:modification instance="2">
+            <p:forMedicalReasons>false</p:forMedicalReasons>
+            <p:modificationID>17</p:modificationID>
+            <p:value>0</p:value>
+          </p:modification>
+          <p:security instance="1">
+            <p:dateFitted>2014-11-17T00:00:00</p:dateFitted>
+            <p:fittedByID>4</p:fittedByID>
+            <p:securityID>91</p:securityID>
+          </p:security>
+        </p:motorRisk>
+      </lstrRiskXML>
+    </Quote>
+  </soap:Body>
+</soap:Envelope>

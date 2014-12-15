@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:tem="http://WebServices.ssp-uk.com/HouseholdAggregator/">
+  <soap:Header>
+    <ssp:Security>
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soap:Header>
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:quote CoverStart="2014-12-08" CoverStartTime="00:00:00" IsMultiProposer="false" CoverType="ContentsAndBuildings" PaymentFrequency="U" PaymentFrequencyDescription="Unknown">
+        <SingleQuoteRequest QuoteMultipleBroker="true" BrokerSCIDs="C00057-001,C00057-002" />
+        <Proposer ProposerType="MainProposer" RelationshipToProposer="P" DateOfBirth="1981-04-17" Sex="Female" MaritalStatus="Partnered" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" EmailAddress="michael.hudson@emailreaction.org" Title="Ms" FirstName="Victoria" LastName="Twenty-Two" DayTimePhone="01778852852">
+          <Occupation IsFullTime="true" EmploymentStatus="Self-Employed" OccupationCode="C99" BusinessCode="564" />
+          <CorrespondenceAddress HouseName="" AddressLine1="1 St. Davids Way" AddressLine2="Sawtry" AddressLine3="Huntingdon" AddressLine4="Cambridgeshire" Postcode="PE28 5NZ" />
+        </Proposer>
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2011-07-01" ClaimType="19" CoverType="Buildings" />
+        <Premises YearBuilt="1999" PremisesType="09" NumberOfBedrooms="3" NumberOfBathrooms="1" TotalNumberOfRooms="9" IsOccupiedNight="true" OccupancyStatus="Unoccupied" OwnerShipType="16" IsSoleOccupancy="" ListedBuildingType="3" IsUsedForBusiness="true" IsClericalWorkOnly="false" SelfContainedAndLockable="true" MaxDaysUnoccupied="90" HasSmokeDetector="true" SecurityDeviceDiscountRequired="false" IsFurnished="true" OccupantsOver18="0" OccupantsUnder18="0" HasExteriorLighting="false" IsSecurityActivated="false" ConstructionWall="09" ConstructionRoof="04" RoofFlatPercentage="50" IsFreeFromFlooding="true" IsNearRiverBank="false" IsGoodStateOfRepair="true" IsSOMaintained="false" IsTreesVicinity="false" HasExtension="false" IsOccupiedDay="true" HasStandardAlarm="true" AlarmProfMaintained="true" HasApprovedAlarm="true" MemberOfNeighbourHoodWatch="true" HasSafeInstalled="true" HasApprovedLocks="true" MainDoorLockType="240" HasPatioDoors="true" PatioDoorLockType="908" HasOtherDoors="true" OtherDoorLockType="240" AccessibleWindowLocks="KeyOperatedLocks" IsFreeFromSubsidence="true" IsFreeFromUnderpinning="true">
+          <Address HouseName="" AddressLine1="1 St. Davids Way" AddressLine2="Sawtry" AddressLine3="Huntingdon" AddressLine4="Cambridgeshire" Postcode="PE28 5NZ" />
+        </Premises>
+        <CoverRequired>
+          <Buildings RebuildingCost="100000" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullValue="true" />
+          <Contents ValuablesSumInsured="4000" ContentsCoverType="NewForOld" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullReplacementValue="true" ValueMostExpensiveItem="4000" AllRisksRequired="false" PersonalEffectsSumInsured="0" TotalSumInsured="40000">
+            <SpecifiedItems>
+              <SpecifiedItem ItemType="W01" Description="Picasso copy" Value="3400" />
+            </SpecifiedItems>
+          </Contents>
+        </CoverRequired>
+      </tem:quote>
+      <tem:sourceOfBusiness>CompareTheMarket</tem:sourceOfBusiness>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

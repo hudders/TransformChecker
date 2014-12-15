@@ -1,0 +1,798 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <QuoteResult xmlns="http://xml.quoteexchange.co.uk/services/CTMHM/QuoteResult">
+      <Header>
+        <ResultStatus>COMPLETE</ResultStatus>
+      </Header>
+      <HomeQuotes>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <LinkDetails>
+              <Comment1>Getting Quote Info</Comment1>
+              <Comment2></Comment2>
+            </LinkDetails>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <LinkDetails>
+              <Comment1>Not Needed</Comment1>
+              <Comment2>Cannot Quote for Residence (Shared by working people)</Comment2>
+            </LinkDetails>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <LinkDetails>
+              <Comment1>Not Needed</Comment1>
+              <Comment2>Cannot quote for residency type chosen</Comment2>
+            </LinkDetails>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>SGA3</Broker>
+            <InsurerName>Saga</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Reference>0</Reference>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=SAGA&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245970</RetrievalLink>
+              <Clientref>0</Clientref>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Broker Declined</Comment1>
+              <Comment2>Unfortunately, we cannot provide a quote for the details provided</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>100</BuildingExcess>
+              <ContentsExcess>100</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>MTH3</Broker>
+            <InsurerName>MORE THAN</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=MRTN&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245971</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot Quote for Holiday Home</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>BLE3</Broker>
+            <InsurerName>Bullseye</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=BULL&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245972</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot quote for residency type chosen</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>TAA3</Broker>
+            <InsurerName>AA Home</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=AAHM&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245973</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>NULL</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>GAD3</Broker>
+            <InsurerName>Grove and Dean</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=GROV&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245974</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0844 5733683</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot Quote for Residence (Shared by working people)</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>QYH3</Broker>
+            <InsurerName>Quote Your Home</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=THAM&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245975</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0800 112 4101</SalesPhoneNumber>
+              <Comment1>Getting Quote Info</Comment1>
+              <Comment2></Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>15.75</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>SNN3</Broker>
+            <InsurerName>Swintons</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=SWIN&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245976</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot quote for residency type chosen</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>PFD3</Broker>
+            <InsurerName>Performace Direct</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=PD&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245977</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0844 5733683</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot Quote for Residence (Shared by working people)</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <LinkDetails>
+              <Comment1>Not Needed</Comment1>
+              <Comment2>Cannot quote for occupancy status</Comment2>
+            </LinkDetails>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>HPT3</Broker>
+            <InsurerName>Home Protect</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=NHI&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245979</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Getting Quote Info</Comment1>
+              <Comment2></Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>SRT3</Broker>
+            <InsurerName>Sure Term Direct</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Reference>1887429580</Reference>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=SRTD&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245980</RetrievalLink>
+              <Clientref>1887429580</Clientref>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Broker Declined</Comment1>
+              <Comment2>Decline Occupancy Status</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>11</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>29.60</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>1000</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>ONE3</Broker>
+            <InsurerName>ONE CALL DIRECT</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Reference>1887429578</Reference>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=1CALL&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245981</RetrievalLink>
+              <Clientref>1887429578</Clientref>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Broker Declined</Comment1>
+              <Comment2>C940 - Product unavailable to quote for New Business</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>11</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>1000</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>EHA3</Broker>
+            <InsurerName>E-HOME</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Reference>28138078</Reference>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=EHM&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245982</RetrievalLink>
+              <Clientref>28138078</Clientref>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Broker Declined</Comment1>
+              <Comment2>Hosted Quote was unable to provide a Price</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>25.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>11</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>8.30</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>HIS3</Broker>
+            <InsurerName>Hiscox</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=HSCX&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245983</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot quote for cracking walls</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>AIM3</Broker>
+            <InsurerName>AIM FOR A GREAT QUOTE</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=A4GH&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245984</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot Quote for Occupation Status if its not Permanent Home</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage>0.00</ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>25.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>FRI3</Broker>
+            <InsurerName>Fresh</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Reference>0</Reference>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=FRESH&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245985</RetrievalLink>
+              <Clientref>0</Clientref>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0800 083 8900</SalesPhoneNumber>
+              <Comment1>Broker Declined</Comment1>
+              <Comment2> FRESH has Declined the Risk Data</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>31.80</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>20.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>49.50</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>KCN3</Broker>
+            <InsurerName>Key Connect</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=KEY&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245986</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Broker Declined</Comment1>
+              <Comment2>Cannot Price if high risk items is over 35perCent of the contents sum insured - High Risk Amount:  is greater than 35perCent: 34650 of contents cover</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>I4R3</Broker>
+            <InsurerName>Insurance 4 Retirement</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=I4RTR&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245987</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0844 5733683</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot quote for cracking walls</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>HAP3</Broker>
+            <InsurerName>Home Protect Axa</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password></Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=AXAI&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245988</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0845123456</SalesPhoneNumber>
+              <Comment1>Getting Quote Info</Comment1>
+              <Comment2></Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>0.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>0.00</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+        <Home>
+          <ProductClass />
+          <Quote>
+            <Broker>ASD3</Broker>
+            <InsurerName>Asda</InsurerName>
+            <ExpiryDate>2014-08-01</ExpiryDate>
+            <LinkDetails>
+              <Username></Username>
+              <Password>NULL</Password>
+              <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=ASDA&amp;qd=nvi12u9s4cj1legtimm31821f3&amp;re=3245989</RetrievalLink>
+              <SalesPhoneCode></SalesPhoneCode>
+              <SalesPhoneNumber>0800 083 8900</SalesPhoneNumber>
+              <Comment1>Filter Decline</Comment1>
+              <Comment2>Cannot Quote for Property having cracks or bulges on external walls</Comment2>
+            </LinkDetails>
+            <Premium>
+              <AnnualPremium>0.00</AnnualPremium>
+              <InstalmentDetails>
+                <ZeroInstallmentsMessage></ZeroInstallmentsMessage>
+                <Deposit>0.00</Deposit>
+                <FirstInstalment>0.00</FirstInstalment>
+                <NumberOfPayments>0</NumberOfPayments>
+                <MonthlyPremium>0.00</MonthlyPremium>
+                <APR>0.00</APR>
+              </InstalmentDetails>
+            </Premium>
+            <Excesses>
+              <BuildingExcess>0</BuildingExcess>
+              <ContentsExcess>0</ContentsExcess>
+              <SubsidenceExcess>0</SubsidenceExcess>
+            </Excesses>
+            <OtherProducts>
+              <LegalCoverPremium>20.00</LegalCoverPremium>
+              <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+              <KeyCoverPremium>0.00</KeyCoverPremium>
+              <HomeAssistancePremium>49.50</HomeAssistancePremium>
+            </OtherProducts>
+          </Quote>
+        </Home>
+      </HomeQuotes>
+    </QuoteResult>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

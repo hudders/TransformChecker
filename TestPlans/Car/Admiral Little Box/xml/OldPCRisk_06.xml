@@ -1,0 +1,342 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <PrivateCar>
+      <a:QuoteRequest Version="1" xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+        <a:Header>
+          <a:Sender>
+            <a:SourceCode>CM01</a:SourceCode>
+            <a:PartnerRef>52448D7B958943C2ACFB923D2417BFCC,0,1</a:PartnerRef>
+            <a:AffinityCode>CTM</a:AffinityCode>
+            <a:RepeatQuote />
+          </a:Sender>
+          <a:ServiceContext>
+            <a:Server>PEG-CTMCORQAP01</a:Server>
+            <a:Path>/Quote/CallProvidersForQuotes</a:Path>
+            <a:PathUrl>http://motor.qa.internal.comparethemarket.com:8084/Quote/CallProvidersForQuotes?requiredFeatures=BRK&amp;requiredFeatures=CUR&amp;requiredFeatures=MLP&amp;requiredFeatures=&amp;requiredFeatures=WND&amp;requiredFeatures=VEX&amp;requiredFeatures=SEX&amp;cacheBuster=1415109844330</a:PathUrl>
+            <a:PathPhysical>D:\CTM\Motor_Mobile\</a:PathPhysical>
+            <a:QueryString>requiredFeatures=BRK&amp;requiredFeatures=CUR&amp;requiredFeatures=MLP&amp;requiredFeatures=&amp;requiredFeatures=WND&amp;requiredFeatures=VEX&amp;requiredFeatures=SEX&amp;cacheBuster=1415109844330</a:QueryString>
+            <a:ClientOS>WinNT</a:ClientOS>
+            <a:ClientBrowser>Chrome</a:ClientBrowser>
+            <a:ClientVersion>38.0</a:ClientVersion>
+            <a:ClientJScriptVersion />
+            <a:ClientEcmaScriptVersion />
+            <a:SessionSessionGuid />
+            <a:SessionTransactionID>52448D7B958943C2ACFB923D2417BFCC</a:SessionTransactionID>
+            <a:CurrentExecutingRequestGuid>87399e7b-4ef9-4a68-a609-654a0ddf9267</a:CurrentExecutingRequestGuid>
+            <a:ApplicationName>BGL.CompareTheMarket.Services.QuoteService</a:ApplicationName>
+            <a:JourneyJourneyType>1</a:JourneyJourneyType>
+            <a:JourneySourceCode>CM01</a:JourneySourceCode>
+            <a:JourneyAffinityCode>CTM</a:JourneyAffinityCode>
+            <a:JourneyProductCode>PC</a:JourneyProductCode>
+            <a:VisitorID>37f52531-43bb-43af-8b13-f21f92d1e3d3</a:VisitorID>
+            <a:VisitLogID>1514950</a:VisitLogID>
+          </a:ServiceContext>
+        </a:Header>
+        <a:Lead>
+          <a:Proposer>1</a:Proposer>
+          <a:PostalAddress>1</a:PostalAddress>
+          <a:MarketingOptOut>
+            <a:EmailOptOut>Y</a:EmailOptOut>
+            <a:PostOptOut>Y</a:PostOptOut>
+            <a:PhoneOptOut>Y</a:PhoneOptOut>
+            <a:SMSOptOut>Y</a:SMSOptOut>
+            <a:ProviderOptOut>Y</a:ProviderOptOut>
+          </a:MarketingOptOut>
+          <a:Persons>
+            <a:Person id="1">
+              <a:Title>DRF</a:Title>
+              <a:TitleDesc>Dr - Female</a:TitleDesc>
+              <a:FirstName>Fiona</a:FirstName>
+              <a:Surname>Six</a:Surname>
+              <a:DOB>1976-06-10</a:DOB>
+              <a:Gender>F</a:Gender>
+              <a:GenderDesc>Female</a:GenderDesc>
+              <a:MaritalStatus>D</a:MaritalStatus>
+              <a:MaritalStatusDesc>Divorced/Dissolved</a:MaritalStatusDesc>
+              <a:EmploymentStatus>E</a:EmploymentStatus>
+              <a:EmploymentStatusDesc>Employed</a:EmploymentStatusDesc>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>B78</a:OccupationCode>
+                <a:OccupationCodeDesc>Falconer</a:OccupationCodeDesc>
+                <a:BusinessCode>876</a:BusinessCode>
+                <a:BusinessCodeDesc>Falconry</a:BusinessCodeDesc>
+              </a:PrimaryOccupation>
+              <a:Licence>
+                <a:LicenceType>F</a:LicenceType>
+                <a:LicenceTypeDesc>Full UK Car Licence</a:LicenceTypeDesc>
+                <a:LicenceHeldYears>6</a:LicenceHeldYears>
+                <a:DateLicenceObtained></a:DateLicenceObtained>
+                <a:DrivingQualifications>DQN</a:DrivingQualifications>
+                <a:DrivingQualificationsDate></a:DrivingQualificationsDate>
+              </a:Licence>
+              <a:Resident>
+                <a:ResidentSince>2013-06-01</a:ResidentSince>
+                <a:UkResidentSinceDOB>N</a:UkResidentSinceDOB>
+              </a:Resident>
+              <a:UseOtherVehicles>XVE</a:UseOtherVehicles>
+              <a:VehiclesInHousehold>9</a:VehiclesInHousehold>
+              <a:AddressAsProposer>Y</a:AddressAsProposer>
+              <a:HomeOwner>Y</a:HomeOwner>
+              <a:PassPlus>N</a:PassPlus>
+              <a:HaveMotorClaim>true</a:HaveMotorClaim>
+              <a:MotorClaims>
+                <a:MotorClaim id="1">
+                  <a:IncidentDate>2013-04-01</a:IncidentDate>
+                  <a:IncidentType>A</a:IncidentType>
+                  <a:IncidentTypeDesc>Accident</a:IncidentTypeDesc>
+                  <a:Damage>1</a:Damage>
+                  <a:DamageDesc>No Damage</a:DamageDesc>
+                  <a:IncidentValue>0.00</a:IncidentValue>
+                  <a:ClaimMade>N</a:ClaimMade>
+                  <a:IncidentDriver>1</a:IncidentDriver>
+                  <a:Fault>N</a:Fault>
+                  <a:Injuries>Y</a:Injuries>
+                  <a:InsuredVehicleClaimAmount>0.00</a:InsuredVehicleClaimAmount>
+                  <a:ThirdPartyClaimAmount>0.00</a:ThirdPartyClaimAmount>
+                  <a:NCDAffected>N</a:NCDAffected>
+                </a:MotorClaim>
+              </a:MotorClaims>
+              <a:HaveMotorConviction>false</a:HaveMotorConviction>
+              <a:MotorInsuranceCancelled>N</a:MotorInsuranceCancelled>
+              <a:HaveNonMotorConviction>false</a:HaveNonMotorConviction>
+              <a:ChildrenUnder16>Y</a:ChildrenUnder16>
+              <a:Ghost>false</a:Ghost>
+              <a:DVLAMedicalCondition>DVN</a:DVLAMedicalCondition>
+              <a:PassedCBT></a:PassedCBT>
+              <a:LargestCCBike>0</a:LargestCCBike>
+            </a:Person>
+            <a:Person id="2">
+              <a:Title>DRM</a:Title>
+              <a:TitleDesc>Dr - Male</a:TitleDesc>
+              <a:FirstName>Fred</a:FirstName>
+              <a:Surname>Six</a:Surname>
+              <a:DOB>1981-11-09</a:DOB>
+              <a:Gender>M</a:Gender>
+              <a:GenderDesc>Male</a:GenderDesc>
+              <a:MaritalStatus>A</a:MaritalStatus>
+              <a:MaritalStatusDesc>Separated</a:MaritalStatusDesc>
+              <a:EmploymentStatus>N</a:EmploymentStatus>
+              <a:EmploymentStatusDesc>Not Employed Due To Disability/Illness</a:EmploymentStatusDesc>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>220</a:OccupationCode>
+                <a:OccupationCodeDesc>Not In Employment</a:OccupationCodeDesc>
+                <a:BusinessCode>186</a:BusinessCode>
+                <a:BusinessCodeDesc>Not In Employment</a:BusinessCodeDesc>
+              </a:PrimaryOccupation>
+              <a:Licence>
+                <a:LicenceType>U</a:LicenceType>
+                <a:LicenceTypeDesc>Provisional European non-EU Licence</a:LicenceTypeDesc>
+                <a:LicenceHeldYears>6</a:LicenceHeldYears>
+                <a:DateLicenceObtained></a:DateLicenceObtained>
+                <a:DrivingQualifications>DQN</a:DrivingQualifications>
+                <a:DrivingQualificationsDate></a:DrivingQualificationsDate>
+              </a:Licence>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+                <a:UkResidentSinceDOB>Y</a:UkResidentSinceDOB>
+              </a:Resident>
+              <a:UseOtherVehicles>XVE</a:UseOtherVehicles>
+              <a:RelationshipToProposer>F</a:RelationshipToProposer>
+              <a:RelToProposerDesc>Other Family</a:RelToProposerDesc>
+              <a:AddressAsProposer>N</a:AddressAsProposer>
+              <a:HomeOwner>N</a:HomeOwner>
+              <a:PassPlus>N</a:PassPlus>
+              <a:HaveMotorClaim>true</a:HaveMotorClaim>
+              <a:MotorClaims>
+                <a:MotorClaim id="1">
+                  <a:IncidentDate>2011-01-01</a:IncidentDate>
+                  <a:IncidentType>5</a:IncidentType>
+                  <a:IncidentTypeDesc>Lightning Damage</a:IncidentTypeDesc>
+                  <a:Damage>0</a:Damage>
+                  <a:DamageDesc>Damaged - Amount Known</a:DamageDesc>
+                  <a:IncidentValue>500.00</a:IncidentValue>
+                  <a:ClaimMade>N</a:ClaimMade>
+                  <a:IncidentDriver>0</a:IncidentDriver>
+                  <a:Injuries>N</a:Injuries>
+                  <a:InsuredVehicleClaimAmount>0.00</a:InsuredVehicleClaimAmount>
+                  <a:ThirdPartyClaimAmount>0.00</a:ThirdPartyClaimAmount>
+                  <a:NCDAffected>N</a:NCDAffected>
+                </a:MotorClaim>
+              </a:MotorClaims>
+              <a:HaveMotorConviction>false</a:HaveMotorConviction>
+              <a:MotorInsuranceCancelled>N</a:MotorInsuranceCancelled>
+              <a:HaveNonMotorConviction>false</a:HaveNonMotorConviction>
+              <a:Ghost>false</a:Ghost>
+              <a:DVLAMedicalCondition>DVN</a:DVLAMedicalCondition>
+              <a:PassedCBT></a:PassedCBT>
+              <a:LargestCCBike>0</a:LargestCCBike>
+            </a:Person>
+            <a:Person id="3">
+              <a:Title>MR</a:Title>
+              <a:TitleDesc>Mr</a:TitleDesc>
+              <a:FirstName>Edward</a:FirstName>
+              <a:Surname>Parent</a:Surname>
+              <a:DOB>1954-08-25</a:DOB>
+              <a:Gender>M</a:Gender>
+              <a:GenderDesc>Male</a:GenderDesc>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+                <a:UkResidentSinceDOB>Y</a:UkResidentSinceDOB>
+              </a:Resident>
+              <a:RelationshipToProposer>M</a:RelationshipToProposer>
+              <a:RelToProposerDesc>Parent</a:RelToProposerDesc>
+              <a:AddressAsProposer>N</a:AddressAsProposer>
+              <a:HomeOwner>N</a:HomeOwner>
+              <a:PassPlus>N</a:PassPlus>
+              <a:HaveMotorClaim>false</a:HaveMotorClaim>
+              <a:HaveMotorConviction>false</a:HaveMotorConviction>
+              <a:MotorInsuranceCancelled>N</a:MotorInsuranceCancelled>
+              <a:HaveNonMotorConviction>false</a:HaveNonMotorConviction>
+              <a:Ghost>false</a:Ghost>
+              <a:PassedCBT></a:PassedCBT>
+              <a:LargestCCBike>0</a:LargestCCBike>
+            </a:Person>
+          </a:Persons>
+          <a:Addresses>
+            <a:Address id="1">
+              <a:AddressLine1>2 Duke of Edinburgh Way</a:AddressLine1>
+              <a:AddressLine2>Malvern</a:AddressLine2>
+              <a:AddressLine3></a:AddressLine3>
+              <a:AddressLine4></a:AddressLine4>
+              <a:AddressLine5></a:AddressLine5>
+              <a:PostCode>WR14 1AZ</a:PostCode>
+              <a:LocationIDFK>128</a:LocationIDFK>
+              <a:LocationDetails>
+                <a:LocationID>128</a:LocationID>
+                <a:Name></a:Name>
+                <a:OrganisationName></a:OrganisationName>
+                <a:Department></a:Department>
+                <a:SubBuilding></a:SubBuilding>
+                <a:Building></a:Building>
+                <a:Number>2</a:Number>
+                <a:DependentThoroughfare></a:DependentThoroughfare>
+                <a:Thoroughfare>Duke of Edinburgh Way</a:Thoroughfare>
+                <a:DoubleDependentLocality></a:DoubleDependentLocality>
+                <a:DependentLocality></a:DependentLocality>
+                <a:Town>Malvern</a:Town>
+                <a:PostalCounty>Worcestershire</a:PostalCounty>
+                <a:AbbreviatedPostalCounty>Worcs</a:AbbreviatedPostalCounty>
+                <a:OptionalCounty>Worcestershire</a:OptionalCounty>
+                <a:AbbreviatedOptionalCounty>Worcs</a:AbbreviatedOptionalCounty>
+                <a:TraditionalCounty>Worcestershire</a:TraditionalCounty>
+                <a:AdministrativeCounty>Worcestershire</a:AdministrativeCounty>
+                <a:Postcode>WR14 1AZ</a:Postcode>
+                <a:DPS>1D</a:DPS>
+                <a:PostcodeFrom></a:PostcodeFrom>
+                <a:PostcodeType>S</a:PostcodeType>
+                <a:MailsortCode>34505</a:MailsortCode>
+                <a:AddressType>1</a:AddressType>
+                <a:AddressTypeDescription>Numbered</a:AddressTypeDescription>
+                <a:Country>United Kingdom</a:Country>
+                <a:CountryISO>GBR</a:CountryISO>
+                <a:GridE>378974</a:GridE>
+                <a:GridN>248333</a:GridN>
+                <a:Latitude>52.1329</a:Latitude>
+                <a:Longitude>-2.3086</a:Longitude>
+              </a:LocationDetails>
+            </a:Address>
+          </a:Addresses>
+          <a:ContactDetails>
+            <a:Phone type="work">
+              <a:PhoneCode>01733</a:PhoneCode>
+              <a:PhoneNumber>320302</a:PhoneNumber>
+            </a:Phone>
+            <a:EmailAdr>transformerPC06@emailreaction.org</a:EmailAdr>
+          </a:ContactDetails>
+          <a:Products>
+            <a:PrivateCars>
+              <a:PrivateCar id="1">
+                <a:PrivateCarCover>
+                  <a:CommencementDate>2014-11-11</a:CommencementDate>
+                  <a:CoverType>02</a:CoverType>
+                  <a:CoverTypeDesc>Third party fire &amp; theft</a:CoverTypeDesc>
+                  <a:ClassOfUse>009</a:ClassOfUse>
+                  <a:ClassOfUseDesc>SDPC and business use (any named driver)</a:ClassOfUseDesc>
+                  <a:TotalExcess>0</a:TotalExcess>
+                  <a:Ncd>
+                    <a:NcdYears>6</a:NcdYears>
+                    <a:NcdSource>1</a:NcdSource>
+                    <a:NcdSourceDesc>With this vehicle or a previous vehicle</a:NcdSourceDesc>
+                    <a:NcdProtected>N</a:NcdProtected>
+                    <a:ProtectedNcdOtherVehicle></a:ProtectedNcdOtherVehicle>
+                  </a:Ncd>
+                  <a:InsurancePaymentMethod>F</a:InsurancePaymentMethod>
+                  <a:PillionPassenger></a:PillionPassenger>
+                  <a:PreviousQuote></a:PreviousQuote>
+                  <a:Drivers>
+                    <a:Driver id="1" type="other" />
+                    <a:Driver id="2" type="main" />
+                  </a:Drivers>
+                </a:PrivateCarCover>
+                <a:PrivateCarRisks>
+                  <a:Vehicle>
+                    <a:AdditionalDetails>
+                      <a:ABICode>41547903</a:ABICode>
+                      <a:Make>Renault</a:Make>
+                      <a:Model>Megane</a:Model>
+                      <a:Doors>5</a:Doors>
+                      <a:Seats>9</a:Seats>
+                      <a:EngineSize>1870</a:EngineSize>
+                      <a:Body>
+                        <a:Desc>SALOON</a:Desc>
+                        <a:Code>01</a:Code>
+                      </a:Body>
+                      <a:LCBody>
+                        <a:Desc></a:Desc>
+                        <a:Code></a:Code>
+                      </a:LCBody>
+                      <a:Fuel>
+                        <a:Desc>DIESEL</a:Desc>
+                        <a:Code>001</a:Code>
+                      </a:Fuel>
+                      <a:Transmission>
+                        <a:Desc>MANUAL</a:Desc>
+                        <a:Code>002</a:Code>
+                      </a:Transmission>
+                      <a:Weight>0</a:Weight>
+                    </a:AdditionalDetails>
+                    <a:VehicleCode>41547903</a:VehicleCode>
+                    <a:VehicleDesc>2003 Renault Megane Scenic Fidji Dci, 1870CC Diesel, 5DR, Manual</a:VehicleDesc>
+                    <a:RegYear>2003</a:RegYear>
+                    <a:RegLetter>03</a:RegLetter>
+                    <a:RegNumber>J60CMT</a:RegNumber>
+                    <a:Seats>9</a:Seats>
+                    <a:LHD>N</a:LHD>
+                    <a:SecurityCode>#N</a:SecurityCode>
+                    <a:SecurityCodeDesc>None</a:SecurityCodeDesc>
+                    <a:Tracker>Y</a:Tracker>
+                    <a:VehiclePurchased>Y</a:VehiclePurchased>
+                    <a:PurchaseDate>2006-11-01</a:PurchaseDate>
+                    <a:OvernightParking>7</a:OvernightParking>
+                    <a:WhereKeptAddress>1</a:WhereKeptAddress>
+                    <a:AnnualMileage>2000</a:AnnualMileage>
+                    <a:BusinessMileage>2000</a:BusinessMileage>
+                    <a:RegisteredKeeper>
+                      <a:OwnerKeeperType>P</a:OwnerKeeperType>
+                      <a:OwnerKeeperID>3</a:OwnerKeeperID>
+                      <a:OwnerKeeperName>Mr Edward Parent</a:OwnerKeeperName>
+                    </a:RegisteredKeeper>
+                    <a:LegalOwner>
+                      <a:OwnerKeeperType>P</a:OwnerKeeperType>
+                      <a:OwnerKeeperID>3</a:OwnerKeeperID>
+                      <a:OwnerKeeperName>Mr Edward Parent</a:OwnerKeeperName>
+                    </a:LegalOwner>
+                    <a:VehicleInsValue>2345</a:VehicleInsValue>
+                    <a:VehicleValue>2345</a:VehicleValue>
+                    <a:InsuranceGroup>07</a:InsuranceGroup>
+                    <a:ValuationType>4</a:ValuationType>
+                    <a:VehicleImported>N</a:VehicleImported>
+                    <a:VehicleKeptDuringDay>VKD1</a:VehicleKeptDuringDay>
+                  </a:Vehicle>
+                  <a:LegalProtection>N</a:LegalProtection>
+                  <a:VehicleBreakdown>N</a:VehicleBreakdown>
+                </a:PrivateCarRisks>
+              </a:PrivateCar>
+            </a:PrivateCars>
+            <a:CommercialVehicles />
+          </a:Products>
+        </a:Lead>
+      </a:QuoteRequest>
+    </PrivateCar>
+  </soap:Body>
+</soap:Envelope>

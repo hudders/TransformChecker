@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <Quote xmlns="http://TGSL/TES_Aggregator">
+      <lxmlTGSLXML>
+        <tgsl xmlns="http://www.transactorgsl.com/schemas">
+          <aggregator>comparethemarket</aggregator>
+          <domain>http://localhost</domain>
+          <partner>
+            <partnerName>acorn</partnerName>
+            <broker>acorn</broker>
+          </partner>
+          <product>motor</product>
+        </tgsl>
+      </lxmlTGSLXML>
+      <lstrRiskXML>
+        <p:motorRisk xmlns:p="http://www.transactorgsl.com/schemas" xmlns="http://www.transactorgsl.com/schemas">
+          <p:insuredParty instance="1">
+            <p:accessToOtherVehicles>true</p:accessToOtherVehicles>
+            <p:client>true</p:client>
+            <p:clubMember>0</p:clubMember>
+            <p:criminalOffence>false</p:criminalOffence>
+            <p:dateLicenceObtained>2013-03-01T00:00:00</p:dateLicenceObtained>
+            <p:dob>1980-02-02T00:00:00</p:dob>
+            <p:email>transformerPC02@emailreaction.org</p:email>
+            <p:forename>Barbara</p:forename>
+            <p:homeOwner>true</p:homeOwner>
+            <p:insurancePreviouslyRefused>false</p:insurancePreviouslyRefused>
+            <p:licenceRestrictionsID>1</p:licenceRestrictionsID>
+            <p:licenceTypeID>F</p:licenceTypeID>
+            <p:mainDriver>true</p:mainDriver>
+            <p:maritalStatusID>B</p:maritalStatusID>
+            <p:mothersMaidenName />
+            <p:numberOfVehiclesAccessTo>2</p:numberOfVehiclesAccessTo>
+            <p:password>compareDM</p:password>
+            <p:sex>Female</p:sex>
+            <p:surname>Two</p:surname>
+            <p:titleID>004</p:titleID>
+            <p:ukResidenceYears>34</p:ukResidenceYears>
+            <p:vehicleUseID>04</p:vehicleUseID>
+            <p:numberOfOtherVehiclesOwned>0</p:numberOfOtherVehiclesOwned>
+            <p:numberOfVehiclesInFamily>0</p:numberOfVehiclesInFamily>
+          </p:insuredParty>
+          <p:insuredParty instance="2">
+            <p:accessToOtherVehicles>true</p:accessToOtherVehicles>
+            <p:client>false</p:client>
+            <p:clubMember>0</p:clubMember>
+            <p:criminalOffence>false</p:criminalOffence>
+            <p:dateLicenceObtained>2014-02-01T00:00:00</p:dateLicenceObtained>
+            <p:dob>1977-07-05T00:00:00</p:dob>
+            <p:email />
+            <p:forename>Betty</p:forename>
+            <p:homeOwner>true</p:homeOwner>
+            <p:insurancePreviouslyRefused>false</p:insurancePreviouslyRefused>
+            <p:licenceRestrictionsID>8</p:licenceRestrictionsID>
+            <p:licenceTypeID>F</p:licenceTypeID>
+            <p:mainDriver>false</p:mainDriver>
+            <p:maritalStatusID>B</p:maritalStatusID>
+            <p:mothersMaidenName />
+            <p:relationshipID>J</p:relationshipID>
+            <p:password>compareDM</p:password>
+            <p:sex>Female</p:sex>
+            <p:surname>Two</p:surname>
+            <p:titleID>004</p:titleID>
+            <p:ukResidenceYears>37</p:ukResidenceYears>
+            <p:vehicleUseID>04</p:vehicleUseID>
+            <p:numberOfOtherVehiclesOwned>0</p:numberOfOtherVehiclesOwned>
+            <p:numberOfVehiclesInFamily>0</p:numberOfVehiclesInFamily>
+          </p:insuredParty>
+          <p:correspondanceAddress instance="1">
+            <p:city>Manchester</p:city>
+            <p:country />
+            <p:county>Lancashire</p:county>
+            <p:house>174</p:house>
+            <p:locality>Swinton</p:locality>
+            <p:postcode>M27 0WN</p:postcode>
+            <p:street>Partington Lane</p:street>
+          </p:correspondanceAddress>
+          <p:occupation instance="1" insuredPartyInstance="1">
+            <p:employersBusinessID>250</p:employersBusinessID>
+            <p:employmentStatusID>S</p:employmentStatusID>
+            <p:occupationID>031</p:occupationID>
+            <p:parttime>false</p:parttime>
+            <p:primaryOccupation>true</p:primaryOccupation>
+          </p:occupation>
+          <p:occupation instance="1" insuredPartyInstance="2">
+            <p:employersBusinessID>246</p:employersBusinessID>
+            <p:employmentStatusID>S</p:employmentStatusID>
+            <p:occupationID>B15</p:occupationID>
+            <p:parttime>false</p:parttime>
+            <p:primaryOccupation>true</p:primaryOccupation>
+          </p:occupation>
+          <p:telephone instance="1">
+            <p:telephoneNumber>01733345678</p:telephoneNumber>
+            <p:telephoneTypeID>3AJPQ7C6</p:telephoneTypeID>
+          </p:telephone>
+          <p:claim instance="1" insuredPartyInstance="1">
+            <p:atFault>false</p:atFault>
+            <p:claimDetailsID>4</p:claimDetailsID>
+            <p:claimStatusID>001</p:claimStatusID>
+            <p:claimTypeID>A</p:claimTypeID>
+            <p:dateOfClaim>2012-05-01T00:00:00</p:dateOfClaim>
+            <p:injuryInvolved>false</p:injuryInvolved>
+            <p:ncdAffected>false</p:ncdAffected>
+            <p:totalCost>0.00</p:totalCost>
+          </p:claim>
+          <p:claim instance="2" insuredPartyInstance="2">
+            <p:atFault>true</p:atFault>
+            <p:claimDetailsID>1</p:claimDetailsID>
+            <p:claimStatusID>001</p:claimStatusID>
+            <p:claimTypeID>T</p:claimTypeID>
+            <p:dateOfClaim>2011-09-01T00:00:00</p:dateOfClaim>
+            <p:injuryInvolved>false</p:injuryInvolved>
+            <p:ncdAffected>false</p:ncdAffected>
+            <p:totalCost>0.00</p:totalCost>
+          </p:claim>
+          <p:cover instance="1">
+            <p:coverRequiredID>01</p:coverRequiredID>
+            <p:coverStartDate>2014-11-21T00:00:00</p:coverStartDate>
+            <p:previousInsurance>false</p:previousInsurance>
+            <p:voluntaryExcess>900</p:voluntaryExcess>
+          </p:cover>
+          <p:vehicle instance="1">
+            <p:abiCode>04060903</p:abiCode>
+            <p:annualMileage>4999</p:annualMileage>
+            <p:bodyTypeID>03</p:bodyTypeID>
+            <p:businessMileage>0</p:businessMileage>
+            <p:currentMileage>0</p:currentMileage>
+            <p:dateOfPurchase>2013-07-01T00:00:00</p:dateOfPurchase>
+            <p:fuelTypeID>002</p:fuelTypeID>
+            <p:gearboxTypeID>002</p:gearboxTypeID>
+            <p:imported>false</p:imported>
+            <p:increasedBHP>0</p:increasedBHP>
+            <p:keeperID>E</p:keeperID>
+            <p:kitCar>false</p:kitCar>
+            <p:leftHandDrive>true</p:leftHandDrive>
+            <p:modifiedWhilstOwned>false</p:modifiedWhilstOwned>
+            <p:numberOfDoors>5</p:numberOfDoors>
+            <p:numberOfSeats>2</p:numberOfSeats>
+            <p:ownerID>E</p:ownerID>
+            <p:overnightParkingID>I</p:overnightParkingID>
+            <p:pricePaid>6000</p:pricePaid>
+            <p:qPlated>false</p:qPlated>
+            <p:registrationNumber>R974LGH</p:registrationNumber>
+            <p:usedForTrackDays>false</p:usedForTrackDays>
+            <p:value>6000</p:value>
+            <p:vehicleCC>1781</p:vehicleCC>
+            <p:vehicleMake>Audi</p:vehicleMake>
+            <p:vehicleModel>A4</p:vehicleModel>
+            <p:yearOfManufacture>1997</p:yearOfManufacture>
+          </p:vehicle>
+          <p:ncd instance="1">
+            <p:ncdYears>0</p:ncdYears>
+            <p:protectedNCD>false</p:protectedNCD>
+          </p:ncd>
+          <p:garageAddress instance="1">
+            <p:city>Manchester</p:city>
+            <p:country />
+            <p:county>Lancashire</p:county>
+            <p:house>174</p:house>
+            <p:locality>Swinton</p:locality>
+            <p:postcode>M27 0WN</p:postcode>
+            <p:street>Partington Lane</p:street>
+          </p:garageAddress>
+          <p:security instance="1">
+            <p:dateFitted>2014-11-17T00:00:00</p:dateFitted>
+            <p:fittedByID>4</p:fittedByID>
+            <p:securityID>91</p:securityID>
+          </p:security>
+        </p:motorRisk>
+      </lstrRiskXML>
+    </Quote>
+  </soap:Body>
+</soap:Envelope>

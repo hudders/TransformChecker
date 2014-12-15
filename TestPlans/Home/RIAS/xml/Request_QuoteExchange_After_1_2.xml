@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <Household>
+      <a:QuoteRequest Version="1" xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+        <a:Header>
+          <a:Sender>
+            <a:SourceCode>CM02</a:SourceCode>
+            <a:PartnerRef />
+          </a:Sender>
+        </a:Header>
+        <a:Lead>
+          <a:Proposer>1</a:Proposer>
+          <a:PostalAddress>1</a:PostalAddress>
+          <a:MarketingOptOut>
+            <a:EmailOptOut>N</a:EmailOptOut>
+            <a:PostOptOut>N</a:PostOptOut>
+            <a:PhoneOptOut>Y</a:PhoneOptOut>
+            <a:SMSOptOut>Y</a:SMSOptOut>
+          </a:MarketingOptOut>
+          <a:Persons>
+            <a:Person id="1">
+              <a:Title>MR</a:Title>
+              <a:FirstName>Test</a:FirstName>
+              <a:Surname>Comapre</a:Surname>
+              <a:DOB>1978-03-01</a:DOB>
+              <a:MaritalStatus>M</a:MaritalStatus>
+              <a:EmploymentStatus>E</a:EmploymentStatus>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>A01</a:OccupationCode>
+                <a:BusinessCode>001</a:BusinessCode>
+              </a:PrimaryOccupation>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+              </a:Resident>
+              <a:Ghost>false</a:Ghost>
+              <a:LargestCCBike i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+              <a:Gender>M</a:Gender>
+            </a:Person>
+          </a:Persons>
+          <a:Addresses>
+            <a:Address id="1">
+              <a:AddressLine1>Gallagher Heath Insurance Services</a:AddressLine1>
+              <a:AddressLine2>St. Marks Court</a:AddressLine2>
+              <a:AddressLine3>North Street</a:AddressLine3>
+              <a:AddressLine4>Horsham</a:AddressLine4>
+              <a:AddressLine5></a:AddressLine5>
+              <a:PostCode>RH12 1RZ</a:PostCode>
+            </a:Address>
+          </a:Addresses>
+          <a:ContactDetails>
+            <a:Phone type="work">
+              <a:PhoneCode>01924</a:PhoneCode>
+              <a:PhoneNumber>12345</a:PhoneNumber>
+            </a:Phone>
+            <a:EmailAdr>test7@hlis.com</a:EmailAdr>
+          </a:ContactDetails>
+          <a:Products>
+            <a:Homes>
+              <a:Home id="1">
+                <a:HomeCover>
+                  <a:CommencementDate>2014-08-01</a:CommencementDate>
+                </a:HomeCover>
+                <a:HomeRisks>
+                  <a:House>
+                    <a:AddressId>1</a:AddressId>
+                    <a:OwnerStatus>03</a:OwnerStatus>
+                    <a:Occupancy>PH</a:Occupancy>
+                    <a:Residents>Y</a:Residents>
+                    <a:NumNonFamilyMembers>0</a:NumNonFamilyMembers>
+                    <a:TypeOfProperty>02</a:TypeOfProperty>
+                    <a:NumBedrooms>1</a:NumBedrooms>
+                    <a:NumberOfRooms>3</a:NumberOfRooms>
+                    <a:ListedBuilding>3</a:ListedBuilding>
+                    <a:TypeOfUse>N</a:TypeOfUse>
+                    <a:YearBuilt>2000</a:YearBuilt>
+                    <a:TypeOfWall>02a</a:TypeOfWall>
+                    <a:Roof>
+                      <a:TypeOfRoof>15a</a:TypeOfRoof>
+                      <a:FlatRoof>N</a:FlatRoof>
+                      <a:YearRecovered></a:YearRecovered>
+                      <a:ReCovered10Years></a:ReCovered10Years>
+                    </a:Roof>
+                    <a:Water400M>N</a:Water400M>
+                    <a:SmokeDetectors>Y</a:SmokeDetectors>
+                    <a:GoodStateOfRepair>Y</a:GoodStateOfRepair>
+                    <a:Unoccupied>
+                      <a:Over45Days>N</a:Over45Days>
+                      <a:NumUnoccupiedDays>0</a:NumUnoccupiedDays>
+                    </a:Unoccupied>
+                    <a:AnyClaims>N</a:AnyClaims>
+                    <a:AnyConvictions>N</a:AnyConvictions>
+                    <a:Bankruptcy>N</a:Bankruptcy>
+                    <a:RefusedInsurance>N</a:RefusedInsurance>
+                    <a:Claims />
+                  </a:House>
+                  <a:Buildings>
+                    <a:CoverType>S</a:CoverType>
+                    <a:YearsHeld>1</a:YearsHeld>
+                    <a:RebuildCost>136000</a:RebuildCost>
+                    <a:Subsidence>N</a:Subsidence>
+                    <a:CrackedWalls>N</a:CrackedWalls>
+                    <a:Underpinning>N</a:Underpinning>
+                    <a:BuildExcess>100</a:BuildExcess>
+                  </a:Buildings>
+                  <a:Contents>
+                    <a:CoverType>N</a:CoverType>
+                    <a:YearsHeld>1</a:YearsHeld>
+                    <a:ContentsCoverAmt>25000</a:ContentsCoverAmt>
+                    <a:HighRiskCoverAmt>6250</a:HighRiskCoverAmt>
+                    <a:SingleItemCoverAmt>1500</a:SingleItemCoverAmt>
+                    <a:Locks>
+                      <a:MainDoor>01</a:MainDoor>
+                      <a:SlidingDoor>06</a:SlidingDoor>
+                      <a:ExternalDoor>06</a:ExternalDoor>
+                      <a:WindowLocks>Y</a:WindowLocks>
+                    </a:Locks>
+                    <a:NeighbourhoodWatch>Y</a:NeighbourhoodWatch>
+                    <a:Occupied9to5>Y</a:Occupied9to5>
+                    <a:SafeFitted>Y</a:SafeFitted>
+                    <a:BurglarAlarm>
+                      <a:FittedandUsed>N</a:FittedandUsed>
+                      <a:MaintContract></a:MaintContract>
+                      <a:Approved></a:Approved>
+                    </a:BurglarAlarm>
+                    <a:UnspecifiedItemCoverAmt>0</a:UnspecifiedItemCoverAmt>
+                    <a:ContentExcess>100</a:ContentExcess>
+                  </a:Contents>
+                  <a:KeyCover>N</a:KeyCover>
+                  <a:LegalProtection>N</a:LegalProtection>
+                  <a:PaymentProtection>N</a:PaymentProtection>
+                  <a:HomeAssistance>N</a:HomeAssistance>
+                </a:HomeRisks>
+              </a:Home>
+            </a:Homes>
+          </a:Products>
+        </a:Lead>
+      </a:QuoteRequest>
+    </Household>
+  </soap:Body>
+</soap:Envelope>

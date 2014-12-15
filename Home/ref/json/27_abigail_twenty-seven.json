@@ -23,7 +23,7 @@
          "organisationName":"",
          "department":"",
          "subBuilding":"",
-         "building":"",
+         "building":"2",
          "number":"2",
          "dependentThoroughfare":"",
          "thoroughfare":"Temple Place",
@@ -52,7 +52,7 @@
          "organisationName":"",
          "department":"",
          "subBuilding":"",
-         "building":"",
+         "building":"2",
          "number":"2",
          "dependentThoroughfare":"",
          "thoroughfare":"Temple Place",
@@ -101,7 +101,18 @@
          "emptyFor45Days":"False",
          "daysLeftEmpty":"",
          "selectedUnoccupiedForHowLong":"",
-         "selectedUnoccupiedReason":""
+         "selectedUnoccupiedReason":"",
+		 "previousClaims":[
+            {
+               "claimId":"48a31148-53c1-4307-962b-eca12b196506",
+               "incidentCause":"storm damage",
+               "claimType":"contents away from the home",
+               "claimDate":"2010-01-01 00:00:00Z",
+               "anyDamage":"False",
+			   "damageAmount":"0",
+               "incidentOccuredAtThisProperty":"True"
+            }
+		 ]
       },
       "ownershipStatus":"rented",
       "tenantType":"council-furnished",

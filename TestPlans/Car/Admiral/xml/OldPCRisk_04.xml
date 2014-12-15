@@ -1,0 +1,324 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <PrivateCar>
+      <a:QuoteRequest Version="1" xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+        <a:Header>
+          <a:Sender>
+            <a:SourceCode>CM01</a:SourceCode>
+            <a:PartnerRef>969CCB5229344AC9BDC826AF5D502B6C,0,1</a:PartnerRef>
+            <a:AffinityCode>CTM</a:AffinityCode>
+            <a:RepeatQuote />
+          </a:Sender>
+          <a:ServiceContext>
+            <a:Server>PEG-CTMCORQAP01</a:Server>
+            <a:Path>/Quote/CallProvidersForQuotes</a:Path>
+            <a:PathUrl>http://motor.qa.internal.comparethemarket.com:8084/Quote/CallProvidersForQuotes?requiredFeatures=BRK&amp;requiredFeatures=CUR&amp;requiredFeatures=MLP&amp;requiredFeatures=&amp;requiredFeatures=WND&amp;requiredFeatures=VEX&amp;requiredFeatures=SEX&amp;cacheBuster=1415109678014</a:PathUrl>
+            <a:PathPhysical>D:\CTM\Motor_Mobile\</a:PathPhysical>
+            <a:QueryString>requiredFeatures=BRK&amp;requiredFeatures=CUR&amp;requiredFeatures=MLP&amp;requiredFeatures=&amp;requiredFeatures=WND&amp;requiredFeatures=VEX&amp;requiredFeatures=SEX&amp;cacheBuster=1415109678014</a:QueryString>
+            <a:ClientOS>WinNT</a:ClientOS>
+            <a:ClientBrowser>Chrome</a:ClientBrowser>
+            <a:ClientVersion>38.0</a:ClientVersion>
+            <a:ClientJScriptVersion />
+            <a:ClientEcmaScriptVersion />
+            <a:SessionSessionGuid />
+            <a:SessionTransactionID>969CCB5229344AC9BDC826AF5D502B6C</a:SessionTransactionID>
+            <a:CurrentExecutingRequestGuid>dbcc8541-4826-4811-952b-6c537524d0e9</a:CurrentExecutingRequestGuid>
+            <a:ApplicationName>BGL.CompareTheMarket.Services.QuoteService</a:ApplicationName>
+            <a:JourneyJourneyType>1</a:JourneyJourneyType>
+            <a:JourneySourceCode>CM01</a:JourneySourceCode>
+            <a:JourneyAffinityCode>CTM</a:JourneyAffinityCode>
+            <a:JourneyProductCode>PC</a:JourneyProductCode>
+            <a:VisitorID>14827f71-aa21-4f2d-9b6d-fed61407bb08</a:VisitorID>
+            <a:VisitLogID>1514941</a:VisitLogID>
+          </a:ServiceContext>
+        </a:Header>
+        <a:Lead>
+          <a:Proposer>1</a:Proposer>
+          <a:PostalAddress>1</a:PostalAddress>
+          <a:MarketingOptOut>
+            <a:EmailOptOut>N</a:EmailOptOut>
+            <a:PostOptOut>Y</a:PostOptOut>
+            <a:PhoneOptOut>N</a:PhoneOptOut>
+            <a:SMSOptOut>N</a:SMSOptOut>
+            <a:ProviderOptOut>Y</a:ProviderOptOut>
+          </a:MarketingOptOut>
+          <a:Persons>
+            <a:Person id="1">
+              <a:Title>MISS</a:Title>
+              <a:TitleDesc>Miss</a:TitleDesc>
+              <a:FirstName>Debbie</a:FirstName>
+              <a:Surname>Four</a:Surname>
+              <a:DOB>1978-04-04</a:DOB>
+              <a:Gender>F</a:Gender>
+              <a:GenderDesc>Female</a:GenderDesc>
+              <a:MaritalStatus>S</a:MaritalStatus>
+              <a:MaritalStatusDesc>Single</a:MaritalStatusDesc>
+              <a:EmploymentStatus>F</a:EmploymentStatus>
+              <a:EmploymentStatusDesc>Full/Part Time Education</a:EmploymentStatusDesc>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>S52</a:OccupationCode>
+                <a:OccupationCodeDesc>Student Nurse - Living At Home</a:OccupationCodeDesc>
+                <a:BusinessCode>186</a:BusinessCode>
+                <a:BusinessCodeDesc>Not In Employment</a:BusinessCodeDesc>
+              </a:PrimaryOccupation>
+              <a:Licence>
+                <a:LicenceType>H</a:LicenceType>
+                <a:LicenceTypeDesc>Full European non-EU Licence</a:LicenceTypeDesc>
+                <a:LicenceHeldYears>3</a:LicenceHeldYears>
+                <a:DateLicenceObtained>2011-02-01T00:00:00</a:DateLicenceObtained>
+                <a:DrivingQualifications>DQN</a:DrivingQualifications>
+                <a:DrivingQualificationsDate></a:DrivingQualificationsDate>
+              </a:Licence>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+                <a:UkResidentSinceDOB>Y</a:UkResidentSinceDOB>
+              </a:Resident>
+              <a:UseOtherVehicles>COVE</a:UseOtherVehicles>
+              <a:VehiclesInHousehold>5</a:VehiclesInHousehold>
+              <a:AddressAsProposer>Y</a:AddressAsProposer>
+              <a:HomeOwner>Y</a:HomeOwner>
+              <a:PassPlus>N</a:PassPlus>
+              <a:HaveMotorClaim>true</a:HaveMotorClaim>
+              <a:MotorClaims>
+                <a:MotorClaim id="1">
+                  <a:IncidentDate>2012-04-01</a:IncidentDate>
+                  <a:IncidentType>A</a:IncidentType>
+                  <a:IncidentTypeDesc>Accident</a:IncidentTypeDesc>
+                  <a:Damage>1</a:Damage>
+                  <a:DamageDesc>No Damage</a:DamageDesc>
+                  <a:IncidentValue>0.00</a:IncidentValue>
+                  <a:ClaimMade>N</a:ClaimMade>
+                  <a:IncidentDriver>1</a:IncidentDriver>
+                  <a:Fault>S</a:Fault>
+                  <a:Injuries>N</a:Injuries>
+                  <a:InsuredVehicleClaimAmount>0.00</a:InsuredVehicleClaimAmount>
+                  <a:ThirdPartyClaimAmount>0.00</a:ThirdPartyClaimAmount>
+                  <a:NCDAffected>N</a:NCDAffected>
+                </a:MotorClaim>
+              </a:MotorClaims>
+              <a:HaveMotorConviction>false</a:HaveMotorConviction>
+              <a:MotorInsuranceCancelled>N</a:MotorInsuranceCancelled>
+              <a:HaveNonMotorConviction>false</a:HaveNonMotorConviction>
+              <a:ChildrenUnder16>N</a:ChildrenUnder16>
+              <a:Ghost>false</a:Ghost>
+              <a:NamedDriverExperience>NDE</a:NamedDriverExperience>
+              <a:NamedDriverExperienceYears>NDY4</a:NamedDriverExperienceYears>
+              <a:DVLAMedicalCondition>DVN</a:DVLAMedicalCondition>
+              <a:PassedCBT></a:PassedCBT>
+              <a:LargestCCBike>0</a:LargestCCBike>
+            </a:Person>
+            <a:Person id="2">
+              <a:Title>MS</a:Title>
+              <a:TitleDesc>Ms</a:TitleDesc>
+              <a:FirstName>Denise</a:FirstName>
+              <a:Surname>Four</a:Surname>
+              <a:DOB>1979-09-07</a:DOB>
+              <a:Gender>F</a:Gender>
+              <a:GenderDesc>Female</a:GenderDesc>
+              <a:MaritalStatus>S</a:MaritalStatus>
+              <a:MaritalStatusDesc>Single</a:MaritalStatusDesc>
+              <a:EmploymentStatus>H</a:EmploymentStatus>
+              <a:EmploymentStatusDesc>House Person</a:EmploymentStatusDesc>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>H09</a:OccupationCode>
+                <a:OccupationCodeDesc>Housewife</a:OccupationCodeDesc>
+                <a:BusinessCode>186</a:BusinessCode>
+                <a:BusinessCodeDesc>Not In Employment</a:BusinessCodeDesc>
+              </a:PrimaryOccupation>
+              <a:Licence>
+                <a:LicenceType>P</a:LicenceType>
+                <a:LicenceTypeDesc>Provisional UK Car Licence</a:LicenceTypeDesc>
+                <a:LicenceHeldYears>8</a:LicenceHeldYears>
+                <a:DateLicenceObtained></a:DateLicenceObtained>
+                <a:DrivingQualifications>DQN</a:DrivingQualifications>
+                <a:DrivingQualificationsDate></a:DrivingQualificationsDate>
+              </a:Licence>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+                <a:UkResidentSinceDOB>Y</a:UkResidentSinceDOB>
+              </a:Resident>
+              <a:UseOtherVehicles>CXVE</a:UseOtherVehicles>
+              <a:RelationshipToProposer>O</a:RelationshipToProposer>
+              <a:RelToProposerDesc>Son/Daughter</a:RelToProposerDesc>
+              <a:AddressAsProposer>N</a:AddressAsProposer>
+              <a:HomeOwner>N</a:HomeOwner>
+              <a:PassPlus>N</a:PassPlus>
+              <a:HaveMotorClaim>true</a:HaveMotorClaim>
+              <a:MotorClaims>
+                <a:MotorClaim id="1">
+                  <a:IncidentDate>2011-11-01</a:IncidentDate>
+                  <a:IncidentType>6</a:IncidentType>
+                  <a:IncidentTypeDesc>Explosion</a:IncidentTypeDesc>
+                  <a:Damage>1</a:Damage>
+                  <a:DamageDesc>No Damage</a:DamageDesc>
+                  <a:IncidentValue>0.00</a:IncidentValue>
+                  <a:ClaimMade>N</a:ClaimMade>
+                  <a:IncidentDriver>0</a:IncidentDriver>
+                  <a:Injuries>N</a:Injuries>
+                  <a:InsuredVehicleClaimAmount>0.00</a:InsuredVehicleClaimAmount>
+                  <a:ThirdPartyClaimAmount>0.00</a:ThirdPartyClaimAmount>
+                  <a:NCDAffected>N</a:NCDAffected>
+                </a:MotorClaim>
+              </a:MotorClaims>
+              <a:HaveMotorConviction>false</a:HaveMotorConviction>
+              <a:MotorInsuranceCancelled>N</a:MotorInsuranceCancelled>
+              <a:HaveNonMotorConviction>false</a:HaveNonMotorConviction>
+              <a:Ghost>false</a:Ghost>
+              <a:DVLAMedicalCondition>DVN</a:DVLAMedicalCondition>
+              <a:PassedCBT></a:PassedCBT>
+              <a:LargestCCBike>0</a:LargestCCBike>
+            </a:Person>
+            <a:Person id="3">
+              <a:Title>MR</a:Title>
+              <a:TitleDesc>Mr</a:TitleDesc>
+              <a:FirstName>David</a:FirstName>
+              <a:Surname>Child</a:Surname>
+              <a:DOB>1991-02-02</a:DOB>
+              <a:Gender>M</a:Gender>
+              <a:GenderDesc>Male</a:GenderDesc>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+                <a:UkResidentSinceDOB>Y</a:UkResidentSinceDOB>
+              </a:Resident>
+              <a:RelationshipToProposer>O</a:RelationshipToProposer>
+              <a:RelToProposerDesc>Son/Daughter</a:RelToProposerDesc>
+              <a:AddressAsProposer>Y</a:AddressAsProposer>
+              <a:HomeOwner>N</a:HomeOwner>
+              <a:PassPlus>N</a:PassPlus>
+              <a:HaveMotorClaim>false</a:HaveMotorClaim>
+              <a:HaveMotorConviction>false</a:HaveMotorConviction>
+              <a:MotorInsuranceCancelled>N</a:MotorInsuranceCancelled>
+              <a:HaveNonMotorConviction>false</a:HaveNonMotorConviction>
+              <a:Ghost>false</a:Ghost>
+              <a:PassedCBT></a:PassedCBT>
+              <a:LargestCCBike>0</a:LargestCCBike>
+            </a:Person>
+          </a:Persons>
+          <a:Addresses>
+            <a:Address id="1">
+              <a:AddressLine1>2 Duke of Edinburgh Way</a:AddressLine1>
+              <a:AddressLine2>Malvern</a:AddressLine2>
+              <a:AddressLine3></a:AddressLine3>
+              <a:AddressLine4></a:AddressLine4>
+              <a:AddressLine5></a:AddressLine5>
+              <a:PostCode>WR14 1AZ</a:PostCode>
+              <a:LocationIDFK></a:LocationIDFK>
+              <a:LocationDetails i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+            </a:Address>
+          </a:Addresses>
+          <a:ContactDetails>
+            <a:Phone type="work">
+              <a:PhoneCode>01733</a:PhoneCode>
+              <a:PhoneNumber>320300</a:PhoneNumber>
+            </a:Phone>
+            <a:EmailAdr>transformerPC04@emailreaction.org</a:EmailAdr>
+          </a:ContactDetails>
+          <a:Products>
+            <a:PrivateCars>
+              <a:PrivateCar id="1">
+                <a:PrivateCarCover>
+                  <a:CommencementDate>2014-11-06</a:CommencementDate>
+                  <a:CoverType>01</a:CoverType>
+                  <a:CoverTypeDesc>Comprehensive</a:CoverTypeDesc>
+                  <a:ClassOfUse>023</a:ClassOfUse>
+                  <a:ClassOfUseDesc>SDPC and business use (proposer only)</a:ClassOfUseDesc>
+                  <a:TotalExcess>700</a:TotalExcess>
+                  <a:Ncd>
+                    <a:NcdYears>0</a:NcdYears>
+                    <a:NcdProtected>N</a:NcdProtected>
+                    <a:ProtectedNcdOtherVehicle></a:ProtectedNcdOtherVehicle>
+                  </a:Ncd>
+                  <a:InsurancePaymentMethod>F</a:InsurancePaymentMethod>
+                  <a:PillionPassenger></a:PillionPassenger>
+                  <a:PreviousQuote></a:PreviousQuote>
+                  <a:Drivers>
+                    <a:Driver id="1" type="main" />
+                    <a:Driver id="2" type="other" />
+                  </a:Drivers>
+                </a:PrivateCarCover>
+                <a:PrivateCarRisks>
+                  <a:Vehicle>
+                    <a:AdditionalDetails>
+                      <a:ABICode>16553803</a:ABICode>
+                      <a:Make>Fiat</a:Make>
+                      <a:Model>Punto</a:Model>
+                      <a:Doors>5</a:Doors>
+                      <a:Seats>4</a:Seats>
+                      <a:EngineSize>1368</a:EngineSize>
+                      <a:Body>
+                        <a:Desc>SALOON</a:Desc>
+                        <a:Code>01</a:Code>
+                      </a:Body>
+                      <a:LCBody>
+                        <a:Desc></a:Desc>
+                        <a:Code></a:Code>
+                      </a:LCBody>
+                      <a:Fuel>
+                        <a:Desc>PETROL</a:Desc>
+                        <a:Code>002</a:Code>
+                      </a:Fuel>
+                      <a:Transmission>
+                        <a:Desc>MANUAL</a:Desc>
+                        <a:Code>002</a:Code>
+                      </a:Transmission>
+                      <a:Weight>0</a:Weight>
+                    </a:AdditionalDetails>
+                    <a:VehicleCode>16553803</a:VehicleCode>
+                    <a:VehicleDesc>2011 Fiat Punto Evo Dynamic (77), 1368CC Petrol, 5DR, Manual</a:VehicleDesc>
+                    <a:RegYear>2011</a:RegYear>
+                    <a:RegLetter>11</a:RegLetter>
+                    <a:RegNumber>WM11ENP</a:RegNumber>
+                    <a:Seats>4</a:Seats>
+                    <a:LHD>N</a:LHD>
+                    <a:SecurityCode>99994</a:SecurityCode>
+                    <a:SecurityCodeDesc>Factory Fitted Non-Thatcham Alarm</a:SecurityCodeDesc>
+                    <a:Tracker>N</a:Tracker>
+                    <a:VehiclePurchased>Y</a:VehiclePurchased>
+                    <a:PurchaseDate>2012-09-01</a:PurchaseDate>
+                    <a:OvernightParking>12</a:OvernightParking>
+                    <a:WhereKeptAddress>1</a:WhereKeptAddress>
+                    <a:AnnualMileage>5000</a:AnnualMileage>
+                    <a:BusinessMileage>5000</a:BusinessMileage>
+                    <a:RegisteredKeeper>
+                      <a:OwnerKeeperType>P</a:OwnerKeeperType>
+                      <a:OwnerKeeperID>3</a:OwnerKeeperID>
+                      <a:OwnerKeeperName>Mr David Child</a:OwnerKeeperName>
+                    </a:RegisteredKeeper>
+                    <a:LegalOwner>
+                      <a:OwnerKeeperType>P</a:OwnerKeeperType>
+                      <a:OwnerKeeperID>3</a:OwnerKeeperID>
+                      <a:OwnerKeeperName>Mr David Child</a:OwnerKeeperName>
+                    </a:LegalOwner>
+                    <a:VehicleInsValue>3000</a:VehicleInsValue>
+                    <a:VehicleValue>3000</a:VehicleValue>
+                    <a:InsuranceGroup>04</a:InsuranceGroup>
+                    <a:ValuationType>4</a:ValuationType>
+                    <a:Modifications>
+                      <a:Modification>
+                        <a:ModType>FC</a:ModType>
+                        <a:ModTypeDesc>Rear Valance</a:ModTypeDesc>
+                        <a:ModCatCodeDesc>Spoilers/Bodykits</a:ModCatCodeDesc>
+                        <a:ModText></a:ModText>
+                      </a:Modification>
+                      <a:Modification>
+                        <a:ModType>FD</a:ModType>
+                        <a:ModTypeDesc>Front Spoiler / Air Dam</a:ModTypeDesc>
+                        <a:ModCatCodeDesc>Spoilers/Bodykits</a:ModCatCodeDesc>
+                        <a:ModText></a:ModText>
+                      </a:Modification>
+                    </a:Modifications>
+                    <a:VehicleImported>N</a:VehicleImported>
+                    <a:VehicleKeptDuringDay>VKD4</a:VehicleKeptDuringDay>
+                  </a:Vehicle>
+                  <a:LegalProtection>N</a:LegalProtection>
+                  <a:VehicleBreakdown>N</a:VehicleBreakdown>
+                </a:PrivateCarRisks>
+              </a:PrivateCar>
+            </a:PrivateCars>
+            <a:CommercialVehicles />
+          </a:Products>
+        </a:Lead>
+      </a:QuoteRequest>
+    </PrivateCar>
+  </soap:Body>
+</soap:Envelope>

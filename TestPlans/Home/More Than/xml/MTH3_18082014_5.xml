@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <Household>
+      <a:QuoteRequest Version="1" xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+        <a:Header>
+          <a:Sender>
+            <a:SourceCode>CM02</a:SourceCode>
+            <a:PartnerRef />
+          </a:Sender>
+        </a:Header>
+        <a:Lead>
+          <a:Proposer>1</a:Proposer>
+          <a:PostalAddress>1</a:PostalAddress>
+          <a:MarketingOptOut>
+            <a:EmailOptOut>Y</a:EmailOptOut>
+            <a:PostOptOut>Y</a:PostOptOut>
+            <a:PhoneOptOut>Y</a:PhoneOptOut>
+            <a:SMSOptOut>N</a:SMSOptOut>
+          </a:MarketingOptOut>
+          <a:Persons>
+            <a:Person id="1">
+              <a:Title>Dr</a:Title>
+              <a:FirstName>Edward</a:FirstName>
+              <a:Surname>Five</a:Surname>
+              <a:DOB>1964-04-17</a:DOB>
+              <a:MaritalStatus>B</a:MaritalStatus>
+              <a:EmploymentStatus>F</a:EmploymentStatus>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>S50</a:OccupationCode>
+                <a:BusinessCode>186</a:BusinessCode>
+              </a:PrimaryOccupation>
+              <a:SecondaryOccupation>
+                <a:OccupationCode>E11</a:OccupationCode>
+                <a:BusinessCode>166</a:BusinessCode>
+              </a:SecondaryOccupation>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+              </a:Resident>
+              <a:Ghost>false</a:Ghost>
+              <a:LargestCCBike i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+              <a:Gender>M</a:Gender>
+            </a:Person>
+            <a:Person id="2">
+              <a:Title>Dr</a:Title>
+              <a:FirstName>Joint</a:FirstName>
+              <a:Surname>Policyholder</a:Surname>
+              <a:DOB>1960-01-01</a:DOB>
+              <a:MaritalStatus>B</a:MaritalStatus>
+              <a:EmploymentStatus>R</a:EmploymentStatus>
+              <a:PrimaryOccupation>
+                <a:OccupationCode>R09</a:OccupationCode>
+                <a:BusinessCode>186</a:BusinessCode>
+              </a:PrimaryOccupation>
+              <a:Resident>
+                <a:ResidentSince>0001-01-01</a:ResidentSince>
+              </a:Resident>
+              <a:RelationshipToProposer>J</a:RelationshipToProposer>
+              <a:Ghost>false</a:Ghost>
+              <a:LargestCCBike i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+              <a:Gender>M</a:Gender>
+            </a:Person>
+          </a:Persons>
+          <a:Addresses>
+            <a:Address id="1">
+              <a:AddressLine1>Byways</a:AddressLine1>
+              <a:AddressLine2>Rippons Drove</a:AddressLine2>
+              <a:AddressLine3>Northborough</a:AddressLine3>
+              <a:AddressLine4>Peterborough</a:AddressLine4>
+              <a:AddressLine5></a:AddressLine5>
+              <a:PostCode>PE6 9AG</a:PostCode>
+            </a:Address>
+            <a:Address id="2">
+              <a:AddressLine1>2 Cotswold Close</a:AddressLine1>
+              <a:AddressLine2>Slough</a:AddressLine2>
+              <a:AddressLine3></a:AddressLine3>
+              <a:AddressLine4></a:AddressLine4>
+              <a:AddressLine5></a:AddressLine5>
+              <a:PostCode>SL1 2TG</a:PostCode>
+            </a:Address>
+          </a:Addresses>
+          <a:ContactDetails>
+            <a:Phone type="work">
+              <a:PhoneCode>01778</a:PhoneCode>
+              <a:PhoneNumber>852852</a:PhoneNumber>
+            </a:Phone>
+            <a:EmailAdr>michael.hudson@emailreaction.org</a:EmailAdr>
+          </a:ContactDetails>
+          <a:Products>
+            <a:Homes>
+              <a:Home id="1">
+                <a:HomeCover>
+                  <a:CommencementDate>2014-08-06</a:CommencementDate>
+                  <a:JointHolderId>2</a:JointHolderId>
+                </a:HomeCover>
+                <a:HomeRisks>
+                  <a:House>
+                    <a:AddressId>2</a:AddressId>
+                    <a:OwnerStatus>03</a:OwnerStatus>
+                    <a:Occupancy>UN</a:Occupancy>
+                    <a:ReasonUnOccupied>01</a:ReasonUnOccupied>
+                    <a:PeriodUnOccupied>05</a:PeriodUnOccupied>
+                    <a:NumNonFamilyMembers>0</a:NumNonFamilyMembers>
+                    <a:TypeOfProperty>26</a:TypeOfProperty>
+                    <a:NumBedrooms>4</a:NumBedrooms>
+                    <a:NumberOfRooms>12</a:NumberOfRooms>
+                    <a:ListedBuilding>3</a:ListedBuilding>
+                    <a:TypeOfUse>N</a:TypeOfUse>
+                    <a:YearBuilt>1984</a:YearBuilt>
+                    <a:TypeOfWall>20</a:TypeOfWall>
+                    <a:Water400M>N</a:Water400M>
+                    <a:SmokeDetectors>Y</a:SmokeDetectors>
+                    <a:GoodStateOfRepair>Y</a:GoodStateOfRepair>
+                    <a:Unoccupied>
+                      <a:Over45Days>N</a:Over45Days>
+                      <a:NumUnoccupiedDays>0</a:NumUnoccupiedDays>
+                    </a:Unoccupied>
+                    <a:AddressDiffReason>06</a:AddressDiffReason>
+                    <a:AnyClaims>Y</a:AnyClaims>
+                    <a:AnyConvictions>N</a:AnyConvictions>
+                    <a:Bankruptcy>N</a:Bankruptcy>
+                    <a:RefusedInsurance>N</a:RefusedInsurance>
+                    <a:Claims>
+                      <a:Claim>
+                        <a:ID>1</a:ID>
+                        <a:IncidentCause>11</a:IncidentCause>
+                        <a:IncidentDate>2011-10-01</a:IncidentDate>
+                        <a:IncidentType>04</a:IncidentType>
+                        <a:Damage>N</a:Damage>
+                        <a:IncidentValue>0</a:IncidentValue>
+                        <a:ThisAddress>N</a:ThisAddress>
+                      </a:Claim>
+                    </a:Claims>
+                  </a:House>
+                  <a:Buildings>
+                    <a:CoverType>S</a:CoverType>
+                    <a:YearsHeld>4</a:YearsHeld>
+                    <a:RebuildCost>100000</a:RebuildCost>
+                    <a:Subsidence>N</a:Subsidence>
+                    <a:CrackedWalls>N</a:CrackedWalls>
+                    <a:Underpinning>Y</a:Underpinning>
+                    <a:DamageOngoing>N</a:DamageOngoing>
+                    <a:BuildExcess>100</a:BuildExcess>
+                  </a:Buildings>
+                  <a:Contents>
+                    <a:CoverType>N</a:CoverType>
+                    <a:YearsHeld>4</a:YearsHeld>
+                    <a:ContentsCoverAmt>40000</a:ContentsCoverAmt>
+                    <a:HighRiskCoverAmt>4000</a:HighRiskCoverAmt>
+                    <a:SingleItemCoverAmt>4000</a:SingleItemCoverAmt>
+                    <a:Locks>
+                      <a:MainDoor>05</a:MainDoor>
+                      <a:SlidingDoor>04</a:SlidingDoor>
+                      <a:ExternalDoor>02</a:ExternalDoor>
+                      <a:WindowLocks>Y</a:WindowLocks>
+                    </a:Locks>
+                    <a:NeighbourhoodWatch>Y</a:NeighbourhoodWatch>
+                    <a:Occupied9to5>Y</a:Occupied9to5>
+                    <a:SelfContained xmlns:a="http://insure-systems.co.uk/Schema/LeadServices/1-0">Y</a:SelfContained>
+                    <a:SafeFitted>Y</a:SafeFitted>
+                    <a:BurglarAlarm>
+                      <a:FittedandUsed>N</a:FittedandUsed>
+                      <a:MaintContract></a:MaintContract>
+                      <a:Approved></a:Approved>
+                    </a:BurglarAlarm>
+                    <a:UnspecifiedItemCoverAmt>0</a:UnspecifiedItemCoverAmt>
+                    <a:ContentExcess>100</a:ContentExcess>
+                  </a:Contents>
+                  <a:SpecifiedItems>
+                    <a:SpecifiedItem>
+                      <a:Item>A13</a:Item>
+                      <a:Description>JVC HDD Camcorder</a:Description>
+                      <a:Value>1900</a:Value>
+                    </a:SpecifiedItem>
+                  </a:SpecifiedItems>
+                  <a:KeyCover>N</a:KeyCover>
+                  <a:LegalProtection>N</a:LegalProtection>
+                  <a:PaymentProtection>N</a:PaymentProtection>
+                  <a:HomeAssistance>N</a:HomeAssistance>
+                </a:HomeRisks>
+              </a:Home>
+            </a:Homes>
+          </a:Products>
+        </a:Lead>
+      </a:QuoteRequest>
+    </Household>
+  </soap:Body>
+</soap:Envelope>

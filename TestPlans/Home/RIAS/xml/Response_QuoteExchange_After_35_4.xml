@@ -1,0 +1,1506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QuoteResults namespace="http://BGL.CompareTheMarket.Services.DistributorService.DataContracts" xmlns="http://BGL.CompareTheMarket.Services.DistributorService.DataContracts">
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>SNN3</Broker>
+        <InsurerName>Swintons</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>380570</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=SWIN&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246000</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>76.63</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>10.31</Deposit>
+            <FirstInstalment>10.31</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>10.31</MonthlyPremium>
+            <APR>35.50</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>50,000</Description>
+              <Status>Y</Status>
+              <ProductCost>50000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>500,000</Description>
+              <Status>Y</Status>
+              <ProductCost>500000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description />
+              <Status>N</Status>
+              <ProductCost>0</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>TAA3</Broker>
+        <InsurerName>AA Home</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>WW1HS213THVJ</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=AAHM&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3245997</RetrievalLink>
+          <Comment2>Get Free AA Breakdown Cover when you buy Home Insurance.</Comment2>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>88.66</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>8.87</Deposit>
+            <FirstInstalment>8.32</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>8.32</MonthlyPremium>
+            <APR>26.90</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>40,000</Description>
+              <Status>Y</Status>
+              <ProductCost>40000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>-12.34</Description>
+              <Status>Y</Status>
+              <ProductCost>-12.34</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>500</Description>
+              <Status>Y</Status>
+              <ProductCost>500</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>500</Description>
+              <Status>Y</Status>
+              <ProductCost>500</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>MTH3</Broker>
+        <InsurerName>MORE THAN</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>QH10067192</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=MRTN&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3245994</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>116.65</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>10.58</FirstInstalment>
+            <NumberOfPayments>12</NumberOfPayments>
+            <MonthlyPremium>10.58</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>75,000</Description>
+              <Status>Y</Status>
+              <ProductCost>75000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>500,000</Description>
+              <Status>Y</Status>
+              <ProductCost>500000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>QYH3</Broker>
+        <InsurerName>Quote Your Home</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>UTHCTM-071010S80W</Reference>
+          <Username></Username>
+          <Password>NULL</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=THAM&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3245998</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>146.47</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>21.97</Deposit>
+            <FirstInstalment>17.04</FirstInstalment>
+            <NumberOfPayments>9</NumberOfPayments>
+            <MonthlyPremium>17.04</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>15.75</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>50,000</Description>
+              <Status>Y</Status>
+              <ProductCost>50000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>500,000</Description>
+              <Status>Y</Status>
+              <ProductCost>500000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>AIM3</Broker>
+        <InsurerName>AIM FOR A GREAT QUOTE</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>UDEE-071010S60W</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=A4GH&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246007</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>152.11</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage>0.00</ZeroInstallmentsMessage>
+            <Deposit>50.00</Deposit>
+            <FirstInstalment>13.81</FirstInstalment>
+            <NumberOfPayments>10</NumberOfPayments>
+            <MonthlyPremium>13.81</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>125</BuildingExcess>
+          <ContentsExcess>125</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>25.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>50,000</Description>
+              <Status>Y</Status>
+              <ProductCost>50000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>125</Description>
+              <Status>Y</Status>
+              <ProductCost>125</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>500,000</Description>
+              <Status>Y</Status>
+              <ProductCost>500000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>125</Description>
+              <Status>Y</Status>
+              <ProductCost>125</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>PFD3</Broker>
+        <InsurerName>Performace Direct</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>H18240940781</Reference>
+          <Username></Username>
+          <Password>c8W77vGqzdob</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=PD&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3245999</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>175.99</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>32.60</Deposit>
+            <FirstInstalment>14.34</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>14.34</MonthlyPremium>
+            <APR>14.34</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>60,000</Description>
+              <Status>Y</Status>
+              <ProductCost>60000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>60,000</Description>
+              <Status>Y</Status>
+              <ProductCost>60000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>1,000</Description>
+              <Status>Y</Status>
+              <ProductCost>1000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>500</Description>
+              <Status>Y</Status>
+              <ProductCost>500</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>KCN3</Broker>
+        <InsurerName>Key Connect</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>110/218/Q213/WEB</Reference>
+          <Username></Username>
+          <Password>UVuj4dYav</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=KEY&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246009</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>179.57</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>16.32</Deposit>
+            <FirstInstalment>18.41</FirstInstalment>
+            <NumberOfPayments>10</NumberOfPayments>
+            <MonthlyPremium>18.41</MonthlyPremium>
+            <APR>28.60</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>25,000</Description>
+              <Status>Y</Status>
+              <ProductCost>25000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>136,000</Description>
+              <Status>Y</Status>
+              <ProductCost>136000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>I4R3</Broker>
+        <InsurerName>Insurance 4 Retirement</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>127/189/Q213/CTM</Reference>
+          <Username></Username>
+          <Password>Ext6pJHQc</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=I4RTR&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246010</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>187.10</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>16.98</FirstInstalment>
+            <NumberOfPayments>12</NumberOfPayments>
+            <MonthlyPremium>16.98</MonthlyPremium>
+            <APR>22.69</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>100,000</Description>
+              <Status>Y</Status>
+              <ProductCost>100000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>136000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CAH</Code>
+              <Description>100,000</Description>
+              <Status>Y</Status>
+              <ProductCost>100000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>500</Description>
+              <Status>Y</Status>
+              <ProductCost>500</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>500</Description>
+              <Status>Y</Status>
+              <ProductCost>500</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>GAD3</Broker>
+        <InsurerName>Grove and Dean</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>J18241940781</Reference>
+          <Username></Username>
+          <Password>c8W77vGqzdob</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=GROV&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3245995</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>190.99</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>34.10</Deposit>
+            <FirstInstalment>15.62</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>15.62</MonthlyPremium>
+            <APR>14.90</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>60,000</Description>
+              <Status>Y</Status>
+              <ProductCost>60000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CCA</Code>
+              <Description>25,000</Description>
+              <Status>Y</Status>
+              <ProductCost>25000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>136000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCA</Code>
+              <Description>136,000</Description>
+              <Status>Y</Status>
+              <ProductCost>136000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>1,000</Description>
+              <Status>Y</Status>
+              <ProductCost>1000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>500</Description>
+              <Status>Y</Status>
+              <ProductCost>500</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>SRT3</Broker>
+        <InsurerName>Sure Term Direct</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>1887432620</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=SRTD&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246003</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>210.39</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>52.60</Deposit>
+            <FirstInstalment>16.28</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>16.28</MonthlyPremium>
+            <APR>29.60</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>50</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>25,000</Description>
+              <Status>Y</Status>
+              <ProductCost>25000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>50</Description>
+              <Status>Y</Status>
+              <ProductCost>50</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>500,000</Description>
+              <Status>Y</Status>
+              <ProductCost>500000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>500</Description>
+              <Status>Y</Status>
+              <ProductCost>500</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>EHA3</Broker>
+        <InsurerName>E-HOME</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>28138079</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=EHM&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246005</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>211.50</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>42.55</Deposit>
+            <FirstInstalment>17.39</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>17.39</MonthlyPremium>
+            <APR>8.30</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>0</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>25,000</Description>
+              <Status>Y</Status>
+              <ProductCost>25000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>136000</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>BLE3</Broker>
+        <InsurerName>Bullseye</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>380570</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=BULL&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3245996</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>232.00</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>22.43</Deposit>
+            <FirstInstalment>22.43</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>22.43</MonthlyPremium>
+            <APR>35.50</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>50,000</Description>
+              <Status>Y</Status>
+              <ProductCost>50000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>500,000</Description>
+              <Status>Y</Status>
+              <ProductCost>500000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>AAP3</Broker>
+        <InsurerName>AA2 Home</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>WW1HS213THVL</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=AAHM2&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246001</RetrievalLink>
+          <Comment2>Get Free AA Breakdown Cover when you buy Home Insurance.</Comment2>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>252.79</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>25.28</Deposit>
+            <FirstInstalment>23.72</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>23.72</MonthlyPremium>
+            <APR>26.90</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>40,000</Description>
+              <Status>Y</Status>
+              <ProductCost>40000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>-12.34</Description>
+              <Status>Y</Status>
+              <ProductCost>-12.34</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>5000</Description>
+              <Status>Y</Status>
+              <ProductCost>5000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>1000</Description>
+              <Status>Y</Status>
+              <ProductCost>1000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CCA</Code>
+              <Description />
+              <Status>Y</Status>
+              <ProductCost>0</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CAH</Code>
+              <Description />
+              <Status>Y</Status>
+              <ProductCost>5000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCA</Code>
+              <Description />
+              <Status>Y</Status>
+              <ProductCost>0</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>COMPLETE</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>FRI3</Broker>
+        <InsurerName>Fresh</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>UFRS-071010SC0W</Reference>
+          <Username></Username>
+          <Password>NULL</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=FRESH&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246008</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>269.28</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>28.43</Deposit>
+            <FirstInstalment>31.84</FirstInstalment>
+            <NumberOfPayments>9</NumberOfPayments>
+            <MonthlyPremium>31.84</MonthlyPremium>
+            <APR>31.80</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>100</BuildingExcess>
+          <ContentsExcess>100</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>20.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>49.50</HomeAssistancePremium>
+          <Features>
+            <Feature>
+              <Code>CCS</Code>
+              <Description>50,000</Description>
+              <Status>Y</Status>
+              <ProductCost>50000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BCS</Code>
+              <Description>500,000</Description>
+              <Status>Y</Status>
+              <ProductCost>500000</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>BXS</Code>
+              <Description>100</Description>
+              <Status>Y</Status>
+              <ProductCost>100</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>CRD</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>MNY</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+            <Feature>
+              <Code>DRN</Code>
+              <Description>0</Description>
+              <Status>Y</Status>
+              <ProductCost>0.00</ProductCost>
+              <Definition />
+            </Feature>
+          </Features>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes />
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes />
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes />
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>SGA3</Broker>
+        <InsurerName>Saga</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference></Reference>
+          <Username></Username>
+          <Password>NULL</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=SAGA&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3245993</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>0.00</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>0.00</FirstInstalment>
+            <NumberOfPayments>0</NumberOfPayments>
+            <MonthlyPremium>0.00</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>0</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>HPT3</Broker>
+        <InsurerName>Home Protect</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference></Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=NHI&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246002</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>0.00</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>0.00</FirstInstalment>
+            <NumberOfPayments>0</NumberOfPayments>
+            <MonthlyPremium>0.00</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>0</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>ONE3</Broker>
+        <InsurerName>ONE CALL DIRECT</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>1887432621</Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=1CALL&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246004</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>0.00</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>13.97</FirstInstalment>
+            <NumberOfPayments>11</NumberOfPayments>
+            <MonthlyPremium>13.97</MonthlyPremium>
+            <APR>25.90</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>0</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>HIS3</Broker>
+        <InsurerName>Hiscox</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference></Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=HSCX&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246006</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>0.00</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>0.00</FirstInstalment>
+            <NumberOfPayments>0</NumberOfPayments>
+            <MonthlyPremium>0.00</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>0</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>HAP3</Broker>
+        <InsurerName>Home Protect Axa</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference></Reference>
+          <Username></Username>
+          <Password></Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=AXAI&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246011</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>0.00</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>0.00</FirstInstalment>
+            <NumberOfPayments>0</NumberOfPayments>
+            <MonthlyPremium>0.00</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>0</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>0.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>0.00</HomeAssistancePremium>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+  <QuoteResult>
+    <Header>
+      <ResultStatus>ERROR</ResultStatus>
+      <PartnerRef>3e096972-4875-425c-b407-9ae24323caa2</PartnerRef>
+    </Header>
+    <Quotes>
+      <Quote>
+        <ProductClass></ProductClass>
+        <Broker>ASD3</Broker>
+        <InsurerName>Asda</InsurerName>
+        <ExpiryDate>2014-08-01T00:00:00</ExpiryDate>
+        <LinkDetails>
+          <Reference>UGRAQE-071010SV0</Reference>
+          <Username></Username>
+          <Password>NULL</Password>
+          <RetrievalLink>http://a_ctm_dev.quoteexchange.co.uk/brokersite-HM.php?broker=ASDA&amp;qd=rs0aqcitboabtkarlc8p580ia6&amp;re=3246012</RetrievalLink>
+        </LinkDetails>
+        <Premium>
+          <AnnualPremium>0.00</AnnualPremium>
+          <InstalmentDetails>
+            <ZeroInstallmentsMessage />
+            <Deposit>0.00</Deposit>
+            <FirstInstalment>0.00</FirstInstalment>
+            <NumberOfPayments>0</NumberOfPayments>
+            <MonthlyPremium>0.00</MonthlyPremium>
+            <APR>0.00</APR>
+          </InstalmentDetails>
+        </Premium>
+        <a:Excesses xmlns:a="http://insure-systems.co.uk/Schema/QuoteRequest/1-0">
+          <BuildingExcess>0</BuildingExcess>
+          <ContentsExcess>0</ContentsExcess>
+        </a:Excesses>
+        <OtherProducts>
+          <LegalCoverPremium>20.00</LegalCoverPremium>
+          <PaymentProtectionPremium>0.00</PaymentProtectionPremium>
+          <KeyCoverPremium>0.00</KeyCoverPremium>
+          <HomeAssistancePremium>49.50</HomeAssistancePremium>
+        </OtherProducts>
+      </Quote>
+    </Quotes>
+    <Messages><Logs><Log><Code>ReqRecvd</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>ReqQueued</Code><LogDateTime>2014-08-01T15:06:04.81103</LogDateTime></Log><Log><Code>OutProcStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderStart</Code><LogDateTime>2014-08-01T15:06:04.90463</LogDateTime></Log><Log><Code>ProviderEnd</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log><Log><Code>InProcStart</Code><LogDateTime>2014-08-01T15:06:27.60277</LogDateTime></Log></Logs></Messages>
+  </QuoteResult>
+</QuoteResults>

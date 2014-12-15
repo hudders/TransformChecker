@@ -8,7 +8,7 @@ let startCell = 67
 let dloadFolder = @"C:\Users\mhudson\Downloads\"
 let savedFolder = @"C:\Dev\panel.testplans\Home\"
 let crrntFolder = @"C:\Dev\TransformChecker\Home\"
-let xlsRtFolder = @"C:\Dev\panel.testplans\"
+let xlsRtFolder = @"C:\Dev\TransformChecker\TestPlans\"
 let jsnRtFolder = crrntFolder + @"ref\json\"
 
 let contains lookFor inSeq = Seq.exists (fun elem -> elem = lookFor) inSeq

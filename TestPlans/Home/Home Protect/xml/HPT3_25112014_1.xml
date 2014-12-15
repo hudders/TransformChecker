@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tem="http://tempuri.org/" xmlns:web="http://www.webmoney.co.uk/xsd/Hp2Xml.xsd">
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:userName>Compare the Market</tem:userName>
+      <tem:passWord>1254CTM2014</tem:passWord>
+      <tem:quotationDataXml>&lt;web:QuestionData xmlns:web="http://www.webmoney.co.uk/xsd/Hp2Xml.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;web:TitleID&gt;003&lt;/web:TitleID&gt;
+  &lt;web:FirstName&gt;Aaron&lt;/web:FirstName&gt;
+  &lt;web:LastName&gt;One&lt;/web:LastName&gt;
+  &lt;web:DateOfBirth&gt;1960-04-17&lt;/web:DateOfBirth&gt;
+  &lt;web:Sex&gt;M&lt;/web:Sex&gt;
+  &lt;web:MaritalStatusID originalvalueid="Married"&gt;2&lt;/web:MaritalStatusID&gt;
+  &lt;web:OccupationID originalvalueid="Child Minder"&gt;C14&lt;/web:OccupationID&gt;
+  &lt;web:BusinessID originalvalueid="Child Minding"&gt;854&lt;/web:BusinessID&gt;
+  &lt;web:Email&gt;michael.hudson@emailreaction.org&lt;/web:Email&gt;
+  &lt;web:DaytimeTelephoneNumber&gt;01778 852852&lt;/web:DaytimeTelephoneNumber&gt;
+  &lt;web:HouseNumber&gt;Byways&lt;/web:HouseNumber&gt;
+  &lt;web:Street1&gt;Rippons Drove&lt;/web:Street1&gt;
+  &lt;web:Street2&gt;Northborough&lt;/web:Street2&gt;
+  &lt;web:TownCity&gt;Peterborough&lt;/web:TownCity&gt;
+  &lt;web:County&gt;Cambridgeshire&lt;/web:County&gt;
+  &lt;web:Postcode&gt;PE6 9AG&lt;/web:Postcode&gt;
+  &lt;web:IsSameAsRiskAddress&gt;0&lt;/web:IsSameAsRiskAddress&gt;
+  &lt;web:PropertyHouseNumber&gt;27a Langley Lane&lt;/web:PropertyHouseNumber&gt;
+  &lt;web:PropertyStreet1&gt;Shipley&lt;/web:PropertyStreet1&gt;
+  &lt;web:PropertyStreet2 /&gt;
+  &lt;web:PropertyTownCity /&gt;
+  &lt;web:PropertyCounty&gt;West Yorkshire&lt;/web:PropertyCounty&gt;
+  &lt;web:PropertyPostcode&gt;BD17 7LH&lt;/web:PropertyPostcode&gt;
+  &lt;web:IsJointApplicant&gt;1&lt;/web:IsJointApplicant&gt;
+  &lt;web:SoleOccupancy originalvalueid="All family members"&gt;1&lt;/web:SoleOccupancy&gt;
+  &lt;web:HaveConvictions&gt;0&lt;/web:HaveConvictions&gt;
+  &lt;web:BankruptOrCCJOrIVA&gt;0&lt;/web:BankruptOrCCJOrIVA&gt;
+  &lt;web:RefusedCancelled&gt;0&lt;/web:RefusedCancelled&gt;
+  &lt;web:JointPolicyHolder&gt;
+    &lt;web:JPTitleID&gt;004&lt;/web:JPTitleID&gt;
+    &lt;web:JPFirstName&gt;Joint&lt;/web:JPFirstName&gt;
+    &lt;web:JPLastName&gt;Policyholder&lt;/web:JPLastName&gt;
+    &lt;web:JPDateOfBirth&gt;1960-01-01&lt;/web:JPDateOfBirth&gt;
+    &lt;web:JPSex&gt;F&lt;/web:JPSex&gt;
+    &lt;web:JPRelationshipID originalvalueid="Spouse"&gt;11&lt;/web:JPRelationshipID&gt;
+    &lt;web:JPOccupationID originalvalueid="Nuclear Scientist"&gt;222&lt;/web:JPOccupationID&gt;
+    &lt;web:JPBusinessID originalvalueid="Nuclear Energy"&gt;141&lt;/web:JPBusinessID&gt;
+  &lt;/web:JointPolicyHolder&gt;
+  &lt;web:PreviouslyBoughtHomeInsurance&gt;1&lt;/web:PreviouslyBoughtHomeInsurance&gt;
+  &lt;web:StartDate&gt;2014-10-30&lt;/web:StartDate&gt;
+  &lt;web:CoverTypeID originalvalueid="Buildings &amp;amp; Contents Cover"&gt;1&lt;/web:CoverTypeID&gt;
+  &lt;web:NumberOfYearsInsuranceHeld originalvalueid="less than 1 year"&gt;0&lt;/web:NumberOfYearsInsuranceHeld&gt;
+  &lt;web:PreviousClaims&gt;0&lt;/web:PreviousClaims&gt;
+  &lt;web:HRI xmlns="http://www.webmoney.co.uk/xsd/Hp2Xml.xsd"&gt;
+    &lt;web:HRICategoryID originalvalueid="jewellery/watches"&gt;J01&lt;/web:HRICategoryID&gt;
+    &lt;web:HRIDescription&gt;Titanium Watch&lt;/web:HRIDescription&gt;
+    &lt;web:HRIValue&gt;1500&lt;/web:HRIValue&gt;
+  &lt;/web:HRI&gt;
+  &lt;web:HRI xmlns="http://www.webmoney.co.uk/xsd/Hp2Xml.xsd"&gt;
+    &lt;web:HRICategoryID&gt;P02&lt;/web:HRICategoryID&gt;
+    &lt;web:HRIDescription&gt;Big Bike&lt;/web:HRIDescription&gt;
+    &lt;web:HRIValue&gt;350&lt;/web:HRIValue&gt;
+  &lt;/web:HRI&gt;
+  &lt;web:PropertyTypeID originalvalueid="Mid Terraced House"&gt;19&lt;/web:PropertyTypeID&gt;
+  &lt;web:YearBuilt&gt;1980&lt;/web:YearBuilt&gt;
+  &lt;web:Bedrooms originalvalueid="One"&gt;1&lt;/web:Bedrooms&gt;
+  &lt;web:WallConstructionID originalvalueid="Stone"&gt;16&lt;/web:WallConstructionID&gt;
+  &lt;web:RoofConstructionID originalvalueid="Tile"&gt;15&lt;/web:RoofConstructionID&gt;
+  &lt;web:Roof33PercentFlat&gt;0&lt;/web:Roof33PercentFlat&gt;
+  &lt;web:RoofThatched&gt;0&lt;/web:RoofThatched&gt;
+  &lt;web:PropertyListed&gt;0&lt;/web:PropertyListed&gt;
+  &lt;web:SignsOfSubsidence&gt;0&lt;/web:SignsOfSubsidence&gt;
+  &lt;web:IssueRectified&gt;1&lt;/web:IssueRectified&gt;
+  &lt;web:underpinned&gt;0&lt;/web:underpinned&gt;
+  &lt;web:GoodStateOfRepair&gt;1&lt;/web:GoodStateOfRepair&gt;
+  &lt;web:OwnershipTypeID originalvalueid="Mortgaged/Owned - Not rented out"&gt;OWN01&lt;/web:OwnershipTypeID&gt;
+  &lt;web:OccupiedWhenID originalvalueid="Occupied Day and Night"&gt;OCC03&lt;/web:OccupiedWhenID&gt;
+  &lt;web:ConsecutiveDaysUnoccupiedID originalvalueid="Up to 45"&gt;30&lt;/web:ConsecutiveDaysUnoccupiedID&gt;
+  &lt;web:DomesticUseOnly originalvalueid="Children minded at property"&gt;0&lt;/web:DomesticUseOnly&gt;
+  &lt;web:FrequencyOfVisitor&gt;1&lt;/web:FrequencyOfVisitor&gt;
+  &lt;web:HowManyAtOneTime&gt;1&lt;/web:HowManyAtOneTime&gt;
+  &lt;web:MainIncome&gt;1&lt;/web:MainIncome&gt;
+  &lt;web:OfficeSelfContained&gt;0&lt;/web:OfficeSelfContained&gt;
+  &lt;web:CommercialInsurance&gt;0&lt;/web:CommercialInsurance&gt;
+  &lt;web:NumStaffEmployed&gt;1&lt;/web:NumStaffEmployed&gt;
+  &lt;web:EmployersLiabilityInsurance&gt;1&lt;/web:EmployersLiabilityInsurance&gt;
+  &lt;web:EscortedOnAndOff&gt;1&lt;/web:EscortedOnAndOff&gt;
+  &lt;web:BusinessEquipmentCoverRequired&gt;0&lt;/web:BusinessEquipmentCoverRequired&gt;
+  &lt;web:BusinessStockAtProperty&gt;0&lt;/web:BusinessStockAtProperty&gt;
+  &lt;web:PropertyUseType&gt;OWN01&lt;/web:PropertyUseType&gt;
+  &lt;web:MainLocksID originalvalueid="Key to lock from outside - unlock &amp;amp; pull down lever to enter"&gt;2&lt;/web:MainLocksID&gt;
+  &lt;web:PatioLocksID originalvalueid="No sliding doors or french windows"&gt;1&lt;/web:PatioLocksID&gt;
+  &lt;web:OtherLocksID originalvalueid="Key to lock from outside - unlock &amp;amp; pull down lever to enter"&gt;2&lt;/web:OtherLocksID&gt;
+  &lt;web:KeyOperatedWindows&gt;1&lt;/web:KeyOperatedWindows&gt;
+  &lt;web:BurglarAlarm&gt;1&lt;/web:BurglarAlarm&gt;
+  &lt;web:NACOSSApproved&gt;1&lt;/web:NACOSSApproved&gt;
+  &lt;web:AlarmMonitored&gt;1&lt;/web:AlarmMonitored&gt;
+  &lt;web:Safe&gt;1&lt;/web:Safe&gt;
+  &lt;web:SmokeAlarm&gt;0&lt;/web:SmokeAlarm&gt;
+  &lt;web:Within200mWater&gt;0&lt;/web:Within200mWater&gt;
+  &lt;web:BuildingsSumInsured&gt;100000&lt;/web:BuildingsSumInsured&gt;
+  &lt;web:BuildingsAccidentalDamage&gt;0&lt;/web:BuildingsAccidentalDamage&gt;
+  &lt;web:BuildingsVolExcess originalvalueid="100"&gt;100&lt;/web:BuildingsVolExcess&gt;
+  &lt;web:ContentsSumInsured&gt;15000&lt;/web:ContentsSumInsured&gt;
+  &lt;web:ContentsAccidentalDamage&gt;0&lt;/web:ContentsAccidentalDamage&gt;
+  &lt;web:ContentsVolExcess originalvalueid="100"&gt;100&lt;/web:ContentsVolExcess&gt;
+  &lt;web:UnspecifiedAwayFromHome&gt;2000&lt;/web:UnspecifiedAwayFromHome&gt;
+&lt;/web:QuestionData&gt;</tem:quotationDataXml>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

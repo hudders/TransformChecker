@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:tem="http://WebServices.ssp-uk.com/HouseholdAggregator/">
+  <soap:Header>
+    <ssp:Security>
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soap:Header>
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:quote CoverStart="2014-12-08" CoverStartTime="00:00:00" IsMultiProposer="true" CoverType="ContentsAndBuildings" PaymentFrequency="U" PaymentFrequencyDescription="Unknown">
+        <SingleQuoteRequest QuoteMultipleBroker="true" BrokerSCIDs="C00057-001,C00057-002" />
+        <Proposer ProposerType="MainProposer" RelationshipToProposer="P" DateOfBirth="1967-04-17" Sex="Female" MaritalStatus="Widowed" IsSmoker="false" FirstTimeBuyer="true" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" EmailAddress="michael.hudson@emailreaction.org" Title="Miss" FirstName="Harriet" LastName="Eight" DayTimePhone="01778852852">
+          <Occupation IsFullTime="true" EmploymentStatus="Unemployed" OccupationCode="U03" BusinessCode="186" />
+          <CorrespondenceAddress HouseName="" AddressLine1="20 Fossway" AddressLine2="York" AddressLine3="" AddressLine4="North Yorkshire" Postcode="YO31 8SG" />
+        </Proposer>
+        <Proposer ProposerType="CoProposer" RelationshipToProposer="E" DateOfBirth="1960-01-01" Sex="Female" MaritalStatus="Married" IsSmoker="false" FirstTimeBuyer="true" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" Title="Miss" FirstName="Joint" LastName="Policyholder">
+          <Occupation IsFullTime="true" EmploymentStatus="HouseholdDuties" OccupationCode="H09" BusinessCode="186" />
+        </Proposer>
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2010-01-01" ClaimType="07" CoverType="Contents" />
+        <Premises YearBuilt="1987" PremisesType="01" NumberOfBedrooms="7" NumberOfBathrooms="1" TotalNumberOfRooms="21" IsOccupiedNight="true" OccupancyStatus="HolidayHome" OwnerShipType="03" IsSoleOccupancy="true" ListedBuildingType="3" IsUsedForBusiness="false" IsClericalWorkOnly="false" SelfContainedAndLockable="true" MaxDaysUnoccupied="30" HasSmokeDetector="true" SecurityDeviceDiscountRequired="false" IsFurnished="true" OccupantsOver18="0" OccupantsUnder18="0" HasExteriorLighting="false" IsSecurityActivated="false" ConstructionWall="13" ConstructionRoof="03" RoofFlatPercentage="50" IsFreeFromFlooding="true" IsNearRiverBank="false" IsGoodStateOfRepair="true" IsSOMaintained="false" IsTreesVicinity="false" HasExtension="false" IsOccupiedDay="true" HasStandardAlarm="false" AlarmProfMaintained="" HasApprovedAlarm="" MemberOfNeighbourHoodWatch="true" HasSafeInstalled="true" HasApprovedLocks="true" MainDoorLockType="240" HasPatioDoors="false" HasOtherDoors="true" OtherDoorLockType="240" AccessibleWindowLocks="KeyOperatedLocks" IsFreeFromSubsidence="true" IsFreeFromUnderpinning="true">
+          <Address HouseName="" AddressLine1="20 Fossway" AddressLine2="York" AddressLine3="" AddressLine4="North Yorkshire" Postcode="YO31 8SG" />
+        </Premises>
+        <CoverRequired>
+          <Buildings RebuildingCost="100000" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullValue="true" />
+          <Contents ValuablesSumInsured="4000" ContentsCoverType="NewForOld" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullReplacementValue="true" ValueMostExpensiveItem="4000" AllRisksRequired="true" PersonalEffectsSumInsured="2000" TotalSumInsured="40000">
+            <AllRisks>
+              <SpecifiedItem ItemType="P02" Description="Really Big Bike" Value="350" />
+            </AllRisks>
+            <SpecifiedItems>
+              <SpecifiedItem ItemType="P08" Description="12MP camera" Value="2200" />
+              <SpecifiedItem ItemType="P08" Description="Expensive optical zoom camera" Value="2300" />
+            </SpecifiedItems>
+          </Contents>
+        </CoverRequired>
+      </tem:quote>
+      <tem:sourceOfBusiness>CompareTheMarket</tem:sourceOfBusiness>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

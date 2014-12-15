@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:tem="http://WebServices.ssp-uk.com/HouseholdAggregator/">
+  <soap:Header>
+    <ssp:Security>
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soap:Header>
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:quote CoverStart="2014-12-08" CoverStartTime="00:00:00" IsMultiProposer="false" CoverType="ContentsAndBuildings" PaymentFrequency="U" PaymentFrequencyDescription="Unknown">
+        <SingleQuoteRequest QuoteMultipleBroker="true" BrokerSCIDs="C00057-001,C00057-002" />
+        <Proposer ProposerType="MainProposer" RelationshipToProposer="P" DateOfBirth="1983-04-17" Sex="Male" MaritalStatus="Divorced" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" EmailAddress="michael.hudson@emailreaction.org" Title="Mr" FirstName="Xu" LastName="Twenty-Four" DayTimePhone="01778852852">
+          <Occupation IsFullTime="true" EmploymentStatus="Unemployed" OccupationCode="U03" BusinessCode="186" />
+          <CorrespondenceAddress HouseName="Flat 1" AddressLine1="212 Urban Road" AddressLine2="Doncaster" AddressLine3="" AddressLine4="South Yorkshire" Postcode="DN4 0HJ" />
+        </Proposer>
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2011-09-01" ClaimType="12" CoverType="Contents" />
+        <Premises YearBuilt="2001" PremisesType="26" NumberOfBedrooms="5" NumberOfBathrooms="1" TotalNumberOfRooms="8" IsOccupiedNight="true" OccupancyStatus="Unoccupied" OwnerShipType="03" IsSoleOccupancy="" ListedBuildingType="3" IsUsedForBusiness="false" IsClericalWorkOnly="false" SelfContainedAndLockable="true" MaxDaysUnoccupied="999" HasSmokeDetector="true" SecurityDeviceDiscountRequired="false" IsFurnished="true" OccupantsOver18="0" OccupantsUnder18="0" HasExteriorLighting="false" IsSecurityActivated="false" ConstructionWall="20" IsFreeFromFlooding="true" IsNearRiverBank="false" IsGoodStateOfRepair="true" IsSOMaintained="false" IsTreesVicinity="false" HasExtension="false" IsOccupiedDay="true" HasStandardAlarm="false" AlarmProfMaintained="" HasApprovedAlarm="" MemberOfNeighbourHoodWatch="true" HasSafeInstalled="true" HasApprovedLocks="false" MainDoorLockType="999" HasPatioDoors="true" PatioDoorLockType="280" HasOtherDoors="true" OtherDoorLockType="908" AccessibleWindowLocks="KeyOperatedLocks" IsFreeFromSubsidence="true" IsFreeFromUnderpinning="true">
+          <Address HouseName="Flat 1" AddressLine1="212 Urban Road" AddressLine2="Doncaster" AddressLine3="" AddressLine4="South Yorkshire" Postcode="DN4 0HJ" />
+        </Premises>
+        <CoverRequired>
+          <Buildings RebuildingCost="100000" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullValue="true" />
+          <Contents ValuablesSumInsured="4000" ContentsCoverType="NewForOld" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullReplacementValue="true" ValueMostExpensiveItem="4000" AllRisksRequired="false" PersonalEffectsSumInsured="0" TotalSumInsured="40000">
+            <SpecifiedItems>
+              <SpecifiedItem ItemType="G06" Description="100 carat diamond" Value="3600" />
+            </SpecifiedItems>
+          </Contents>
+        </CoverRequired>
+      </tem:quote>
+      <tem:sourceOfBusiness>CompareTheMarket</tem:sourceOfBusiness>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>

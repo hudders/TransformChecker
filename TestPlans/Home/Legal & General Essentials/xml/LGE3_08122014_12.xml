@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ssp="http://SSP.Authentication.Services/" xmlns:tem="http://WebServices.ssp-uk.com/HouseholdAggregator/">
+  <soap:Header>
+    <ssp:Security>
+      <ssp:SystemUsername>1045678055</ssp:SystemUsername>
+      <ssp:SystemPassword>AE9ACEEC-D1CA-4BF9-8318-66C61EF5B74F</ssp:SystemPassword>
+      <ssp:SystemID>2</ssp:SystemID>
+    </ssp:Security>
+  </soap:Header>
+  <soap:Body>
+    <tem:GetQuote>
+      <tem:quote CoverStart="2014-12-08" CoverStartTime="00:00:00" IsMultiProposer="true" CoverType="ContentsAndBuildings" PaymentFrequency="U" PaymentFrequencyDescription="Unknown">
+        <SingleQuoteRequest QuoteMultipleBroker="true" BrokerSCIDs="C00057-001,C00057-002" />
+        <Proposer ProposerType="MainProposer" RelationshipToProposer="P" DateOfBirth="1971-04-17" Sex="Female" MaritalStatus="Divorced" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" EmailAddress="michael.hudson@emailreaction.org" Title="Dr" FirstName="Louise" LastName="Twelve" DayTimePhone="01778852852">
+          <Occupation IsFullTime="true" EmploymentStatus="Employed" OccupationCode="C99" BusinessCode="564" />
+          <CorrespondenceAddress HouseName="" AddressLine1="75 Gavin Way" AddressLine2="Highwoods" AddressLine3="Colchester" AddressLine4="Essex" Postcode="CO4 9FF" />
+        </Proposer>
+        <Proposer ProposerType="CoProposer" RelationshipToProposer="O" DateOfBirth="1980-01-01" Sex="Female" MaritalStatus="Single" IsSmoker="false" FirstTimeBuyer="false" HasConvictions="false" HasCcj="false" HasPolicyRefused="false" DateResidencyStarted="2014-12-08" Title="Miss" FirstName="Joint" LastName="Policyholder">
+          <Occupation IsFullTime="true" EmploymentStatus="InEducation" OccupationCode="S34" BusinessCode="186" />
+        </Proposer>
+        <Claim Cost="1000" IsCurrentAddress="false" Date="2010-01-01" ClaimType="33" CoverType="Buildings" />
+        <Premises YearBuilt="1991" PremisesType="04" NumberOfBedrooms="1" NumberOfBathrooms="1" TotalNumberOfRooms="3" IsOccupiedNight="true" OccupancyStatus="HolidayHome" OwnerShipType="03" IsSoleOccupancy="true" ListedBuildingType="4" IsUsedForBusiness="false" IsClericalWorkOnly="false" SelfContainedAndLockable="true" MaxDaysUnoccupied="30" HasSmokeDetector="true" SecurityDeviceDiscountRequired="false" IsFurnished="true" OccupantsOver18="0" OccupantsUnder18="0" HasExteriorLighting="false" IsSecurityActivated="false" ConstructionWall="01" ConstructionRoof="06" RoofFlatPercentage="50" IsFreeFromFlooding="true" IsNearRiverBank="false" IsGoodStateOfRepair="true" IsSOMaintained="false" IsTreesVicinity="false" HasExtension="false" IsOccupiedDay="true" HasStandardAlarm="false" AlarmProfMaintained="" HasApprovedAlarm="" MemberOfNeighbourHoodWatch="true" HasSafeInstalled="true" HasApprovedLocks="true" MainDoorLockType="240" HasPatioDoors="true" PatioDoorLockType="240" HasOtherDoors="true" OtherDoorLockType="240" AccessibleWindowLocks="KeyOperatedLocks" IsFreeFromSubsidence="true" IsFreeFromUnderpinning="true">
+          <Address HouseName="" AddressLine1="75 Gavin Way" AddressLine2="Highwoods" AddressLine3="Colchester" AddressLine4="Essex" Postcode="CO4 9FF" />
+        </Premises>
+        <CoverRequired>
+          <Buildings RebuildingCost="30000" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullValue="true" />
+          <Contents ValuablesSumInsured="4000" ContentsCoverType="NewForOld" IsAccidentalDamageRequired="false" VoluntaryExcess="100" IsFullReplacementValue="true" ValueMostExpensiveItem="4000" AllRisksRequired="false" PersonalEffectsSumInsured="0" TotalSumInsured="40000">
+            <SpecifiedItems>
+              <SpecifiedItem ItemType="S01" Description="The best sailboard" Value="9999" />
+            </SpecifiedItems>
+          </Contents>
+        </CoverRequired>
+      </tem:quote>
+      <tem:sourceOfBusiness>CompareTheMarket</tem:sourceOfBusiness>
+    </tem:GetQuote>
+  </soap:Body>
+</soap:Envelope>
